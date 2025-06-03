@@ -21,10 +21,8 @@ This document is organized into several key sections to guide users through the 
 
 ## Climate datasets
 
-This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor (Prioritization method)
+This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor ([Prioritization method](https://github.com/Rwema25/AE-project/wiki/Prioritization-Methodology)).
 
-
-### Summary
 
 ::: scroll-table
 | Dataset Name | Short Description | Provider/Source | Spatial Coverage | Temporal Coverage | Spatial Resolution | Temporal Resolution | Key Variables | Data Quality Indicators | Metadata Completeness | Update Frequency | Data Provenance | Preprocessing Steps | Access Methods | API/Package Links | Example Scripts | License/Terms | Integration Challenges | Data Ownership | Versioning/Change Log | Data Citation | Benchmarking/Validation Studies | Potential Applications (Agroecological) | Priority Level |
@@ -45,7 +43,6 @@ This section systematically presents the climate datasets used in this study, co
 
 This section summarizes key climate hazards: drought, heat stress, waterlogging, and compound events, relevant to agroecological research and climate risk assessment. For each hazard, widely used indices and indicators are listed along with their calculation methods, interpretation thresholds (including crop or livestock specificity where applicable), data requirements, and available tools or scripts for computation. Compound hazards, such as simultaneous heat and drought, are also included, as they can amplify risks to crops and livestock. This resource is designed to help users select, calculate, and apply the most appropriate indices for climate risk analysis and decision support in agricultural systems.
 
-### Summary
 
 | Hazard | Type/Subtype | Indicator/Index/Variable | Calculation/Formula / Description | Thresholds / Interpretation | Crop/Livestock Specificity | Data Needed / Source | Script/API/Package/Link | Reference / Link | Prioritization | Example Application |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -68,7 +65,7 @@ This section summarizes key climate hazards: drought, heat stress, waterlogging,
 
 To ensure the selection of optimal climate datasets for agroecological research, we apply a structured prioritization approach. This process evaluates datasets based on criteria critical for agricultural applications, data integration, and scientific rigor.
 
-### Prioritization Criteria
+#### Prioritization Criteria
 
 -   **Relevance to Agroecology**
     -   *Does the dataset include variables essential for crop modeling and agricultural risk assessment (e.g., precipitation, temperature, soil moisture, evapotranspiration)?*
@@ -81,7 +78,7 @@ To ensure the selection of optimal climate datasets for agroecological research,
 -   **Data Quality, Validation, and Uncertainty**
     -   *Has the dataset been peer-reviewed, validated against ground observations, or subject to uncertainty quantification? Is metadata comprehensive and transparent?*
 
-### Example Scoring Approach
+#### Example Scoring Approach
 
 | Criterion                  | Weight (%) | Score (1–5) | Weighted Score |
 |----------------------------|------------|-------------|----------------|
@@ -101,16 +98,10 @@ To ensure the selection of optimal climate datasets for agroecological research,
 -   **Medium:** 2.0 ≤ Score \< 3.0 (Supplementary or niche use)
 -   **Low:** Score \< 2.0 (Limited utility for project)
 
-### References to Frameworks
-
--   **Climate Adaptation Prioritization:**
-    -   The methodology to prioritize climate adaptation measures in urban areas uses similar multi-criteria approaches.\
-    -   [*Sustainability* **12**(12), 4807 (2020).](https://www.mdpi.com/2071-1050/12/12/4807)
-
-### Prioritized Dataset List
+#### Prioritized Dataset List
 
 | Rank | Dataset | Weighted Score | Notes/Strengths |
-|--------------|--------------|--------------|-------------------------------|
+|---------------|---------------|---------------|---------------------------|
 | 1 | CHIRPS | 4.8 | Essential precip, high res, strong integration |
 | 1 | AgERA5 | 4.8 | Key ag variables, high res, tailored for agriculture |
 | 2 | TerraClimate | 4.7 | Water balance, high res, global, accessible |
@@ -122,11 +113,11 @@ To ensure the selection of optimal climate datasets for agroecological research,
 | 5 | NASA POWER | 4.0 | Solar, temp, global, but coarser res |
 | 6 | CMIP6 | 3.9 | Future scenarios, coarser res, less direct for ag |
 
-## Indicator Prioritization Methodology
+### Indicator Prioritization Methodology
 
 Indicators were prioritized using a multi-criteria matrix, scoring each index on relevance to key hazards, scientific consensus, crop/livestock specificity, data availability, computation feasibility, and management impact. Those with the highest total scores were selected as core indicators for our climate data tool. This approach ensures that our indicator set is robust, actionable, and grounded in both science and practical application.
 
-### Indicator Prioritization Matrix
+#### Indicator Prioritization Matrix
 
 We used a multi-criteria matrix to prioritize climate hazard indicators for inclusion in our climate data tool. Each indicator was scored from 1 (lowest) to 3 (highest) against the following criteria:
 
@@ -149,6 +140,8 @@ We used a multi-criteria matrix to prioritize climate hazard indicators for incl
 
 *Each criterion is scored from 1 (lowest) to 3 (highest). The total score is the sum across all criteria.*
 
-### References
+## References
+
+Guerrero-Hidalga et al. (2020). [Methodology to Prioritize Climate Adaptation Measures in Urban Areas. Barcelona and Bristol Case Studies](https://doi.org/10.3390/su12124807). *Sustainability*, 12(12), 4807.
 
 Hinkel, J. (2009). [The PIAM Approach: A Framework for Multi-Criteria Selection of Indicators for Integrated Assessment](https://doi.org/10.1016/j.ecolind.2008.01.012). *Ecological Indicators*, 9(1), 89–103.
