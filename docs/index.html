@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Michel Rwema">
 
-<title>AEproject</title>
+<title>Climate Toolkit for Agroecological Research – AEproject</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -102,6 +68,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
+  window.hypothesisConfig = function () {
+    return { openSidebar: true };
+  };
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -143,21 +115,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#climate-datasets" id="toc-climate-datasets" class="nav-link" data-scroll-target="#climate-datasets">Climate datasets</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul></li>
+  <li><a href="#indicators" id="toc-indicators" class="nav-link" data-scroll-target="#indicators">Indicators</a>
+  <ul class="collapse">
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
+  </ul></li>
+  <li><a href="#prioritization-methodology" id="toc-prioritization-methodology" class="nav-link" data-scroll-target="#prioritization-methodology">Prioritization Methodology</a>
+  <ul class="collapse">
+  <li><a href="#dataset-prioritization-methodology" id="toc-dataset-prioritization-methodology" class="nav-link" data-scroll-target="#dataset-prioritization-methodology">Dataset Prioritization Methodology</a></li>
+  <li><a href="#prioritization-criteria" id="toc-prioritization-criteria" class="nav-link" data-scroll-target="#prioritization-criteria">Prioritization Criteria</a></li>
+  <li><a href="#example-scoring-approach" id="toc-example-scoring-approach" class="nav-link" data-scroll-target="#example-scoring-approach">Example Scoring Approach</a></li>
+  <li><a href="#references-to-frameworks" id="toc-references-to-frameworks" class="nav-link" data-scroll-target="#references-to-frameworks">References to Frameworks</a></li>
+  <li><a href="#prioritized-dataset-list" id="toc-prioritized-dataset-list" class="nav-link" data-scroll-target="#prioritized-dataset-list">Prioritized Dataset List</a></li>
+  </ul></li>
+  <li><a href="#indicator-prioritization-methodology" id="toc-indicator-prioritization-methodology" class="nav-link" data-scroll-target="#indicator-prioritization-methodology">Indicator Prioritization Methodology</a>
+  <ul class="collapse">
+  <li><a href="#indicator-prioritization-matrix" id="toc-indicator-prioritization-matrix" class="nav-link" data-scroll-target="#indicator-prioritization-matrix">Indicator Prioritization Matrix</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AEproject</h1>
+<h1 class="title">Climate Toolkit for Agroecological Research</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michel Rwema </p>
+          </div>
+  </div>
     
   
     
@@ -168,16 +173,811 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The Alliance of Bioversity International and CIAT (ABC), in partnership with the McKnight Foundation and the African Institute of Mathematical Sciences (AIMS), is developing a Climate Data Toolkit to support agroecological (AE) research. The toolkit will empower researchers and practitioners to integrate climate data into their workflows, enabling robust analyses of agroecological systems under climate stresses and shocks. Rather than creating new datasets or analytical functions, this project will consolidate and simplify access to existing climate data resources, offering users a streamlined, user-friendly platform to support evidence-based decision-making.</p>
+<p>This document is organized into several key sections to guide users through the Climate Data Toolkit. It begins with an overview of the climate datasets included, detailing their sources, variables, and formats. Next, it presents the climate indicators relevant to agroecological research, explaining their definitions and calculation methods. The following section outlines the prioritization methodology used to select and rank datasets and indicators based on research needs. Additional chapters provide information on the tools, scripts, and APIs integrated within the toolkit, along with practical guidance on applying the toolkit in real-world agroecological contexts. Finally, references and supplementary materials are included to support further exploration and use.</p>
+</section>
+<section id="climate-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="climate-datasets">Climate datasets</h2>
+<p>This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor (Prioritization method)</p>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<div class="scroll-table">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Dataset Name</th>
+<th>Short Description</th>
+<th>Provider/Source</th>
+<th>Spatial Coverage</th>
+<th>Temporal Coverage</th>
+<th>Spatial Resolution</th>
+<th>Temporal Resolution</th>
+<th>Key Variables</th>
+<th>Data Quality Indicators</th>
+<th>Metadata Completeness</th>
+<th>Update Frequency</th>
+<th>Data Provenance</th>
+<th>Preprocessing Steps</th>
+<th>Access Methods</th>
+<th>API/Package Links</th>
+<th>Example Scripts</th>
+<th>License/Terms</th>
+<th>Integration Challenges</th>
+<th>Data Ownership</th>
+<th>Versioning/Change Log</th>
+<th>Data Citation</th>
+<th>Benchmarking/Validation Studies</th>
+<th>Potential Applications (Agroecological)</th>
+<th>Priority Level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CHIRPS</td>
+<td>High-resolution, quasi-global rainfall dataset blending satellite imagery and station data for trend analysis and seasonal drought monitoring</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirps">Climate Hazards Center (CHC), UCSB</a></td>
+<td>50°S–50°N, 180°W–180°E</td>
+<td>1981–present (updated frequently)</td>
+<td>0.05° x 0.05° (~5.5 km at equator)</td>
+<td>Daily, pentadal (5-day), dekadal (10-day), monthly</td>
+<td>Precipitation (mm)</td>
+<td>Validated against station data; uncertainty estimates; provisional data for ~20 days after month end</td>
+<td>Spatial/temporal coverage, source, version, units, coordinate system (WGS84)</td>
+<td>Updated within 45 days; provisional data replaced with final</td>
+<td>Satellite + station blend; processing steps documented on <a href="https://www.chc.ucsb.edu/data/chirps">CHC website</a></td>
+<td>Resampling, masking, unit conversion, missing data handling</td>
+<td>FTP/HTTP (<a href="https://data.chc.ucsb.edu/data/chirps/">CHC data portal</a>), <a href="https://earlywarning.usgs.gov/fews">FEWS NET Data Portal</a>, <a href="https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY">Google Earth Engine (GEE)</a>, R package (<a href="https://cran.r-project.org/web/packages/chirps/index.html"><code>chirps</code> on CRAN</a>)</td>
+<td><a href="https://developers.google.com/earth-engine/api_docs">GEE API Docs</a>, <a href="https://cran.r-project.org/web/packages/chirps/index.html">R package chirps</a></td>
+<td><a href="https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_chirps.R">Example: Script to Download CHIRPS in R (GitHub)</a></td>
+<td>Open for research and non-commercial use</td>
+<td>Large file sizes, need for specific libraries (e.g., <code>netCDF4</code>, <code>xarray</code>), handling provisional data, managing missing data flags</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirps">Climate Hazards Center, UCSB</a></td>
+<td>Version history on <a href="https://www.chc.ucsb.edu/data/chirps">CHC website</a></td>
+<td>Cite as: “CHIRPS dataset provided by Climate Hazards Group, UCSB”</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirps/validation">CHIRPS Validation on CHC website</a>, <a href="https://doi.org/10.1038/sdata.2015.66">CHIRPS v2.0: Increased resolution from climate station evaluation (Funk et al., 2015)</a></td>
+<td>Rainfall pattern analysis, drought monitoring, crop yield modeling, water resource management, agroclimatic zoning, validation of local climate data</td>
+<td><strong>High (core dataset for agroecology)</strong></td>
+</tr>
+<tr class="even">
+<td>AgERA5</td>
+<td>Reanalysis dataset tailored for agriculture, based on ERA5 but with additional variables and adjustments for agricultural applications</td>
+<td><a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/agera5">ECMWF/C3S</a></td>
+<td>Global</td>
+<td>1979–present (updated daily with a short delay)</td>
+<td>0.1° x 0.1° (~10 km)</td>
+<td>Hourly</td>
+<td>Standard ERA5 variables plus: Evapotranspiration (actual/potential), Soil water content (various depths), Leaf Area Index (LAI), Fraction of Absorbed Photosynthetically Active Radiation (FAPAR), crop-specific indicators</td>
+<td>Model-based, validated against ground observations where possible; uncertainty and bias information in documentation; see <a href="https://confluence.ecmwf.int/display/CKB/ERA5+data+documentation">ECMWF documentation</a></td>
+<td>Full metadata in GRIB files (variable definitions, units, provenance, coordinate system, version)</td>
+<td>Updated daily with a short delay</td>
+<td>Derived from ERA5 reanalysis; further processed for agricultural relevance; see <a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/agera5">AgERA5 documentation</a></td>
+<td>Convert GRIB to NetCDF for easier handling (<code>cfgrib</code>, <code>eccodes</code>, <code>xarray</code>); spatial/temporal subsetting; handle large file sizes; check units/definitions for ag variables</td>
+<td><a href="https://dataspace.copernicus.eu/">Copernicus Data Space Ecosystem (CDSE)</a>, <a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/agera5">ECMWF AgERA5 page</a></td>
+<td><a href="https://cds.climate.copernicus.eu/how-to-api">CDS API Docs</a>, <a href="https://github.com/ecmwf/cfgrib">cfgrib Python package</a>, <a href="https://confluence.ecmwf.int/display/ECC/ecCodes+Home">eccodes</a></td>
+<td><a href="https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_AgERA5.R">Example: Script to download AgERA5 in R(GitHub)</a></td>
+<td><a href="https://cds.climate.copernicus.eu/terms-and-conditions">Copernicus license</a> (free for research/educational use, registration required)</td>
+<td>Registration required, GRIB format requires specific tools, large data volume, agricultural variable definitions may differ from other datasets</td>
+<td><a href="https://www.ecmwf.int/">ECMWF</a>, <a href="https://climate.copernicus.eu/">Copernicus Climate Change Service</a></td>
+<td>Versioning and change log available on <a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/insitu-gridded-observations-europe">CDSE</a> and <a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/agera5">ECMWF AgERA5</a></td>
+<td>Cite as: “AgERA5 dataset provided by ECMWF and Copernicus Climate Change Service (C3S)”</td>
+<td><a href="https://www.ecmwf.int/en/elibrary/19899-agera5-dataset-evaluation-and-use-crop-modelling">AgERA5: Dataset evaluation and use for crop modeling (ECMWF)</a>, <a href="https://datastore.copernicus-climate.eu/documents/insitu-gridded-observations-europe/AgERA5_TechNote_v1.0.pdf">AgERA5 technical note (PDF)</a></td>
+<td>Crop yield forecasting, irrigation management, pest/disease modeling, land suitability assessment, drought/heat stress monitoring, vegetation dynamics (LAI, FAPAR), water resource management, climate change impact assessment, soil moisture studies</td>
+<td><strong>High (core dataset for agroecology and climate-adaptive agriculture)</strong></td>
+</tr>
+<tr class="odd">
+<td>TerraClimate</td>
+<td>High-resolution (~4 km, 1/24°) monthly global dataset of climate and climatic water balance variables for terrestrial surfaces, combining climatological normals with coarser time-varying data for detailed, temporally consistent records</td>
+<td><a href="https://www.climatologylab.org/terraclimate.html">Climatology Lab, University of California Merced (UCM)</a></td>
+<td>Global (all terrestrial surfaces)</td>
+<td>1958–present (updated annually)</td>
+<td>1/24° (~4 km)</td>
+<td>Monthly</td>
+<td>Precipitation, max/min temperature, wind speed, vapor pressure, vapor pressure deficit, downward shortwave radiation, reference/actual evapotranspiration, climatic water deficit, soil moisture, runoff, snow water equivalent, Palmer Drought Severity Index (PDSI)</td>
+<td>Validated against station and streamflow data; improved mean absolute error and spatial realism; inherits biases from parent datasets (e.g., precipitation bias in mountains)</td>
+<td>Metadata available for variables, units, provenance, and grid; NetCDF metadata includes time, lat, lon, variable</td>
+<td>Updated annually when parent datasets become available</td>
+<td>WorldClim v2 (climatology), CRU Ts4.0 and JRA55 (monthly anomalies), climatically aided interpolation; water balance via modified Thornthwaite-Mather model</td>
+<td>Check missing data flags; handle large files; use geospatial tools (netCDF4, xarray, raster, R)</td>
+<td><a href="https://www.climatologylab.org/terraclimate.html">Climatology Lab website</a>, <a href="https://planetarycomputer.microsoft.com/dataset/terraclimate">Microsoft Planetary Computer</a>, <a href="https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE">Google Earth Engine</a>, <a href="https://www.climatologylab.org/terraclimate.html">THREDDS servers</a></td>
+<td><a href="https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPPSOR_TERRACLIMATE">Google Earth Engine API Docs</a>, <a href="https://planetarycomputer.microsoft.com/docs/overview/about/">Planetary Computer API Docs</a>, <a href="https://www.climatologylab.org/terraclimate.html">THREDDS server access</a>, <a href="https://cran.r-project.org/web/packages/datazoom.amazonia/vignettes/TERRACLIMATE.html">R package (datazoom.amazonia vignette)</a></td>
+<td><a href="https://www.climatologylab.org/terraclimate.html">Download TerraClimate in Python/R via THREDDS server</a>, or use <a href="https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPPSOR_TERRACLIMATE">GEE script example</a></td>
+<td><a href="https://www.climatologylab.org/terraclimate.html">Public domain (CC0 license)</a>; free for research and operational use</td>
+<td>Large file sizes; requires geospatial software; annual updates; monthly resolution limits capture of short-term extremes; model-derived variables have uncertainties in data-sparse regions</td>
+<td><a href="https://www.climatologylab.org/terraclimate.html">Climatology Lab, University of California Merced</a></td>
+<td>Versioning/change log not specified; annual updates tracked via parent datasets</td>
+<td>Abatzoglou et al.&nbsp;(2018): TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958–2015. Scientific Data, 5, <a href="https://doi.org/10.1038/sdata.2017.191" class="uri">https://doi.org/10.1038/sdata.2017.191</a></td>
+<td><a href="https://doi.org/10.1038/sdata.2017.191">Scientific Data article (Abatzoglou et al., 2018)</a>, <a href="https://climatedataguide.ucar.edu/climate-data/terraclimate-global-high-resolution-gridded-temperature-precipitation-and-other-water">Climate Data Guide summary</a></td>
+<td>Climate trend/variability analysis, drought monitoring, water balance and agricultural risk assessment, crop yield modeling, agroclimatic zoning, ecological/hydrological modeling, validation/downscaling of coarser datasets</td>
+<td><strong>High (core dataset for agroecological and climate-adaptive research)</strong></td>
+</tr>
+<tr class="even">
+<td>IMERG (Integrated Multi-satellitE Retrievals for GPM)</td>
+<td>NASA/JAXA quasi-global (90°S–90°N), high-resolution (0.1° x 0.1°) precipitation estimates by merging GPM satellite constellation data with microwave, infrared, and gauge observations</td>
+<td><a href="https://gpm.nasa.gov/">NASA GPM</a> / <a href="https://global.jaxa.jp/projects/sat/gpm/">JAXA</a></td>
+<td>Quasi-global (90°S–90°N, 180°W–180°E)</td>
+<td>June 2000–present (updated with latency: Early, Late, Final Runs)</td>
+<td>0.1° x 0.1° (~10 km)</td>
+<td>Half-hourly, daily, monthly</td>
+<td>Precipitation rate (mm/hr), accumulated precipitation (mm), error estimates, counts of contributing retrievals</td>
+<td>Validation against global gauge networks; error estimates included; Final Run is highest quality; see <a href="https://gpm.nasa.gov/resources/documents/imerg-algorithm-theoretical-basis-document">IMERG Algorithm Theoretical Basis Document</a></td>
+<td>NetCDF files include variable/unit metadata, time, lat, lon, run type, version, and error variables</td>
+<td>Half-hourly to monthly, depending on product and run (Early: ~4h latency; Late: ~12h; Final: ~3 months)</td>
+<td>Merges GPM satellite data (microwave/IR sensors) with gauge data; multiple runs differ by latency and data sources; see <a href="https://gpm.nasa.gov/data/imerg">IMERG documentation</a></td>
+<td>Handle large files; use netCDF4/xarray/rioxarray (Python) or raster (R); check fill values; aggregate temporally as needed; select appropriate run (Early/Late/Final)</td>
+<td><a href="https://disc.gsfc.nasa.gov/datasets?keywords=IMERG">NASA GES DISC</a>, <a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07">Google Earth Engine</a>, <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/NASA_GPM_3IMERGDF_06.html">ERDDAP servers (example)</a></td>
+<td><a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07">GEE API Docs</a>, <a href="https://disc.gsfc.nasa.gov/datasets?keywords=IMERG">GES DISC Data Access</a>, <a href="https://disc.gsfc.nasa.gov/information/howto?keywords=IMERG">IMERG Data Cookbook</a></td>
+<td><a href="https://disc.gsfc.nasa.gov/information/howto?keywords=IMERG">GES DISC IMERG Python Example</a>, <a href="https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GPM_L3_IMERG_V07">GEE JavaScript Example</a></td>
+<td><a href="https://earthdata.nasa.gov/earthdata/earthdata-citation-policy">NASA Data Policy</a> (open for research/non-commercial use, acknowledge NASA/JAXA/GPM)</td>
+<td>Large file sizes; software requirements; different runs have different latency/accuracy; missing data flags; only precipitation (no temperature, etc.)</td>
+<td><a href="https://gpm.nasa.gov/">NASA</a> / <a href="https://global.jaxa.jp/projects/sat/gpm/">JAXA</a></td>
+<td><a href="https://gpm.nasa.gov/data/directory">IMERG Versioning</a> (version and change log per product)</td>
+<td>“Huffman, G.J., et al., 2020. NASA Global Precipitation Measurement (GPM) Integrated Multi-satellitE Retrievals for GPM (IMERG), Version 07. NASA’s GES DISC. <a href="https://doi.org/10.5067/GPM/IMERG/3B-HH/07" class="uri">https://doi.org/10.5067/GPM/IMERG/3B-HH/07</a>”</td>
+<td><a href="https://gpm.nasa.gov/data/validation">IMERG Validation Reports</a>, <a href="https://gpm.nasa.gov/resources/documents/imerg-algorithm-theoretical-basis-document">IMERG Algorithm Theoretical Basis</a></td>
+<td>Rainfall pattern analysis, drought monitoring, extreme precipitation event analysis, crop yield modeling, water resource management, agroclimatic zoning, validation of local rainfall data, sub-daily/daily hydrological modeling</td>
+<td><strong>High (core precipitation dataset for agroecological and climate studies)</strong></td>
+</tr>
+<tr class="odd">
+<td>TAMSAT</td>
+<td>Long-term, high-resolution rainfall dataset for Africa, blending Meteosat thermal infrared satellite imagery with ground-based rain gauge observations for operational rainfall monitoring and climate risk assessment.</td>
+<td><a href="https://www.tamsat.org.uk/">Department of Meteorology, University of Reading</a></td>
+<td>Africa (continental)</td>
+<td>1983–present (updated regularly)</td>
+<td>0.0375° x 0.0375° (~4 km)</td>
+<td>Daily, dekadal (10-day), monthly</td>
+<td>Rainfall/precipitation (mm), soil moisture estimates (for some products)</td>
+<td>Calibrated with ground-based rain gauges; validation and uncertainty assessments published in peer-reviewed literature; quality control flags in data files</td>
+<td>NetCDF files include variable names, units, time, lat, lon, version, and quality flags; documentation available on <a href="https://www.tamsat.org.uk/">TAMSAT website</a></td>
+<td>Updated regularly as new satellite and gauge data become available</td>
+<td>Derived from Meteosat TIR imagery, calibrated with gauge observations; see <a href="https://www.tamsat.org.uk/">TAMSAT documentation</a> and publications</td>
+<td>Handle large files; use NetCDF-compatible tools (e.g., xarray, netCDF4, raster); check for missing data flags and quality control layers; aggregate or subset as needed</td>
+<td><a href="https://www.tamsat.org.uk/data/">TAMSAT Data Portal</a>, FTP/HTTP download (see website for latest), may require registration</td>
+<td>No formal public API; use <a href="https://www.tamsat.org.uk/data/">TAMSAT Data Portal</a> for downloads; process with <code>xarray</code>, <code>netCDF4</code> (Python), or <code>raster</code> (R); check <a href="https://www.tamsat.org.uk/documentation/">documentation</a> for updates</td>
+<td>-</td>
+<td><a href="https://www.tamsat.org.uk/terms-of-use/">Terms of Use</a>: Free for non-commercial research and educational use; citation required</td>
+<td>Large file sizes; NetCDF format requires specific tools; access methods may change; rainfall only (no temperature, radiation, etc.); accuracy limited in regions with sparse gauge data</td>
+<td><a href="https://www.tamsat.org.uk/">University of Reading</a></td>
+<td>Versioning and updates noted in file names and <a href="https://www.tamsat.org.uk/documentation/">documentation</a></td>
+<td>“TAMSAT rainfall dataset, University of Reading. See <a href="https://www.tamsat.org.uk/">TAMSAT website</a> for citation guidance.”</td>
+<td><a href="https://www.tamsat.org.uk/publications/">TAMSAT Publications</a>, validation studies listed on the website</td>
+<td>Rainfall pattern analysis, drought monitoring and early warning, agricultural planning, crop yield modeling, water availability assessment, climate risk analysis, validation of other rainfall datasets over Africa</td>
+<td><strong>High (core rainfall dataset for agroecological research in Africa)</strong></td>
+</tr>
+<tr class="even">
+<td>CHIRTS (Climate Hazards Center InfraRed Temperature with Stations)</td>
+<td>High-resolution, quasi-global maximum and minimum temperature dataset blending satellite thermal infrared data with ground station observations for climate monitoring and agricultural risk assessment</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirts">Climate Hazards Center (CHC), UCSB</a></td>
+<td>60°S–70°N, 180°W–180°E</td>
+<td>1983–2016 (v1.0), 1983–present (v2.0, ongoing updates)</td>
+<td>0.05° x 0.05° (~5.5 km at equator)</td>
+<td>Daily</td>
+<td>Maximum and minimum temperature (°C)</td>
+<td>Validated against global station data; quality flags and uncertainty estimates included; see <a href="https://www.chc.ucsb.edu/data/chirts">CHIRTS documentation</a></td>
+<td>Metadata includes variable, unit, time, lat, lon, version, and processing details</td>
+<td>Updated as new versions or extensions are released (check CHC website for latest)</td>
+<td>Blends satellite thermal infrared observations with ground station data; processing described in <a href="https://www.chc.ucsb.edu/data/chirts">CHIRTS documentation</a></td>
+<td>Handle NetCDF files; use xarray, netCDF4 (Python), or raster (R); check for missing data flags</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirts">CHC Data Portal (CHIRTS)</a>, FTP/HTTP download (see website)</td>
+<td>No formal API; use <a href="https://www.chc.ucsb.edu/data/chirts">CHC data portal</a> for downloads and documentation</td>
+<td><a href="https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_chirts.R">Example: Download and process CHIRTS in R (GitHub)</a></td>
+<td>Open for research and non-commercial use (see <a href="https://www.chc.ucsb.edu/data/chirts">CHC data use policy</a>)</td>
+<td>Large file sizes; requires geospatial software; limited to temperature variables</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirts">Climate Hazards Center, UCSB</a></td>
+<td>Version history and change log on <a href="https://www.chc.ucsb.edu/data/chirts">CHC website</a></td>
+<td>“CHIRTS dataset provided by Climate Hazards Group, UCSB” (see <a href="https://www.chc.ucsb.edu/data/chirts">CHC citation guidance</a>)</td>
+<td><a href="https://www.chc.ucsb.edu/data/chirts">Validation and methodology described in CHIRTS documentation</a> and associated peer-reviewed publications</td>
+<td>Heat stress monitoring, crop modeling, climate trend analysis, agricultural risk assessment, drought impact studies, validation of other temperature datasets</td>
+<td><strong>High (core temperature dataset for agroecological research)</strong></td>
+</tr>
+<tr class="odd">
+<td>ERA5 (ECMWF Reanalysis v5)</td>
+<td>Fifth generation ECMWF atmospheric reanalysis, providing hourly estimates for a large number of atmospheric, land, and ocean climate variables globally</td>
+<td><a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5">European Centre for Medium-Range Weather Forecasts (ECMWF)</a></td>
+<td>Global</td>
+<td>1950 to near-present (updated daily)</td>
+<td>0.25° x 0.25° (~31 km at equator) for atmospheric variables; other variables may differ</td>
+<td>Hourly (monthly means also available)</td>
+<td>Air temperature (various levels), precipitation, surface radiation, wind speed/direction, soil moisture, evaporation, sea surface temperature, sea ice, and more</td>
+<td>Model-based with uncertainties estimated via ensemble; validated against observations; see <a href="https://confluence.ecmwf.int/display/CKB/ERA5:+data+documentation">ERA5 documentation</a></td>
+<td>Full metadata in GRIB files (variable definitions, units, provenance, coordinate system, version)</td>
+<td>Updated daily with a delay of 2–3 months for final data</td>
+<td>Combines model data with global observations using 4D-Var data assimilation; see <a href="https://confluence.ecmwf.int/display/CKB/ERA5:+data+documentation">ERA5 documentation</a>[1][3][5]</td>
+<td>Use cfgrib/eccodes (Python) for GRIB; convert to NetCDF; subset spatially/temporally; check units/definitions</td>
+<td><a href="https://cds.climate.copernicus.eu/">Copernicus Data Space Ecosystem (CDSE)</a>, <a href="https://www.ecmwf.int/en/forecasts/accessing-forecasts/access-archives">ECMWF Data Catalogue (MARS)</a>, <a href="https://registry.opendata.aws/ecmwf-era5/">Cloud Platforms (AWS, GCP, Azure)</a></td>
+<td><a href="https://cds.climate.copernicus.eu/api-how-to">CDS API Docs</a>, <a href="https://github.com/ecmwf/cfgrib">cfgrib Python package</a>, <a href="https://confluence.ecmwf.int/display/ECC/ecCodes+Home">eccodes</a></td>
+<td><a href="https://cds.climate.copernicus.eu/toolbox/doc/how-to/1_how_to_retrieve_data/1_how_to_retrieve_data.html">ERA5 Python example (CDS API)</a></td>
+<td><a href="https://cds.climate.copernicus.eu/terms-and-conditions">Copernicus license</a> (free for research/educational use, registration required)</td>
+<td>Registration required; large dataset volume; GRIB format needs specific tools; high computational demands; complexity of access and format</td>
+<td><a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5">ECMWF, Copernicus Climate Change Service (C3S)</a></td>
+<td>Versioning and change log available on <a href="https://confluence.ecmwf.int/display/CKB/ERA5:+data+documentation">ECMWF documentation</a></td>
+<td>“ERA5 data provided by ECMWF and Copernicus Climate Change Service (C3S)”</td>
+<td><a href="https://www.ecmwf.int/en/elibrary/20293-ecmwf-reanalysis-fifth-generation-era5">ERA5 evaluation and publications (ECMWF)</a>, <a href="https://doi.org/10.1002/qj.3803">Hersbach et al.&nbsp;(2020)</a></td>
+<td>Temperature analysis, precipitation/drought monitoring, evapotranspiration, solar radiation, wind patterns, soil moisture, extreme weather, climate change impact studies</td>
+<td><strong>High (core dataset for agroecological and climate research)</strong></td>
+</tr>
+<tr class="even">
+<td>NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP)</td>
+<td>Global, high-resolution (0.25°) daily climate projections downscaled from CMIP5 and CMIP6 GCMs, including key variables for climate impact studies</td>
+<td><a href="https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp">NASA Earth Exchange (NEX)</a></td>
+<td>CMIP5: 50°S–50°N; CMIP6: 60°S–90°N</td>
+<td>CMIP5: 1950–2099; CMIP6: 1950–2100</td>
+<td>0.25° x 0.25° (~25 km)</td>
+<td>Daily</td>
+<td>tasmin (daily min temperature, K), tasmax (daily max temperature, K), precipitation (kg m⁻² s⁻¹)</td>
+<td>Bias-corrected and spatially disaggregated; multiple GCMs/scenarios; see <a href="https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf">NEX-GDDP Technical Notes</a> (CMIP5), <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">NEX-GDDP-CMIP6 Technical Note</a></td>
+<td>NetCDF metadata includes variable, unit, scenario, model, time, lat, lon, and processing info</td>
+<td>Dataset is not updated in real time; new versions may be released for CMIP6/other projects</td>
+<td>Downscaled from CMIP5/CMIP6 GCMs using Bias-Correction Spatial Disaggregation (BCSD); see <a href="https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf">technical documentation</a> (CMIP5), <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">NEX-GDDP-CMIP6 Technical Note</a></td>
+<td>Handle large NetCDF files; use xarray, netCDF4, CDO; check for missing data flags; convert units as needed</td>
+<td><a href="https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp">NASA NCCS THREDDS</a>, <a href="https://registry.opendata.aws/nex-gddp/">AWS S3</a>, <a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS">Google Earth Engine</a></td>
+<td><a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS">Google Earth Engine API Docs</a>, <a href="https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp">THREDDS NetCDFSubset</a>, <a href="https://registry.opendata.aws/nex-gddp/">AWS S3 API</a></td>
+<td><a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS">GEE example scripts</a>, <a href="https://registry.opendata.aws/nex-gddp/">AWS S3 download example</a>, <a href="https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_manual_nex_gddpCMIP6.R">GitHub script to download data</a></td>
+<td>Open for scientific research; not recommended for commercial/engineering use without expert consultation</td>
+<td>Large file sizes (up to 38 TB for CMIP6), requires technical expertise, limited to temperature/precipitation, projections subject to GCM/downscaling uncertainties</td>
+<td><a href="https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp">NASA Earth Exchange (NEX)</a></td>
+<td>Versioning and change log available via <a href="https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf">NEX-GDDP Technical Notes</a> (CMIP5), <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">NEX-GDDP-CMIP6 Technical Note</a></td>
+<td>“NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP)” (see <a href="https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp">homepage</a> for citation details)</td>
+<td><a href="https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf">NEX-GDDP Technical Notes</a> (CMIP5), <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">NEX-GDDP-CMIP6 Technical Note</a></td>
+<td>Climate risk assessment, crop yield modeling, drought/heat stress analysis, water resource planning, agroclimatic zoning, validation of local climate data</td>
+<td><strong>High (core dataset for climate impact and agroecological research)</strong></td>
+</tr>
+<tr class="odd">
+<td>NASA POWER (Prediction Of Worldwide Energy Resources)</td>
+<td>Freely available, gridded solar and meteorological datasets derived from NASA satellite observations and climate models for renewable energy, agriculture, and building energy efficiency applications</td>
+<td><a href="https://power.larc.nasa.gov/">NASA Langley Research Center (LaRC) POWER Project</a></td>
+<td>Global</td>
+<td>Varies by parameter; many from 1981 to near-present</td>
+<td>0.5° x 0.5° (~50 km); some parameters may be higher resolution</td>
+<td>Daily, monthly, hourly (parameter-dependent)</td>
+<td>Solar radiation (insolation, direct normal irradiance, diffuse horizontal irradiance), surface meteorology (temperature, wind speed/direction, humidity, pressure), precipitation, evapotranspiration, soil moisture (some datasets), cloud cover</td>
+<td>Derived from NASA satellite products and reanalysis; validation and uncertainty information in documentation; see <a href="https://power.larc.nasa.gov/docs/">POWER Documentation</a></td>
+<td>Metadata included in NetCDF, JSON, and CSV outputs; variable names, units, coordinates, time, and processing info</td>
+<td>Updated regularly as new satellite and reanalysis data are processed</td>
+<td>Combines satellite observations and climate models; see <a href="https://power.larc.nasa.gov/docs/">POWER Documentation</a> for details</td>
+<td>Handle missing data flags; use appropriate tools for CSV, JSON, NetCDF (e.g., xarray, pandas, netCDF4); check units and spatial/temporal resolution</td>
+<td><a href="https://power.larc.nasa.gov/data-access-viewer/">POWER Data Access Viewer</a>, <a href="https://power.larc.nasa.gov/docs/services/api/">POWER API</a>, direct download (CSV, JSON, NetCDF, GeoJSON)</td>
+<td><a href="https://power.larc.nasa.gov/docs/tutorials/api-getting-started/">API Getting Started</a>, <a href="https://pynasapower.readthedocs.io">POWER Python client (pynasapower)</a>, <a href="https://docs.ropensci.org/nasapower/">POWER R client (nasapower)</a></td>
+<td><a href="https://pynasapower.readthedocs.io/en/latest/usage.html">API Python Example</a>, <a href="https://docs.ropensci.org/nasapower/articles/nasapower.html">R Example</a>, <a href="https://power.larc.nasa.gov/docs/tutorials/">API Tutorials</a></td>
+<td>Public domain; free for use with attribution to NASA/POWER (<a href="https://power.larc.nasa.gov/docs/resources/citation/">citation guidance</a>)</td>
+<td>0.5° resolution may be too coarse for local studies; temporal coverage varies by parameter; API requires programming knowledge; handle units and missing data carefully</td>
+<td><a href="https://power.larc.nasa.gov/">NASA Langley Research Center (LaRC)</a></td>
+<td>Versioning and updates documented in <a href="https://power.larc.nasa.gov/docs/">POWER Documentation</a></td>
+<td><a href="https://power.larc.nasa.gov/docs/resources/citation/">NASA POWER Citation Guidance</a></td>
+<td><a href="https://power.larc.nasa.gov/docs/resources/publications/">POWER Publications</a>, <a href="https://power.larc.nasa.gov/docs/methodology/uncertainty/">Validation/Uncertainty</a></td>
+<td>Solar resource assessment, crop modeling, irrigation planning, climate risk analysis, energy efficiency studies, agroclimatic zoning, weather-driven agricultural decision support</td>
+<td><strong>High (widely used for agroclimatology and renewable energy)</strong></td>
+</tr>
+<tr class="even">
+<td>CMIP6 (Coupled Model Intercomparison Project Phase 6)</td>
+<td>International coordinated climate modeling effort providing a comprehensive ensemble of global climate projections for understanding past, present, and future climate change</td>
+<td><a href="https://wcrp-cmip.org/cmip-phases/cmip6/">World Climate Research Programme (WCRP) WGCM</a>, data via <a href="https://esgf.llnl.gov/">Earth System Grid Federation (ESGF)</a></td>
+<td>Global (resolution varies by model)</td>
+<td>Historical: ~1850–present; Projections: up to 2100+ (varies by experiment)</td>
+<td>Varies by model (from ~100 km to ~25 km or finer)</td>
+<td>Daily, monthly, sub-daily (model/variable-dependent)</td>
+<td>Temperature (surface, ocean, etc.), precipitation, radiation, wind, humidity, sea level pressure, sea ice, ocean currents, salinity, soil moisture, runoff, carbon cycle, and more</td>
+<td>Each modeling group provides validation and uncertainty info; ensemble approach allows assessment of robustness; see <a href="https://doi.org/10.5194/gmd-9-1937-2016">Eyring et al., 2016</a></td>
+<td>NetCDF files with CF-compliant metadata (variable/unit, model, experiment, grid, version, etc.)</td>
+<td>Not updated in real time; new experiments released as available</td>
+<td>Data produced by international modeling centers; standardized protocols; see <a href="https://wcrp-cmip.org/cmip-phases/cmip6/">CMIP6 Overview</a></td>
+<td>Handle large NetCDF files; use xarray, netCDF4, dask; understand DRS structure; regrid as needed for analysis</td>
+<td><a href="https://esgf-node.llnl.gov/projects/cmip6/">ESGF Search</a>, <a href="https://cds.climate.copernicus.eu/datasets/projections-cmip6">Copernicus CDS</a>, <a href="https://stac.ceda.ac.uk/collections/cmip6">CEDA STAC API</a></td>
+<td><a href="https://wcrp-cmip.org/cmip-data-access/">ESGF API Docs</a>, <a href="https://github.com/ESGF/pyesgf">pyesgf Python library</a>, <a href="https://cds.climate.copernicus.eu/api-how-to">Copernicus CDS API</a></td>
+<td><a href="https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_rawCMIP6.R">Example: Script to download rowCMIP6 in R(GitHub)</a></td>
+<td>Data access and use governed by contributing modeling group terms (see <a href="https://esgf.llnl.gov/">ESGF Terms</a>), generally free for research/education with attribution</td>
+<td>Huge data volume; variable model resolutions; complex DRS structure; requires technical expertise; model biases and uncertainties; license terms vary by group</td>
+<td><a href="https://wcrp-cmip.org/cmip-phases/cmip6/">WCRP WGCM</a>, <a href="https://wcrp-cmip.org/research-community/modelling-centres/">Modeling Centers</a></td>
+<td>Versioning and change log per model/experiment; see <a href="https://pcmdi.llnl.gov/CMIP6/Guide/dataUsers.html">CMIP6 DRS</a></td>
+<td>See <a href="https://www.wdc-climate.de/docs/pdf/CMIP6_Citation_Userguide.pdf">CMIP6 Citation Guidance</a></td>
+<td><a href="https://doi.org/10.5194/gmd-9-1937-2016">Eyring et al., 2016</a>, <a href="https://wcrp-cmip.org/research-community/publications/">CMIP6 Publications</a></td>
+<td>Climate change impact assessment, crop suitability, extreme event analysis, adaptation strategy development, regional downscaling, climate risk analysis</td>
+<td><strong>High (core dataset for climate and agroecological research)</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
+</section>
+</section>
+<section id="indicators" class="level2">
+<h2 class="anchored" data-anchor-id="indicators">Indicators</h2>
+<p>This section summarizes key climate hazards: drought, heat stress, waterlogging, and compound events, relevant to agroecological research and climate risk assessment. For each hazard, widely used indices and indicators are listed along with their calculation methods, interpretation thresholds (including crop or livestock specificity where applicable), data requirements, and available tools or scripts for computation. Compound hazards, such as simultaneous heat and drought, are also included, as they can amplify risks to crops and livestock. This resource is designed to help users select, calculate, and apply the most appropriate indices for climate risk analysis and decision support in agricultural systems.</p>
+<section id="summary-1" class="level3">
+<h3 class="anchored" data-anchor-id="summary-1">Summary</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Hazard</th>
+<th>Type/Subtype</th>
+<th>Indicator/Index/Variable</th>
+<th>Calculation/Formula / Description</th>
+<th>Thresholds / Interpretation</th>
+<th>Crop/Livestock Specificity</th>
+<th>Data Needed / Source</th>
+<th>Script/API/Package/Link</th>
+<th>Reference / Link</th>
+<th>Prioritization</th>
+<th>Example Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drought</td>
+<td>Meteorological</td>
+<td>SPI (Standardized Precipitation Index)</td>
+<td>SPI = (precip - mean)/std (over ref period)</td>
+<td>SPI &lt; -1 (moderate), &lt; -2 (severe)</td>
+<td>Generic</td>
+<td>Precipitation (monthly; CHIRPS, TAMSAT, IMERG)</td>
+<td><a href="https://cran.r-project.org/web/packages/SPEI/index.html">R: SPEI package</a></td>
+<td><a href="https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-index-spi">McKee et al., 1993</a></td>
+<td>High</td>
+<td>Drought monitoring, early warning</td>
+</tr>
+<tr class="even">
+<td>Drought</td>
+<td>Agricultural</td>
+<td>Soil Moisture Anomaly</td>
+<td>SMA = (soil moisture - mean)/std</td>
+<td>Crop-specific (e.g.&nbsp;&lt;20% FC)</td>
+<td>Yes</td>
+<td>Soil moisture (ERA5, AgERA5, TAMSAT)</td>
+<td><a href="https://xarray.pydata.org/">Python: xarray</a></td>
+<td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>High</td>
+<td>Crop stress detection</td>
+</tr>
+<tr class="odd">
+<td>Drought</td>
+<td>Agricultural</td>
+<td>SPEI (Standardized Precipitation Evapotranspiration Index)</td>
+<td>Like SPI but includes PET</td>
+<td>SPEI &lt; -1 (mod), &lt; -2 (severe)</td>
+<td>Generic</td>
+<td>Precipitation, PET (CHIRPS, ERA5, AgERA5)</td>
+<td><a href="https://cran.r-project.org/web/packages/SPEI/index.html">R: SPEI package</a></td>
+<td><a href="https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei">Vicente-Serrano et al., 2010</a></td>
+<td>High</td>
+<td>Drought impact on crops</td>
+</tr>
+<tr class="even">
+<td>Drought</td>
+<td>Hydrological</td>
+<td>Streamflow Anomaly</td>
+<td>Deviation from mean streamflow</td>
+<td>&lt; threshold (site-specific)</td>
+<td>Yes</td>
+<td>River gauge data</td>
+<td>Custom (site-specific)</td>
+<td><a href="https://library.wmo.int/doc_num.php?explnum_id=7768">WMO</a></td>
+<td>Medium</td>
+<td>Water resource management</td>
+</tr>
+<tr class="odd">
+<td>Heat Stress</td>
+<td>Crop</td>
+<td>NTX (Number of Days Tmax &gt; X°C)</td>
+<td>Count days Tmax &gt; threshold during season</td>
+<td>X = crop-specific (e.g.&nbsp;35°C maize, 30°C potato)</td>
+<td>Yes</td>
+<td>Daily Tmax (CHIRTS, ERA5, AgERA5)</td>
+<td><a href="https://github.com/AgroClimate/heat-stress-indices">Python Example</a></td>
+<td><a href="https://www.pnas.org/content/108/2/458">Lobell et al., 2011</a></td>
+<td>High</td>
+<td>Heatwave risk for maize</td>
+</tr>
+<tr class="even">
+<td>Heat Stress</td>
+<td>Livestock</td>
+<td>THI (Temperature Humidity Index)</td>
+<td>THI = T - [(0.55 - 0.0055<em>RH)</em>(T-14.5)]</td>
+<td>THI &gt; 72 (dairy cattle stress)</td>
+<td>Yes</td>
+<td>Temp, humidity (ERA5, AgERA5)</td>
+<td><a href="https://cran.r-project.org/web/packages/climwin/index.html">R: climwin</a></td>
+<td><a href="https://www.ars.usda.gov/plains-area/clay-center-ne/marc/docs/thi/">NOAA</a></td>
+<td>Medium</td>
+<td>Dairy cattle management</td>
+</tr>
+<tr class="odd">
+<td>Heat Stress</td>
+<td>Crop/Livestock</td>
+<td>VPD (Vapor Pressure Deficit)</td>
+<td>VPD = SVP - AVP (kPa)</td>
+<td>Crop/livestock-specific</td>
+<td>Yes</td>
+<td>Temp, humidity (ERA5, AgERA5, CHIRTS)</td>
+<td><a href="https://unidata.github.io/MetPy/latest/">Python: metpy</a></td>
+<td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>Medium</td>
+<td>Crop/livestock risk mapping</td>
+</tr>
+<tr class="even">
+<td>Heat Stress</td>
+<td>Crop</td>
+<td>Hot Nights (NTN)</td>
+<td>Number of nights Tmin &gt; threshold (e.g.&nbsp;20°C)</td>
+<td>Crop-specific (e.g.&nbsp;rice, &gt;24°C)</td>
+<td>Yes</td>
+<td>Daily Tmin (CHIRTS, ERA5, AgERA5)</td>
+<td><a href="https://pandas.pydata.org/">Python: pandas</a></td>
+<td><a href="https://www.pnas.org/content/101/27/9971">Peng et al., 2004</a></td>
+<td>Medium</td>
+<td>Rice yield loss risk</td>
+</tr>
+<tr class="odd">
+<td>Heat Stress</td>
+<td>Crop</td>
+<td>Growing Degree Days (GDD)</td>
+<td>GDD = Σ(Tmean - Tbase) over season</td>
+<td>Tbase = crop-specific</td>
+<td>Yes</td>
+<td>Daily Tmin, Tmax (CHIRTS, ERA5, AgERA5)</td>
+<td><a href="https://cran.r-project.org/web/packages/chillR/index.html">R: chillR</a></td>
+<td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>High</td>
+<td>Crop phenology modeling</td>
+</tr>
+<tr class="even">
+<td>Waterlogging</td>
+<td>-</td>
+<td>Days Soil Moisture &gt; Field Capacity</td>
+<td>Count days soil moisture &gt; FC</td>
+<td>&gt;3 days = risk for many crops</td>
+<td>Yes</td>
+<td>Soil moisture (ERA5, AgERA5, TAMSAT)</td>
+<td><a href="https://xarray.pydata.org/">Python: xarray</a></td>
+<td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>Medium</td>
+<td>Rice, wheat management</td>
+</tr>
+<tr class="odd">
+<td>Waterlogging</td>
+<td>-</td>
+<td>Days Rainfall &gt; X mm</td>
+<td>Count days rainfall &gt; threshold</td>
+<td>X = crop-specific</td>
+<td>Yes</td>
+<td>Precipitation (CHIRPS, TAMSAT, IMERG)</td>
+<td><a href="https://pandas.pydata.org/">Python: pandas</a></td>
+<td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>Medium</td>
+<td>Flood risk assessment</td>
+</tr>
+<tr class="even">
+<td>Compound</td>
+<td>Crop/Livestock</td>
+<td>Heat + Drought (e.g.&nbsp;VPD)</td>
+<td>VPD = SVP - AVP (kPa), combines heat and dryness</td>
+<td>Crop/livestock-specific</td>
+<td>Yes</td>
+<td>Temp, humidity (ERA5, AgERA5, CHIRTS)</td>
+<td><a href="https://unidata.github.io/MetPy/latest/">Python: metpy</a></td>
+<td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>Medium</td>
+<td>Compound hazard assessment</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="prioritization-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="prioritization-methodology">Prioritization Methodology</h2>
+<section id="dataset-prioritization-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-prioritization-methodology">Dataset Prioritization Methodology</h3>
+<p>To ensure the selection of optimal climate datasets for agroecological research, we apply a structured prioritization approach. This process evaluates datasets based on criteria critical for agricultural applications, data integration, and scientific rigor.</p>
+</section>
+<section id="prioritization-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="prioritization-criteria">Prioritization Criteria</h3>
+<ul>
+<li><strong>Relevance to Agroecology</strong>
+<ul>
+<li><em>Does the dataset include variables essential for crop modeling and agricultural risk assessment (e.g., precipitation, temperature, soil moisture, evapotranspiration)?</em></li>
+</ul></li>
+<li><strong>Spatial and Temporal Alignment</strong>
+<ul>
+<li><em>Does the dataset’s spatial and temporal resolution meet the needs of farm-level or regional analysis (e.g., &lt;10 km spatial resolution, daily or sub-monthly time steps)?</em></li>
+</ul></li>
+<li><strong>Accessibility</strong>
+<ul>
+<li><em>Is the dataset freely available for research use? Does it offer clear documentation and robust access methods (e.g., API, direct download, cloud platforms)?</em></li>
+</ul></li>
+<li><strong>Integration Potential</strong>
+<ul>
+<li><em>Are there established tools, scripts, or packages (e.g., Python/R libraries, Google Earth Engine scripts) to facilitate data retrieval, preprocessing, and analysis?</em></li>
+</ul></li>
+<li><strong>Data Quality, Validation, and Uncertainty</strong>
+<ul>
+<li><em>Has the dataset been peer-reviewed, validated against ground observations, or subject to uncertainty quantification? Is metadata comprehensive and transparent?</em></li>
+</ul></li>
+</ul>
+</section>
+<section id="example-scoring-approach" class="level3">
+<h3 class="anchored" data-anchor-id="example-scoring-approach">Example Scoring Approach</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 17%">
+<col style="width: 18%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>Weight (%)</th>
+<th>Score (1–5)</th>
+<th>Weighted Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Relevance to Agroecology</td>
+<td>30</td>
+<td>5</td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td>Spatial/Temporal Alignment</td>
+<td>20</td>
+<td>4</td>
+<td>0.8</td>
+</tr>
+<tr class="odd">
+<td>Accessibility</td>
+<td>20</td>
+<td>3</td>
+<td>0.6</td>
+</tr>
+<tr class="even">
+<td>Integration Potential</td>
+<td>20</td>
+<td>4</td>
+<td>0.8</td>
+</tr>
+<tr class="odd">
+<td>Data Quality &amp; Validation</td>
+<td>10</td>
+<td>4</td>
+<td>0.4</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>100</strong></td>
+<td></td>
+<td><strong>4.1</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Priority Level:</strong></p>
+<p><strong>Formula:</strong><br>
+<code>Weighted Score = (Weight as decimal) × Score</code></p>
+<ul>
+<li><strong>High:</strong> Score ≥ 3.0 (Core dataset for agroecology)</li>
+<li><strong>Medium:</strong> 2.0 ≤ Score &lt; 3.0 (Supplementary or niche use)</li>
+<li><strong>Low:</strong> Score &lt; 2.0 (Limited utility for project)</li>
+</ul>
+</section>
+<section id="references-to-frameworks" class="level3">
+<h3 class="anchored" data-anchor-id="references-to-frameworks">References to Frameworks</h3>
+<ul>
+<li><strong>Climate Adaptation Prioritization:</strong>
+<ul>
+<li>The methodology to prioritize climate adaptation measures in urban areas uses similar multi-criteria approaches.<br>
+</li>
+<li><a href="https://www.mdpi.com/2071-1050/12/12/4807"><em>Sustainability</em> <strong>12</strong>(12), 4807 (2020).</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="prioritized-dataset-list" class="level3">
+<h3 class="anchored" data-anchor-id="prioritized-dataset-list">Prioritized Dataset List</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Rank</th>
+<th>Dataset</th>
+<th>Weighted Score</th>
+<th>Notes/Strengths</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>CHIRPS</td>
+<td>4.8</td>
+<td>Essential precip, high res, strong integration</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>AgERA5</td>
+<td>4.8</td>
+<td>Key ag variables, high res, tailored for agriculture</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>TerraClimate</td>
+<td>4.7</td>
+<td>Water balance, high res, global, accessible</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>IMERG</td>
+<td>4.7</td>
+<td>High-res precip, global, accessible</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>TAMSAT</td>
+<td>4.7</td>
+<td>Africa-focused, very high res, accessible</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>CHIRTS</td>
+<td>4.7</td>
+<td>Essential temp, high res, strong integration</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>ERA5</td>
+<td>4.2</td>
+<td>Broad variables, high res, strong integration</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>NEX-GDDP</td>
+<td>4.1</td>
+<td>Future projections, downscaled, accessible</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>NASA POWER</td>
+<td>4.0</td>
+<td>Solar, temp, global, but coarser res</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>CMIP6</td>
+<td>3.9</td>
+<td>Future scenarios, coarser res, less direct for ag</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="indicator-prioritization-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="indicator-prioritization-methodology">Indicator Prioritization Methodology</h2>
+<p>Indicators were prioritized using a multi-criteria matrix, scoring each index on relevance to key hazards, scientific consensus, crop/livestock specificity, data availability, computation feasibility, and management impact. Those with the highest total scores were selected as core indicators for our climate data tool. This approach ensures that our indicator set is robust, actionable, and grounded in both science and practical application.</p>
+<section id="indicator-prioritization-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="indicator-prioritization-matrix">Indicator Prioritization Matrix</h3>
+<p>We used a multi-criteria matrix to prioritize climate hazard indicators for inclusion in our climate data tool. Each indicator was scored from 1 (lowest) to 3 (highest) against the following criteria:</p>
+<ul>
+<li><strong>Relevance to key agroecological hazards</strong> (drought, heat, waterlogging, compound events)</li>
+<li><strong>Scientific consensus and prevalence</strong> in literature/operational use</li>
+<li><strong>Crop/livestock specificity</strong> (can thresholds be tailored?)</li>
+<li><strong>Data availability</strong> (open-access, spatial/temporal coverage)</li>
+<li><strong>Computation feasibility</strong> (existing scripts, APIs, packages)</li>
+<li><strong>Impact on management and decision-making</strong></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th style="text-align: center;">Relevance</th>
+<th style="text-align: center;">Scientific Consensus</th>
+<th style="text-align: center;">Crop/Livestock Specificity</th>
+<th style="text-align: center;">Data Availability</th>
+<th style="text-align: center;">Computation Feasibility</th>
+<th style="text-align: center;">Management Impact</th>
+<th style="text-align: center;">Total Score</th>
+<th style="text-align: center;">Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPI (Standardized Precipitation Index)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">High</td>
+</tr>
+<tr class="even">
+<td>SPEI (Standardized Precipitation Evapotranspiration Index)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">High</td>
+</tr>
+<tr class="odd">
+<td>Soil Moisture Anomaly</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">High</td>
+</tr>
+<tr class="even">
+<td>NTX (Number of Hot Days)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">High</td>
+</tr>
+<tr class="odd">
+<td>THI (Temperature Humidity Index, Livestock)</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Medium</td>
+</tr>
+<tr class="even">
+<td>VPD (Vapor Pressure Deficit)</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Medium</td>
+</tr>
+<tr class="odd">
+<td>Days Soil Moisture &gt; Field Capacity</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">Medium</td>
+</tr>
+</tbody>
+</table>
+<p><em>Each criterion is scored from 1 (lowest) to 3 (highest). The total score is the sum across all criteria.</em></p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>Hinkel, J. (2009). <a href="https://doi.org/10.1016/j.ecolind.2008.01.012">The PIAM Approach: A Framework for Multi-Criteria Selection of Indicators for Integrated Assessment</a>. <em>Ecological Indicators</em>, 9(1), 89–103.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
