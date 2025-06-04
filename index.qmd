@@ -140,8 +140,32 @@ We used a multi-criteria matrix to prioritize climate hazard indicators for incl
 
 *Each criterion is scored from 1 (lowest) to 3 (highest). The total score is the sum across all criteria.*
 
+## Glossary of Terms
+
+This section serves as the central reference point for essential terms and definitions foundational to our agroecological (AE) project. It provides a clear and accessible glossary to ensure consistent understanding and application of key concepts throughout the project, supporting effective communication and knowledge sharing among all users. Many definitions herein are adapted from ISO standards ([ISO 14050](https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en)). Climate hazard definitions are sourced from a relevant agriculture-focused project's [GitHub repository](https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions).
+
+
+| Terms | Definitions |
+|-------|:-------------|
+| Climate| Statistical description of the weather in terms of the mean and variability of relevant quantities over a period of time ranging from months to thousands or millions of years|
+|Climate scenario| Plausible and often simplified representation of the future climate, based on an internally consistent set of climatological relationships that has been constructed for explicit use in investigating the potential consequences of anthropogenic climate change|
+|Climate change| Change in climate that persists for an extended period, typically decades or longer|
+|Climate change exposure| Potential impact of climate change on locations and their social, economic, and natural structures|
+|Climate action| Human intervention to achieve climate change measures or goals based on mitigation or adaptation priorities under climate change policies |
+|Indicator |An indicator is a quantitative, qualitative, or binary variable that can be measured, calculated, or described, representing the status of operations, management, conditions, or impacts|
+| Hazard | Potential source of injury or damage to the health of people, or damage to property or the environment |
+| Site | Location with geographical boundaries, and on which activities under the control of an organization can be carried out |
+|Heat stress|...|
+|Drought stress|...|
+|Waterlogging & flodding stress|...|
+
 ## References
 
 Guerrero-Hidalga et al. (2020). [Methodology to Prioritize Climate Adaptation Measures in Urban Areas. Barcelona and Bristol Case Studies](https://doi.org/10.3390/su12124807). *Sustainability*, 12(12), 4807.
 
 Hinkel, J. (2009). [The PIAM Approach: A Framework for Multi-Criteria Selection of Indicators for Integrated Assessment](https://doi.org/10.1016/j.ecolind.2008.01.012). *Ecological Indicators*, 9(1), 89–103.
+
+ISO (2020). [ISO 14050:2020(en)
+Environmental management — Vocabulary: Terms relating to climate change and climate action](https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en). *ISO*, 14050:2020(en).
+
+Adaptation Atlas (2023). [Hazards-definitions](https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions). *GitHub repository*.
