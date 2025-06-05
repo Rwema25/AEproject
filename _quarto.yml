@@ -17,6 +17,11 @@ format:
       - brand
     css: styles.css
     toc: true
+    toc-location: left-body
+    number-sections: true
+    
+    
+   
 
 
 

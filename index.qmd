@@ -23,8 +23,8 @@ This document is organized into several key sections to guide users through the 
 
 This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor ([Prioritization method](https://github.com/Rwema25/AE-project/wiki/Prioritization-Methodology)).
 
+<div class="table-responsive">
 
-::: scroll-table
 | Dataset Name | Short Description | Provider/Source | Spatial Coverage | Temporal Coverage | Spatial Resolution | Temporal Resolution | Key Variables | Data Quality Indicators | Metadata Completeness | Update Frequency | Data Provenance | Preprocessing Steps | Access Methods | API/Package Links | Example Scripts | License/Terms | Integration Challenges | Data Ownership | Versioning/Change Log | Data Citation | Benchmarking/Validation Studies | Potential Applications (Agroecological) | Priority Level |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | CHIRPS | High-resolution, quasi-global rainfall dataset blending satellite imagery and station data for trend analysis and seasonal drought monitoring | [Climate Hazards Center (CHC), UCSB](https://www.chc.ucsb.edu/data/chirps) | 50°S–50°N, 180°W–180°E | 1981–present (updated frequently) | 0.05° x 0.05° (\~5.5 km at equator) | Daily, pentadal (5-day), dekadal (10-day), monthly | Precipitation (mm) | Validated against station data; uncertainty estimates; provisional data for \~20 days after month end | Spatial/temporal coverage, source, version, units, coordinate system (WGS84) | Updated within 45 days; provisional data replaced with final | Satellite + station blend; processing steps documented on [CHC website](https://www.chc.ucsb.edu/data/chirps) | Resampling, masking, unit conversion, missing data handling | FTP/HTTP ([CHC data portal](https://data.chc.ucsb.edu/data/chirps/)), [FEWS NET Data Portal](https://earlywarning.usgs.gov/fews), [Google Earth Engine (GEE)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY), R package ([`chirps` on CRAN](https://cran.r-project.org/web/packages/chirps/index.html)) | [GEE API Docs](https://developers.google.com/earth-engine/api_docs), [R package chirps](https://cran.r-project.org/web/packages/chirps/index.html) | [Example: Script to Download CHIRPS in R (GitHub)](https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_chirps.R) | Open for research and non-commercial use | Large file sizes, need for specific libraries (e.g., `netCDF4`, `xarray`), handling provisional data, managing missing data flags | [Climate Hazards Center, UCSB](https://www.chc.ucsb.edu/data/chirps) | Version history on [CHC website](https://www.chc.ucsb.edu/data/chirps) | Cite as: "CHIRPS dataset provided by Climate Hazards Group, UCSB" | [CHIRPS Validation on CHC website](https://www.chc.ucsb.edu/data/chirps/validation), [CHIRPS v2.0: Increased resolution from climate station evaluation (Funk et al., 2015)](https://doi.org/10.1038/sdata.2015.66) | Rainfall pattern analysis, drought monitoring, crop yield modeling, water resource management, agroclimatic zoning, validation of local climate data | **High (core dataset for agroecology)** |
@@ -37,12 +37,15 @@ This section systematically presents the climate datasets used in this study, co
 | NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP) | Global, high-resolution (0.25°) daily climate projections downscaled from CMIP5 and CMIP6 GCMs, including key variables for climate impact studies | [NASA Earth Exchange (NEX)](https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp) | CMIP5: 50°S–50°N; CMIP6: 60°S–90°N | CMIP5: 1950–2099; CMIP6: 1950–2100 | 0.25° x 0.25° (\~25 km) | Daily | tasmin (daily min temperature, K), tasmax (daily max temperature, K), precipitation (kg m⁻² s⁻¹) | Bias-corrected and spatially disaggregated; multiple GCMs/scenarios; see [NEX-GDDP Technical Notes](https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf) (CMIP5), [NEX-GDDP-CMIP6 Technical Note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) | NetCDF metadata includes variable, unit, scenario, model, time, lat, lon, and processing info | Dataset is not updated in real time; new versions may be released for CMIP6/other projects | Downscaled from CMIP5/CMIP6 GCMs using Bias-Correction Spatial Disaggregation (BCSD); see [technical documentation](https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf) (CMIP5), [NEX-GDDP-CMIP6 Technical Note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) | Handle large NetCDF files; use xarray, netCDF4, CDO; check for missing data flags; convert units as needed | [NASA NCCS THREDDS](https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp), [AWS S3](https://registry.opendata.aws/nex-gddp/), [Google Earth Engine](https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS) | [Google Earth Engine API Docs](https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS), [THREDDS NetCDFSubset](https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp), [AWS S3 API](https://registry.opendata.aws/nex-gddp/) | [GEE example scripts](https://developers.google.com/earth-engine/datasets/catalog/NASA_NEX-DCP30_ENSEMBLE_STATS), [AWS S3 download example](https://registry.opendata.aws/nex-gddp/), [GitHub script to download data](https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_manual_nex_gddpCMIP6.R) | Open for scientific research; not recommended for commercial/engineering use without expert consultation | Large file sizes (up to 38 TB for CMIP6), requires technical expertise, limited to temperature/precipitation, projections subject to GCM/downscaling uncertainties | [NASA Earth Exchange (NEX)](https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp) | Versioning and change log available via [NEX-GDDP Technical Notes](https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf) (CMIP5), [NEX-GDDP-CMIP6 Technical Note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) | "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP)" (see [homepage](https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp) for citation details) | [NEX-GDDP Technical Notes](https://esgf.nccs.nasa.gov/esgdoc/NEX-GDDP_Tech_Note_v0.pdf) (CMIP5), [NEX-GDDP-CMIP6 Technical Note](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) | Climate risk assessment, crop yield modeling, drought/heat stress analysis, water resource planning, agroclimatic zoning, validation of local climate data | **High (core dataset for climate impact and agroecological research)** |
 | NASA POWER (Prediction Of Worldwide Energy Resources) | Freely available, gridded solar and meteorological datasets derived from NASA satellite observations and climate models for renewable energy, agriculture, and building energy efficiency applications | [NASA Langley Research Center (LaRC) POWER Project](https://power.larc.nasa.gov/) | Global | Varies by parameter; many from 1981 to near-present | 0.5° x 0.5° (\~50 km); some parameters may be higher resolution | Daily, monthly, hourly (parameter-dependent) | Solar radiation (insolation, direct normal irradiance, diffuse horizontal irradiance), surface meteorology (temperature, wind speed/direction, humidity, pressure), precipitation, evapotranspiration, soil moisture (some datasets), cloud cover | Derived from NASA satellite products and reanalysis; validation and uncertainty information in documentation; see [POWER Documentation](https://power.larc.nasa.gov/docs/) | Metadata included in NetCDF, JSON, and CSV outputs; variable names, units, coordinates, time, and processing info | Updated regularly as new satellite and reanalysis data are processed | Combines satellite observations and climate models; see [POWER Documentation](https://power.larc.nasa.gov/docs/) for details | Handle missing data flags; use appropriate tools for CSV, JSON, NetCDF (e.g., xarray, pandas, netCDF4); check units and spatial/temporal resolution | [POWER Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/), [POWER API](https://power.larc.nasa.gov/docs/services/api/), direct download (CSV, JSON, NetCDF, GeoJSON) | [API Getting Started](https://power.larc.nasa.gov/docs/tutorials/api-getting-started/), [POWER Python client (pynasapower)](https://pynasapower.readthedocs.io), [POWER R client (nasapower)](https://docs.ropensci.org/nasapower/) | [API Python Example](https://pynasapower.readthedocs.io/en/latest/usage.html), [R Example](https://docs.ropensci.org/nasapower/articles/nasapower.html), [API Tutorials](https://power.larc.nasa.gov/docs/tutorials/) | Public domain; free for use with attribution to NASA/POWER ([citation guidance](https://power.larc.nasa.gov/docs/resources/citation/)) | 0.5° resolution may be too coarse for local studies; temporal coverage varies by parameter; API requires programming knowledge; handle units and missing data carefully | [NASA Langley Research Center (LaRC)](https://power.larc.nasa.gov/) | Versioning and updates documented in [POWER Documentation](https://power.larc.nasa.gov/docs/) | [NASA POWER Citation Guidance](https://power.larc.nasa.gov/docs/resources/citation/) | [POWER Publications](https://power.larc.nasa.gov/docs/resources/publications/), [Validation/Uncertainty](https://power.larc.nasa.gov/docs/methodology/uncertainty/) | Solar resource assessment, crop modeling, irrigation planning, climate risk analysis, energy efficiency studies, agroclimatic zoning, weather-driven agricultural decision support | **High (widely used for agroclimatology and renewable energy)** |
 | CMIP6 (Coupled Model Intercomparison Project Phase 6) | International coordinated climate modeling effort providing a comprehensive ensemble of global climate projections for understanding past, present, and future climate change | [World Climate Research Programme (WCRP) WGCM](https://wcrp-cmip.org/cmip-phases/cmip6/), data via [Earth System Grid Federation (ESGF)](https://esgf.llnl.gov/) | Global (resolution varies by model) | Historical: \~1850–present; Projections: up to 2100+ (varies by experiment) | Varies by model (from \~100 km to \~25 km or finer) | Daily, monthly, sub-daily (model/variable-dependent) | Temperature (surface, ocean, etc.), precipitation, radiation, wind, humidity, sea level pressure, sea ice, ocean currents, salinity, soil moisture, runoff, carbon cycle, and more | Each modeling group provides validation and uncertainty info; ensemble approach allows assessment of robustness; see [Eyring et al., 2016](https://doi.org/10.5194/gmd-9-1937-2016) | NetCDF files with CF-compliant metadata (variable/unit, model, experiment, grid, version, etc.) | Not updated in real time; new experiments released as available | Data produced by international modeling centers; standardized protocols; see [CMIP6 Overview](https://wcrp-cmip.org/cmip-phases/cmip6/) | Handle large NetCDF files; use xarray, netCDF4, dask; understand DRS structure; regrid as needed for analysis | [ESGF Search](https://esgf-node.llnl.gov/projects/cmip6/), [Copernicus CDS](https://cds.climate.copernicus.eu/datasets/projections-cmip6), [CEDA STAC API](https://stac.ceda.ac.uk/collections/cmip6) | [ESGF API Docs](https://wcrp-cmip.org/cmip-data-access/), [pyesgf Python library](https://github.com/ESGF/pyesgf), [Copernicus CDS API](https://cds.climate.copernicus.eu/api-how-to) | [Example: Script to download rowCMIP6 in R(GitHub)](https://github.com/AdaptationAtlas/hazards/blob/main/R/01_download_data/download_rawCMIP6.R) | Data access and use governed by contributing modeling group terms (see [ESGF Terms](https://esgf.llnl.gov/)), generally free for research/education with attribution | Huge data volume; variable model resolutions; complex DRS structure; requires technical expertise; model biases and uncertainties; license terms vary by group | [WCRP WGCM](https://wcrp-cmip.org/cmip-phases/cmip6/), [Modeling Centers](https://wcrp-cmip.org/research-community/modelling-centres/) | Versioning and change log per model/experiment; see [CMIP6 DRS](https://pcmdi.llnl.gov/CMIP6/Guide/dataUsers.html) | See [CMIP6 Citation Guidance](https://www.wdc-climate.de/docs/pdf/CMIP6_Citation_Userguide.pdf) | [Eyring et al., 2016](https://doi.org/10.5194/gmd-9-1937-2016), [CMIP6 Publications](https://wcrp-cmip.org/research-community/publications/) | Climate change impact assessment, crop suitability, extreme event analysis, adaptation strategy development, regional downscaling, climate risk analysis | **High (core dataset for climate and agroecological research)** |
-:::
+
+</div>
+
 
 ## Indicators
 
 This section summarizes key climate hazards: drought, heat stress, waterlogging, and compound events, relevant to agroecological research and climate risk assessment. For each hazard, widely used indices and indicators are listed along with their calculation methods, interpretation thresholds (including crop or livestock specificity where applicable), data requirements, and available tools or scripts for computation. Compound hazards, such as simultaneous heat and drought, are also included, as they can amplify risks to crops and livestock. This resource is designed to help users select, calculate, and apply the most appropriate indices for climate risk analysis and decision support in agricultural systems.
 
+<div class="table-responsive">
 
 | Hazard | Type/Subtype | Indicator/Index/Variable | Calculation/Formula / Description | Thresholds / Interpretation | Crop/Livestock Specificity | Data Needed / Source | Script/API/Package/Link | Reference / Link | Prioritization | Example Application |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -59,7 +62,9 @@ This section summarizes key climate hazards: drought, heat stress, waterlogging,
 | Waterlogging | \- | Days Rainfall \> X mm | Count days rainfall \> threshold | X = crop-specific | Yes | Precipitation (CHIRPS, TAMSAT, IMERG) | [Python: pandas](https://pandas.pydata.org/) | [FAO](http://www.fao.org/3/y5043e/y5043e0d.htm) | Medium | Flood risk assessment |
 | Compound | Crop/Livestock | Heat + Drought (e.g. VPD) | VPD = SVP - AVP (kPa), combines heat and dryness | Crop/livestock-specific | Yes | Temp, humidity (ERA5, AgERA5, CHIRTS) | [Python: metpy](https://unidata.github.io/MetPy/latest/) | [FAO](https://www.fao.org/3/y5082e/y5082e07.htm) | Medium | Compound hazard assessment |
 
-## Prioritization Methodology
+</div>
+
+## Prioritization Methodology {#prioritization-method}
 
 ### Dataset Prioritization Methodology
 
@@ -80,6 +85,8 @@ To ensure the selection of optimal climate datasets for agroecological research,
 
 #### Example Scoring Approach
 
+<div class="table-responsive">
+
 | Criterion                  | Weight (%) | Score (1–5) | Weighted Score |
 |----------------------------|------------|-------------|----------------|
 | Relevance to Agroecology   | 30         | 5           | 1.5            |
@@ -88,6 +95,8 @@ To ensure the selection of optimal climate datasets for agroecological research,
 | Integration Potential      | 20         | 4           | 0.8            |
 | Data Quality & Validation  | 10         | 4           | 0.4            |
 | **Total**                  | **100**    |             | **4.1**        |
+
+</div>
 
 **Priority Level:**
 
@@ -99,6 +108,8 @@ To ensure the selection of optimal climate datasets for agroecological research,
 -   **Low:** Score \< 2.0 (Limited utility for project)
 
 #### Prioritized Dataset List
+
+<div class="table-responsive">
 
 | Rank | Dataset | Weighted Score | Notes/Strengths |
 |---------------|---------------|---------------|---------------------------|
@@ -112,6 +123,8 @@ To ensure the selection of optimal climate datasets for agroecological research,
 | 4 | NEX-GDDP | 4.1 | Future projections, downscaled, accessible |
 | 5 | NASA POWER | 4.0 | Solar, temp, global, but coarser res |
 | 6 | CMIP6 | 3.9 | Future scenarios, coarser res, less direct for ag |
+
+</div>
 
 ### Indicator Prioritization Methodology
 
@@ -128,6 +141,8 @@ We used a multi-criteria matrix to prioritize climate hazard indicators for incl
 -   **Computation feasibility** (existing scripts, APIs, packages)
 -   **Impact on management and decision-making**
 
+<div class="table-responsive">
+
 | Indicator | Relevance | Scientific Consensus | Crop/Livestock Specificity | Data Availability | Computation Feasibility | Management Impact | Total Score | Priority |
 |--------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 | SPI (Standardized Precipitation Index) | 3 | 3 | 1 | 3 | 3 | 2 | 15 | High |
@@ -138,12 +153,15 @@ We used a multi-criteria matrix to prioritize climate hazard indicators for incl
 | VPD (Vapor Pressure Deficit) | 2 | 2 | 2 | 2 | 2 | 2 | 12 | Medium |
 | Days Soil Moisture \> Field Capacity | 2 | 1 | 2 | 2 | 2 | 2 | 11 | Medium |
 
+</div>
+
 *Each criterion is scored from 1 (lowest) to 3 (highest). The total score is the sum across all criteria.*
 
 ## Glossary of Terms
 
 This section serves as the central reference point for essential terms and definitions foundational to our agroecological (AE) project. It provides a clear and accessible glossary to ensure consistent understanding and application of key concepts throughout the project, supporting effective communication and knowledge sharing among all users. Many definitions herein are adapted from ISO standards ([ISO 14050](https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en)). Climate hazard definitions are sourced from a relevant agriculture-focused project's [GitHub repository](https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions).
 
+<div class="table-responsive">
 
 | Terms | Definitions |
 |-------|:-------------|
@@ -158,6 +176,8 @@ This section serves as the central reference point for essential terms and defin
 |Heat stress|...|
 |Drought stress|...|
 |Waterlogging & flodding stress|...|
+
+</div>
 
 ## References
 

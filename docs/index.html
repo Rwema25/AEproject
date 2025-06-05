@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,24 +114,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#climate-datasets" id="toc-climate-datasets" class="nav-link" data-scroll-target="#climate-datasets">Climate datasets</a></li>
-  <li><a href="#indicators" id="toc-indicators" class="nav-link" data-scroll-target="#indicators">Indicators</a></li>
-  <li><a href="#prioritization-methodology" id="toc-prioritization-methodology" class="nav-link" data-scroll-target="#prioritization-methodology">Prioritization Methodology</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#climate-datasets" id="toc-climate-datasets" class="nav-link" data-scroll-target="#climate-datasets"><span class="header-section-number">2</span> Climate datasets</a></li>
+  <li><a href="#indicators" id="toc-indicators" class="nav-link" data-scroll-target="#indicators"><span class="header-section-number">3</span> Indicators</a></li>
+  <li><a href="#prioritization-method" id="toc-prioritization-method" class="nav-link" data-scroll-target="#prioritization-method"><span class="header-section-number">4</span> Prioritization Methodology</a>
   <ul class="collapse">
-  <li><a href="#dataset-prioritization-methodology" id="toc-dataset-prioritization-methodology" class="nav-link" data-scroll-target="#dataset-prioritization-methodology">Dataset Prioritization Methodology</a></li>
-  <li><a href="#indicator-prioritization-methodology" id="toc-indicator-prioritization-methodology" class="nav-link" data-scroll-target="#indicator-prioritization-methodology">Indicator Prioritization Methodology</a></li>
+  <li><a href="#dataset-prioritization-methodology" id="toc-dataset-prioritization-methodology" class="nav-link" data-scroll-target="#dataset-prioritization-methodology"><span class="header-section-number">4.1</span> Dataset Prioritization Methodology</a></li>
+  <li><a href="#indicator-prioritization-methodology" id="toc-indicator-prioritization-methodology" class="nav-link" data-scroll-target="#indicator-prioritization-methodology"><span class="header-section-number">4.2</span> Indicator Prioritization Methodology</a></li>
   </ul></li>
-  <li><a href="#glossary-of-terms" id="toc-glossary-of-terms" class="nav-link" data-scroll-target="#glossary-of-terms">Glossary of Terms</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#glossary-of-terms" id="toc-glossary-of-terms" class="nav-link" data-scroll-target="#glossary-of-terms"><span class="header-section-number">5</span> Glossary of Terms</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,16 +163,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<nav id="TOC-body" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#climate-datasets" id="toc-climate-datasets"><span class="header-section-number">2</span> Climate datasets</a></li>
+  <li><a href="#indicators" id="toc-indicators"><span class="header-section-number">3</span> Indicators</a></li>
+  <li><a href="#prioritization-method" id="toc-prioritization-method"><span class="header-section-number">4</span> Prioritization Methodology</a>
+  <ul>
+  <li><a href="#dataset-prioritization-methodology" id="toc-dataset-prioritization-methodology"><span class="header-section-number">4.1</span> Dataset Prioritization Methodology</a></li>
+  <li><a href="#indicator-prioritization-methodology" id="toc-indicator-prioritization-methodology"><span class="header-section-number">4.2</span> Indicator Prioritization Methodology</a></li>
+  </ul></li>
+  <li><a href="#glossary-of-terms" id="toc-glossary-of-terms"><span class="header-section-number">5</span> Glossary of Terms</a></li>
+  <li><a href="#references" id="toc-references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+</nav>
+<section id="introduction" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
 <p>The Alliance of Bioversity International and CIAT (ABC), in partnership with the McKnight Foundation and the African Institute of Mathematical Sciences (AIMS), is developing a Climate Data Toolkit to support agroecological (AE) research. The toolkit will empower researchers and practitioners to integrate climate data into their workflows, enabling robust analyses of agroecological systems under climate stresses and shocks. Rather than creating new datasets or analytical functions, this project will consolidate and simplify access to existing climate data resources, offering users a streamlined, user-friendly platform to support evidence-based decision-making.</p>
 <p>This document is organized into several key sections to guide users through the Climate Data Toolkit. It begins with an overview of the climate datasets included, detailing their sources, variables, and formats. Next, it presents the climate indicators relevant to agroecological research, explaining their definitions and calculation methods. The following section outlines the prioritization methodology used to select and rank datasets and indicators based on research needs. Additional chapters provide information on the tools, scripts, and APIs integrated within the toolkit, along with practical guidance on applying the toolkit in real-world agroecological contexts. Finally, references and supplementary materials are included to support further exploration and use.</p>
 </section>
-<section id="climate-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="climate-datasets">Climate datasets</h2>
+<section id="climate-datasets" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="climate-datasets"><span class="header-section-number">2</span> Climate datasets</h2>
 <p>This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor (<a href="https://github.com/Rwema25/AE-project/wiki/Prioritization-Methodology">Prioritization method</a>).</p>
-<div class="scroll-table">
+<div class="table-responsive">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -464,9 +482,10 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </section>
-<section id="indicators" class="level2">
-<h2 class="anchored" data-anchor-id="indicators">Indicators</h2>
+<section id="indicators" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="indicators"><span class="header-section-number">3</span> Indicators</h2>
 <p>This section summarizes key climate hazards: drought, heat stress, waterlogging, and compound events, relevant to agroecological research and climate risk assessment. For each hazard, widely used indices and indicators are listed along with their calculation methods, interpretation thresholds (including crop or livestock specificity where applicable), data requirements, and available tools or scripts for computation. Compound hazards, such as simultaneous heat and drought, are also included, as they can amplify risks to crops and livestock. This resource is designed to help users select, calculate, and apply the most appropriate indices for climate risk analysis and decision support in agricultural systems.</p>
+<div class="table-responsive">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -642,14 +661,15 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 </section>
-<section id="prioritization-methodology" class="level2">
-<h2 class="anchored" data-anchor-id="prioritization-methodology">Prioritization Methodology</h2>
-<section id="dataset-prioritization-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-prioritization-methodology">Dataset Prioritization Methodology</h3>
+<section id="prioritization-method" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="prioritization-method"><span class="header-section-number">4</span> Prioritization Methodology</h2>
+<section id="dataset-prioritization-methodology" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="dataset-prioritization-methodology"><span class="header-section-number">4.1</span> Dataset Prioritization Methodology</h3>
 <p>To ensure the selection of optimal climate datasets for agroecological research, we apply a structured prioritization approach. This process evaluates datasets based on criteria critical for agricultural applications, data integration, and scientific rigor.</p>
-<section id="prioritization-criteria" class="level4">
-<h4 class="anchored" data-anchor-id="prioritization-criteria">Prioritization Criteria</h4>
+<section id="prioritization-criteria" class="level4" data-number="4.1.1">
+<h4 data-number="4.1.1" class="anchored" data-anchor-id="prioritization-criteria"><span class="header-section-number">4.1.1</span> Prioritization Criteria</h4>
 <ul>
 <li><strong>Relevance to Agroecology</strong>
 <ul>
@@ -673,8 +693,9 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="example-scoring-approach" class="level4">
-<h4 class="anchored" data-anchor-id="example-scoring-approach">Example Scoring Approach</h4>
+<section id="example-scoring-approach" class="level4" data-number="4.1.2">
+<h4 data-number="4.1.2" class="anchored" data-anchor-id="example-scoring-approach"><span class="header-section-number">4.1.2</span> Example Scoring Approach</h4>
+<div class="table-responsive">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 40%">
@@ -729,6 +750,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Priority Level:</strong></p>
 <p><strong>Formula:</strong><br>
 <code>Weighted Score = (Weight as decimal) × Score</code></p>
@@ -738,8 +760,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Low:</strong> Score &lt; 2.0 (Limited utility for project)</li>
 </ul>
 </section>
-<section id="prioritized-dataset-list" class="level4">
-<h4 class="anchored" data-anchor-id="prioritized-dataset-list">Prioritized Dataset List</h4>
+<section id="prioritized-dataset-list" class="level4" data-number="4.1.3">
+<h4 data-number="4.1.3" class="anchored" data-anchor-id="prioritized-dataset-list"><span class="header-section-number">4.1.3</span> Prioritized Dataset List</h4>
+<div class="table-responsive">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -818,13 +841,14 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 </section>
-<section id="indicator-prioritization-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="indicator-prioritization-methodology">Indicator Prioritization Methodology</h3>
+<section id="indicator-prioritization-methodology" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="indicator-prioritization-methodology"><span class="header-section-number">4.2</span> Indicator Prioritization Methodology</h3>
 <p>Indicators were prioritized using a multi-criteria matrix, scoring each index on relevance to key hazards, scientific consensus, crop/livestock specificity, data availability, computation feasibility, and management impact. Those with the highest total scores were selected as core indicators for our climate data tool. This approach ensures that our indicator set is robust, actionable, and grounded in both science and practical application.</p>
-<section id="indicator-prioritization-matrix" class="level4">
-<h4 class="anchored" data-anchor-id="indicator-prioritization-matrix">Indicator Prioritization Matrix</h4>
+<section id="indicator-prioritization-matrix" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="indicator-prioritization-matrix"><span class="header-section-number">4.2.1</span> Indicator Prioritization Matrix</h4>
 <p>We used a multi-criteria matrix to prioritize climate hazard indicators for inclusion in our climate data tool. Each indicator was scored from 1 (lowest) to 3 (highest) against the following criteria:</p>
 <ul>
 <li><strong>Relevance to key agroecological hazards</strong> (drought, heat, waterlogging, compound events)</li>
@@ -834,6 +858,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Computation feasibility</strong> (existing scripts, APIs, packages)</li>
 <li><strong>Impact on management and decision-making</strong></li>
 </ul>
+<div class="table-responsive">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -939,13 +964,15 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 <p><em>Each criterion is scored from 1 (lowest) to 3 (highest). The total score is the sum across all criteria.</em></p>
 </section>
 </section>
 </section>
-<section id="glossary-of-terms" class="level2">
-<h2 class="anchored" data-anchor-id="glossary-of-terms">Glossary of Terms</h2>
+<section id="glossary-of-terms" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="glossary-of-terms"><span class="header-section-number">5</span> Glossary of Terms</h2>
 <p>This section serves as the central reference point for essential terms and definitions foundational to our agroecological (AE) project. It provides a clear and accessible glossary to ensure consistent understanding and application of key concepts throughout the project, supporting effective communication and knowledge sharing among all users. Many definitions herein are adapted from ISO standards (<a href="https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en">ISO 14050</a>). Climate hazard definitions are sourced from a relevant agriculture-focused project’s <a href="https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions">GitHub repository</a>.</p>
+<div class="table-responsive">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1004,9 +1031,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<section id="references" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="references"><span class="header-section-number">6</span> References</h2>
 <p>Guerrero-Hidalga et al.&nbsp;(2020). <a href="https://doi.org/10.3390/su12124807">Methodology to Prioritize Climate Adaptation Measures in Urban Areas. Barcelona and Bristol Case Studies</a>. <em>Sustainability</em>, 12(12), 4807.</p>
 <p>Hinkel, J. (2009). <a href="https://doi.org/10.1016/j.ecolind.2008.01.012">The PIAM Approach: A Framework for Multi-Criteria Selection of Indicators for Integrated Assessment</a>. <em>Ecological Indicators</em>, 9(1), 89–103.</p>
 <p>ISO (2020). <a href="https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en">ISO 14050:2020(en) Environmental management — Vocabulary: Terms relating to climate change and climate action</a>. <em>ISO</em>, 14050:2020(en).</p>
