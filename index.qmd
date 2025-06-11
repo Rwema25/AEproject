@@ -64,6 +64,121 @@ This section summarizes key climate hazards: drought, heat stress, waterlogging,
 
 </div>
 
+## Crop Calendar datasets
+
+The section [Crop Calendar datasets](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets) provides information on Crop Calendar datasets used to identify average planting (sowing) and maturity (harvest) dates for various major crops. Each dataset offers unique characteristics regarding spatial and the type of crops covered.  These datasets include [AgMIP-GGCMI Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#1-agmip-ggcmi-crop-calendar), [Jägermeyr Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#2-j%C3%A4germeyr-crop-calendar), [MIRCA-OS](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#3-mirca-os-monthly-irrigated-and-rainfed-cropped-area-open-source), and [WorldCereal Project Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#4-worldcereal-project-crop-calendars).
+
+<div class="table-responsive">
+
+| **Dataset Name**  | **Short Description**  |**Provider/Source**   | **Spatial Coverage**  | **Temporal Coverage**  | **Spatial Resolution** |**Temporal Resolution** | **Key Variables**   | **Data Quality Indicators**  | **Metadata Completeness**   | **Update Frequency**  | **Data Provenance**   | **Preprocessing Steps**       | **Access Methods**   | **API/Package Links**    | **Example Scripts**   | **License/Terms**    | **Integration Challenges**   | **Data Ownership**  | **Versioning/Change Log**   | **Data Citation** | **Benchmarking/Validation Studies**  | **Potential Applications (Agroecological)** | **Priority Level**   |
+|--------|--------------|-------------|--------|-----|----------|----|---------|--------|---------|--------|-------|------------|-------|-----------|--------|---------|----------|------------|--------|---------|--------|----------|-------|
+| AgMIP-GGCMI Crop Calendar  | Global dataset providing multi-year average planting (sowing) and maturity (harvest) dates for 18 major crops, distinguishing rainfed and irrigated systems, at 0.5° spatial resolution. Composite of multiple observational sources designed for harmonized crop modeling and climate impact assessments. | AgMIP (Agricultural Model Intercomparison and Improvement Project) and GGCMI (Global Gridded Crop Model Intercomparison), led by NASA GISS, Potsdam Institute for Climate Impact Research, University of Minnesota, University of Goettingen. | Global land areas at 0.5° x 0.5° grid cells | Multi-year average (static growing periods; no interannual variability) | 0.5° x 0.5° latitude/longitude | One growing season per crop per grid cell (except wheat and rice with multiple seasons) | Planting day of year (DOY), Maturity (harvest) day of year (DOY) for 18 crops, separately for rainfed and irrigated systems | Gap-filling and spatial extrapolation documented; static averages only; users advised to check regional data quality | Comprehensive metadata including crop-specific details, spatial/temporal coverage, data sources, and processing methods | Static dataset; no regular updates planned | Composite product merging various observational data sources; detailed provenance in Jägermeyr et al. (2021) publication | Spatial extrapolation, gap-filling, merging of observational datasets; no crop rotations included | Download via Zenodo ([DOI link](https://doi.org/10.5281/zenodo.5062513)); source code and tools on GitHub ([link](https://github.com/AgMIP-GGCMI/cropCalendars)) | No direct API; programmatic access via downloadable scripts and R package on GitHub | R scripts for simulation and adaptation of crop calendars available on GitHub | Open for research and non-commercial use; citation required | Static averages limit temporal dynamics; gap-filled and extrapolated areas require caution; no crop rotation or interannual variability | AgMIP and GGCMI consortium | Version tracked on Zenodo; updates documented in dataset record | Jägermeyr et al. (2021), "Climate impacts on global agriculture emerge earlier in new generation of climate and crop," Nature Food; DOI: 10.1038/s43016-021-00400-y | Validation and evaluation detailed in Jägermeyr et al. (2021) and Minoli et al. (2022); see dataset documentation | Calibration of crop phenology models; harmonized growing periods for multi-model crop simulations; climate impact assessments; adaptation scenario development | **High (core dataset for global crop modeling and climate impact studies)** |
+| Jägermeyr Crop Calendar     | The Jägermeyr Crop Calendar is a global dataset offering multi-year average planting (sowing) and maturity (harvest) dates for 18 major crops, distinguishing rainfed and irrigated systems at 0.5° spatial resolution. It merges multiple observational sources with gap-filling and spatial extrapolation to cover cultivated and uncultivated areas. Designed for global gridded crop model intercomparison and climate impact studies. | Developed by Jonas Jägermeyr and collaborators, hosted by AgMIP-GGCMI with contributions from Potsdam Institute for Climate Impact Research, NASA GISS, and others. | Global land areas at 0.5° x 0.5° grid cells | Multi-year average (static growing periods; no interannual variability) | 0.5° latitude/longitude grid cells | One growing season per crop per grid cell, except wheat (winter and spring) and rice (two main seasons) | Planting day of year (DOY), maturity (harvest) day of year (DOY), separated by rainfed and irrigated management | Gap-filling and spatial extrapolation applied; static averages only; users advised to verify regional data quality | Comprehensive metadata including crop-specific details, spatial/temporal coverage, data sources, and processing methods | Static dataset; no regular updates planned | Composite product merging multiple observational sources; gap-filling and spatial extrapolation for uncultivated or data-sparse areas | Spatial extrapolation, gap-filling, merging multiple observational datasets; no crop rotations included | Download via Zenodo ([DOI](https://doi.org/10.5281/zenodo.5062513)); source code and modeling scripts on GitHub ([link](https://github.com/AgMIP-GGCMI/cropCalendars)) | No direct API; programmatic access via downloadable scripts and R package on GitHub | R scripts for simulation and adaptation of crop calendars available on GitHub | Open for research and non-commercial use; users should cite original publications appropriately | Static multi-year averages only; no crop rotations or interannual variability; spatial extrapolation may reduce local accuracy | AgMIP-GGCMI consortium | Version tracked on Zenodo; updates documented in dataset record | Jägermeyr et al. (2021), "Climate impacts on global agriculture emerge earlier in new generation of climate and crop," *Nature Food*, DOI: 10.1038/s43016-021-00400-y | Validation and evaluation detailed in Jägermeyr et al. (2021) and Minoli et al. (2022); see dataset documentation | Calibration of crop model phenology; harmonized growing periods for multi-model crop simulations; climate impact assessments; adaptation scenario development | **High (core dataset for global crop modeling and climate impact studies)** |
+| MIRCA-OS (Monthly Irrigated and Rainfed Cropped Area, Open Source) | MIRCA-OS is a global, open-source dataset providing monthly irrigated and rainfed cropped area maps for 23 crop classes at 5-arcminute (~10 km) spatial resolution for years 2000, 2005, 2010, and 2015. Combines subnational crop-specific harvested area statistics with global gridded land cover and crop calendar data to produce monthly growing area grids and annual harvested area maps. | Developed by an international team led by researchers associated with AgMIP and global land use modeling groups.                       | Global (180°W to 180°E longitude, 90°S to 90°N latitude) | Years 2000, 2005, 2010, and 2015            | 5 arcminutes (~10 km x 10 km); annual maps also at 0.5° resolution | Monthly growing area grids representing crop growth stages from planting to maturity | Monthly growing area (ha) for irrigated and rainfed systems, annual harvested area (ha), crop calendars (planting and maturity months) | Areas with no crop presence assigned zero; gap-filling based on regional statistics and land cover; large file sizes require processing tools | Comprehensive metadata including crop classes, spatial/temporal coverage, processing methods | Static dataset for specified years; no continuous updates planned | Combines subnational harvested area statistics with global land cover and crop calendars; downscaled to 5-arcminute grids using area weighting and cropping calendars; gap-filling and mosaicking applied | Data clipped, reprojected; planting and maturity months extracted; downscaling and mosaicking performed; gap-filling applied | Download via HydroShare ([link](https://www.hydroshare.org/resource/60a890eb841c460192c03bb590687145/)), GitHub ([link](https://github.com/MIRCA-OS/MIRCA-OS_Code)), and journal supplementary materials | No dedicated API; programmatic access via GitHub scripts and downloadable datasets | Processing scripts available on GitHub repository | Open for research and non-commercial use; citation of original dataset recommended | Large file sizes; requires GIS or scientific programming tools (e.g., Python with xarray, R, QGIS) to process | MIRCA-OS international development team | Version 0.1 tracked on GitHub and HydroShare; updates documented in dataset records | Kebede et al. (2024), "A global open-source dataset of monthly irrigated and rainfed cropped areas (MIRCA-OS) for the 21st century," Nature Scientific Data, DOI: 10.1038/s41597-024-04313-w | Validation and methodology described in Kebede et al. (2024); see dataset documentation and GitHub | Mapping spatial and temporal distribution of crop areas; differentiating irrigated and rainfed systems; supporting crop phenology and cropping intensity analyses; input for crop models requiring spatially explicit cropped area and calendar information | **High (key dataset for spatial-temporal crop area and irrigation studies)** |
+| WorldCereal Project Crop Calendars | Global, season-specific maps of start (SOS) and end (EOS) of growing seasons for maize and wheat, supporting global crop mapping and monitoring; foundational for generating high-resolution, seasonally updated crop type and irrigation maps. | WorldCereal Consortium (funded by ESA)                                                                  | Global, stratified into agro-ecological zones (AEZs)                                              | Currently for 2021 (Phase I); designed for seasonal and annual updates | 0.5° x 0.5° latitude/longitude (~50 km at equator); crop type maps at 10 m resolution | Seasonally updated; start and end dates per major growing season per crop                           | Start of Season (SOS), End of Season (EOS) for maize and wheat (winter and spring cereals); future crops planned | Quality flags and confidence layers provided; simulated data in data-sparse areas; users advised to review confidence | Comprehensive metadata including crop calendars, AEZ stratification, and processing methods           | Seasonal updates planned; currently static for 2021                                                | Merged national/subnational calendars (GEOGLAM, USDA-FAS, FAO, ASAP); Random Forest model trained on ERA5 climate data to estimate SOS/EOS; stratification into zones with similar growing seasons | Data harmonization, spatial modeling, simulation in data gaps; confidence layers generated            | Download via figshare ([link](https://tandf.figshare.com/articles/dataset/Global_crop_calendars_of_maize_and_wheat_in_the_framework_of_the_WorldCereal_project/20005293)) and WorldCereal website ([link](https://esa-worldcereal.org/en)) | No dedicated API; data usable in GIS and remote sensing workflows                                   | Not explicitly stated; open and free under Creative Commons Attribution 4.0 License                   | Coarser spatial resolution (0.5°) than crop type maps; limited to maize and wheat currently; simulated data in sparse regions requires caution | WorldCereal Consortium and ESA                                                                        | Version 100 for 2021; updates documented on WorldCereal platforms                                  | Franch et al. (2022), WorldCereal project reports; ESSD Data Descriptor (2023), DOI: 10.5194/essd-15-5491-2023 | Validation and methodology detailed in project publications and reports                          | Crop-type mapping and monitoring; crop condition and yield forecasting; agroecological zoning; operational monitoring; input for crop models and remote sensing | **High (key dataset for global crop seasonality and monitoring)** |
+
+</div>
+
+Here are detailed summaries and direct excerpts from key sources describing the methodology used to identify planting (sowing) and harvesting (maturity) dates for the major crop calendar datasets:
+
+### 1. AgMIP-GGCMI Crop Calendar and Jägermeyr Crop Calendar (approach for calculation)
+
+Sowing dates are simulated by first classifying the climate seasonality, then applying rules based on either wet season onset (precipitation) or temperature thresholds (temperature), with crop-specific parameters and validation against observed data. This approach enables global, climate-driven estimation of sowing dates for major crops.
+
+#### Step-by-Step Summary: Determining Sowing Dates
+
+This summary outlines the methodology for simulating sowing dates of major crops under rainfed conditions, as described in the materials and methods section of Waha et al. (2019).
+
+#### 1. Input Climate Data Preparation
+- Gather monthly temperature, precipitation, and number of wet days at 0.5° x 0.5° spatial resolution from the Climatic Research Unit dataset.
+- Generate daily mean temperatures by interpolating monthly means.
+- Distribute daily precipitation using a weather generator that considers wet/dry day transitions.
+
+#### 2. Climate Seasonality Classification
+- Calculate annual variation coefficients for precipitation (CVprec) and temperature (CVtemp) from past monthly climate data, using an exponential weighted moving average (recent years weighted more heavily).
+- Classify each location into one of four seasonality types:
+  - No temperature and no precipitation seasonality
+  - Precipitation seasonality
+  - Temperature seasonality
+  - Both temperature and precipitation seasonality
+- For combined seasonality, check if the coldest month’s mean temperature is above 10°C (no cold season) or ≤10°C (cold season).
+
+#### 3. Rule-Based Sowing Date Determination by Seasonality Type
+- **No seasonality:** Assign a default sowing date (January 1) for technical reasons.
+- **Precipitation seasonality:** 
+  - Identify the main wet season using the sum of precipitation-to-potential-evapotranspiration (P/PET) ratios over four consecutive months.
+  - Sowing date is the first wet day (>0.1 mm precipitation) in the main wet season.
+- **Temperature seasonality:**
+  - Sowing occurs when daily average temperatures exceed a crop-specific threshold (for spring crops) or fall below a threshold (for winter crops needing vernalization).
+  - The sowing month is when the mean monthly temperature of the past exceeds (or falls below) the threshold; if the last day of the previous month already meets the threshold, that month is chosen.
+- **Combined seasonality:** 
+  - If coldest month >10°C, precipitation determines sowing (as above).
+  - If coldest month ≤10°C, temperature determines sowing (as above).
+
+### 4. Crop-Specific Temperature Thresholds
+- Each crop has a globally applied temperature threshold for sowing, based on literature and observed farmer practices.
+- For winter crops, the threshold ensures vernalization requirements are met.
+
+### 5. Validation
+- Simulated sowing dates are compared with observed global data (MIRCA2000).
+- For most crops and regions, the difference between simulated and observed sowing dates is less than one month.
+
+---
+
+**Reference:**  
+[1] Waha et al. (2019), "Climate-driven simulation of global crop sowing dates" ([PDF](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/70717716/4bcc804d-87d0-4ee9-9f89-291268f8b4d4/Waha19.pdf))
+
+#### General Crop Modeling Methodologies
+
+Thermal time / growing degree days (GDD) approaches are widely used to simulate crop phenology, where maturity is reached once accumulated heat units meet crop-specific thresholds.
+
+For example, the Community Land Model (CLM) uses GDD accumulation to determine maturity dates (Olin et al., 2015;Jagermeyr et al., 2018; Rabin et al, 2023).
+
+Rule-based methods also use climate seasonality, temperature thresholds, and soil moisture indices to estimate sowing and maturity dates (see refs: Mathison et al., 2018; Minoli et al., 2022).
+
+---
+
+**References:**
+
+- Olin, S., Schurgers, G., Lindeskog, M., Wårlind, D., Smith, B., Bodin, P., Holmér, J., and Arneth, A. (2015). Modelling the response of yields and tissue C : N to changes in atmospheric CO2 and N management in the main wheat regions of western Europe. *Biogeosciences*, 12, 2489–2515. https://doi.org/10.5194/bg-12-2489-2015
+
+- Jägermeyr, J., & Frieler, K. (2018). Spatial variations in crop growing seasons pivotal to reproduce global fluctuations in maize and wheat yields. *Science Advances*, 4, eaat4517. https://doi.org/10.1126/sciadv.aat4517
+
+- Rabin, S. S., Sacks, W. J., Lombardozzi, D. L., Xia, L., & Robock, A. (2023). Observation-based sowing dates and cultivars significantly affect yield and irrigation for some crops in the Community Land Model (CLM5). *Geoscientific Model Development*, 16, 7253–7273. https://doi.org/10.5194/gmd-16-7253-2023
+
+- Mathison, C., Deva, C., Falloon, P., & Challinor, A. J. (2018). Estimating sowing and harvest dates based on the Asian summer monsoon. *Earth System Dynamics*, 9, 563–592. https://doi.org/10.5194/esd-9-563-2018
+
+- Minoli, S., Jägermeyr, J., Asseng, S., Urfels, A., & Müller, C. (2022). Global crop yields can be lifted by timely adaptation of growing periods to climate change. *Nature Communications*, 13, Article 7079. https://doi.org/10.1038/s41467-022-34411-5
+
+#### Other approach
+
+Different approaches are applied in existing crop models to determine current and future sowing dates. Crop models such as `LPJmL` (Bondeau et al., 2007) identify sowing dates from climate data and crop water and temperature requirements for sowing. The calculation procedure currently applied in `LPJmL` (Bondeau et al.,2007) is not applicable for all crops in different climatic regions and has only been evaluated for temperate cereals.
+
+Another approach is to optimize sowing dates using the
+ crop model by selecting the date which leads to the highest crop yield,a method applied, for example, in `DayCent` (Stehfest et al., 2007), or by selecting the optimal growing period based on pre-defined crop-specific requirements, as in `GAEZ` (Fischer et al.,2002). 
+ 
+Finally, pre-defined sowing dates based on obser
+vations have been used, e.g. in the Global Crop Water Model (`GCWM`)(Siebert & Döll,2008) and in `GEPIC` (Liu et al.,2007).
+
+**References:**
+
+- Bondeau, A., Smith, P. C., Zaehle, S., Schaphoff, S., Lucht, W., Cramer, W., ... & Smith, B. (2007). Modelling the role of agriculture for the 20th century global terrestrial carbon balance. *Global Change Biology*, 13(3), 679-706.  
+  https://gmd.copernicus.org/articles/11/1343/2018/gmd-11-1343-2018.pdf
+
+- Stehfest, E., van Vuuren, D., Kram, T., Bouwman, L., Alkemade, R., Bakkenes, M., ... & Prins, A. (2014). Integrated assessment of global environmental change with IMAGE 3.0. Model description and policy applications.  
+  Available via model documentation or scientific databases.
+
+- Fischer, G., Shah, M., & van Velthuizen, H. (2002). Global Agro-ecological Zones (GAEZ v3.0) — Model documentation.  
+  http://www.fao.org/nr/gaez/en/
+
+- Siebert, S., & Döll, P. (2008). Quantifying blue and green virtual water contents in global crop production as well as potential production losses without irrigation. *Journal of Hydrology*, 384(3-4), 198-217.  
+  https://www.sciencedirect.com/science/article/pii/S0022169408003587
+
+- Liu, J., You, L., Amini, M., Obersteiner, M., Herrero, M., Zehnder, A. J., & Yang, H. (2010). A high-resolution assessment on global nitrogen flows in cropland. *Proceedings of the National Academy of Sciences*, 107(17), 8035-8040.  
+  https://www.pnas.org/content/107/17/8035
+
+
+
 ## Prioritization Methodology {#prioritization-method}
 
 ### Dataset Prioritization Methodology
