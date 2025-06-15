@@ -5,3 +5,80 @@
   max-width: 100%;
   margin-bottom: 1em;
 }
+.scroll-table {
+  height: 300px;         /* Set your preferred visible height */
+  overflow-y: auto;      /* Enables vertical scroll bar */
+  overflow-x: auto;      /* Keeps horizontal scroll bar for wide tables */
+  max-width: 100%;       /* Ensures table doesn't overflow container */
+  margin-bottom: 1em;    /* Consistent spacing */
+}
+table {
+  table-layout: fixed;      /* Fix column widths */
+  width: 100%;              /* Use full container width */
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;    /* Wrap text inside cells */
+  overflow-wrap: break-word;
+  white-space: normal;      /* Allow wrapping */
+}
+.scroll-table table {
+  min-width: 1400px;      /* Prevent table from shrinking too much */
+  table-layout: auto;     /* Let browser size columns based on content */
+  border-collapse: collapse;
+  width: auto;            /* Allow table to be wider than container */
+}
+
+.scroll-table table th,
+.scroll-table table td {
+  white-space: normal;    /* Allow text wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+table th, table td {
+  font-size: 10px;   /* Adjust the size as needed */
+}
+p {
+  font-size: 14px; /* Comfortable size for body text */
+}
+
+h1 {
+  font-size: 24px; /* Clear and prominent main heading */
+}
+
+h2 {
+  font-size: 20px; /* Secondary heading */
+}
+
+h3 {
+  font-size: 18px; /* Tertiary heading */
+}
+
+h4 {
+  font-size: 16px; /* Smaller heading */
+}
+
+h5 {
+  font-size: 14px; /* Smallest heading */
+}
+
+ul, ol {
+  font-size: 14px;       /* Match body text size for lists */
+  margin-left: 20px;     /* Indent for readability */
+}
+
+li {
+  line-height: 1.5;      /* Adequate spacing between list items */
+}
+
+
+
+
+
+
+
+
+
