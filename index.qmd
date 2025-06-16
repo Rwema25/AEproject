@@ -180,6 +180,48 @@ vations have been used, e.g. in the Global Crop Water Model (`GCWM`)(Siebert & D
 - Liu, J., You, L., Amini, M., Obersteiner, M., Herrero, M., Zehnder, A. J., & Yang, H. (2010). A high-resolution assessment on global nitrogen flows in cropland. *Proceedings of the National Academy of Sciences*, 107(17), 8035-8040.  
   https://www.pnas.org/content/107/17/8035
 
+## Discussion on State-of-the-Art Approaches: Rainfall-Based vs NDVI-Based Seasonality Detection
+
+Seasonality detection plays a vital role in ecological monitoring, agricultural management, and climate studies. Two primary approaches are widely used: rainfall-based and NDVI-based methods, each with distinct data sources, strengths, and limitations.
+
+### Comparison Table of Rainfall-Based and NDVI-Based Seasonality Detection
+
+| Aspect                    | Rainfall-Based Detection                                                                                          | NDVI-Based Detection                                                                                             |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Data Source**            | Precipitation measurements (rain gauges, satellites) [1](http://dx.doi.org/10.4236/ijg.2011.21004) | Satellite-derived vegetation greenness index (NDVI) [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4) |
+| **Primary Focus**          | Hydrological inputs and rainfall patterns                                                                       | Vegetation response and phenology [3](https://doi.org/10.1080/01431160600702392)                   |
+| **Detection Method**       | Change-point detection, threshold methods [4](https://doi.org/10.3389/ffgc.2025.1555385) | Time-series analysis of vegetation indices [5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449) |
+| **Strengths**              | Direct measurement of rainfall; timely detection of season transitions [1](http://dx.doi.org/10.4236/ijg.2011.21004),[4](https://doi.org/10.3389/ffgc.2025.1555385)                                   | Captures biological/ecological response; useful over large spatial scales [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4),[3](https://doi.org/10.1080/01431160600702392)                                |
+| **Limitations**            | Does not capture vegetation or ecological response; may miss lag effects                                        | Influenced by other climatic factors; time lag between rainfall and vegetation response [3](https://doi.org/10.1080/01431160600702392),[5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449)                  |
+| **Time Lag Consideration** | Generally immediate reflection of rainfall events                                                              | Vegetation response lags rainfall by weeks to months; lag varies by region and ecosystem [5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449)                    |
+| **Applications**           | Defining rainy season onset/cessation; hydrological studies [1](http://dx.doi.org/10.4236/ijg.2011.21004),[4](https://doi.org/10.3389/ffgc.2025.1555385)                                              | Monitoring vegetation dynamics; ecological and agricultural assessments [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4),[3](https://doi.org/10.1080/01431160600702392)                                  |
+| **Complementarity**        | Provides physical season boundaries                                                                              | Validates and refines seasonality based on vegetation growth [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4),[5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449)                                             |
+
+#### Rainfall-Based Seasonality Detection
+
+Rainfall-based approaches utilize precipitation data to identify the onset, duration, and end of rainy seasons through statistical techniques such as change-point detection and threshold analysis. These methods provide direct and timely indicators of hydrological seasonality, which is critical in semi-arid and arid regions where rainfall governs water availability and crop cycles. However, rainfall data alone may not reflect the biological or ecological responses that follow precipitation events [1](http://dx.doi.org/10.4236/ijg.2011.21004),[4](https://doi.org/10.3389/ffgc.2025.1555385).
+
+#### NDVI-Based Seasonality Detection
+
+NDVI, derived from satellite remote sensing, measures vegetation greenness and is widely employed to infer seasonality by capturing vegetation phenology. NDVI strongly correlates with rainfall, especially during growing seasons, but the relationship is modulated by time lags, vegetation type, soil properties, and other climatic factors such as temperature and solar radiation. Time lags between rainfall and NDVI response can range from a few weeks to several months and vary spatially, necessitating advanced modeling approaches to accurately capture these dynamics [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4),[3](https://doi.org/10.1080/01431160600702392),[5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449).
+
+#### Integration and Complementarity
+
+Integrating rainfall and NDVI data provides a more comprehensive view of seasonality by combining physical rainfall patterns with ecological vegetation responses. This integration improves the accuracy of seasonality detection and enhances understanding of ecosystem health and productivity under varying climatic conditions [2](https://doi.org/10.1016/B978-0-12-822931-6.00003-4),[5](https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449).
+
+**References:**
+
+[1] Shisanya, C. A., Recha, C., & Anyamba, A. (2011). Rainfall variability and its impact on normalized difference vegetation index in arid and semi-arid lands of Kenya. International Journal of Geosciences, 2(01), 36. http://dx.doi.org/10.4236/ijg.2011.21004 
+
+[2] Dutta, S., Rehman, S., Chatterjee, S., & Sajjad, H. (2021). Analyzing seasonal variation in the vegetation cover using NDVI and rainfall in the dry deciduous forest region of Eastern India. In Forest Resources Resilience and Conflicts (pp. 33-48). Elsevier. https://doi.org/10.1016/B978-0-12-822931-6.00003-4 
+
+[3] Chamaille‐Jammes, S., Fritz, H., & Murindagomo, F. (2006). Spatial patterns of the NDVI–rainfall relationship at the seasonal and interannual time scales in an African savanna. International Journal of Remote Sensing, 27(23), 5185-5200. https://doi.org/10.1080/01431160600702392 
+
+[4] Guo, J., Liao, W., Qimuge, H., Xu, Y., Wang, J., & Narisu. (2025). Seasonal analysis of spatial and temporal variations in NDVI and its driving factors in Inner Mongolia during the vegetation growing season (1999–2019). Frontiers in Forests and Global Change, 8, 1555385. https://doi.org/10.3389/ffgc.2025.1555385 
+
+[5] Wu, T., Feng, F., Lin, Q., & Bai, H. (2019). Advanced method to capture the time-lag effects between annual NDVI and precipitation variation using RNN in the arid and semi-arid grasslands. Water, 11(9), 1789. https://www.osmikon.de/osmikonsearch/Record/baseftdoajarticlesoaidoajorg_article8cb7f18a982d4c5eaade0acd88eed449 
+ 
+
 
 
 ## Prioritization Methodology {#prioritization-method}
@@ -297,7 +339,7 @@ This section serves as the central reference point for essential terms and defin
 
 </div>
 
-## References
+**References:**
 
 Guerrero-Hidalga et al. (2020). [Methodology to Prioritize Climate Adaptation Measures in Urban Areas. Barcelona and Bristol Case Studies](https://doi.org/10.3390/su12124807). *Sustainability*, 12(12), 4807.
 
