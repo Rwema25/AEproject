@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Michel Rwema">
+<meta name="author" content="Michel Rwema Mouhamadou Bamba Sylla">
 
 <title>Climate Toolkit for Agroecological Research – AEproject</title>
 <style>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Michel Rwema </p>
+             <p>Michel Rwema<br>Mouhamadou Bamba Sylla </p>
           </div>
   </div>
     
@@ -512,12 +512,14 @@ ul.task-list li input[type="checkbox"] {
 <th>Hazard</th>
 <th>Type/Subtype</th>
 <th>Indicator/Index/Variable</th>
-<th>Calculation/Formula / Description</th>
+<th>Calculation/ Description</th>
 <th>Thresholds / Interpretation</th>
 <th>Crop/Livestock Specificity</th>
 <th>Data Needed / Source</th>
 <th>Script/API/Package/Link</th>
 <th>Reference / Link</th>
+<th>Soil Data Needed</th>
+<th>Elevation Data Needed</th>
 <th>Prioritization</th>
 <th>Example Application</th>
 </tr>
@@ -533,23 +535,12 @@ ul.task-list li input[type="checkbox"] {
 <td>Precipitation (monthly; CHIRPS, TAMSAT, IMERG)</td>
 <td><a href="https://cran.r-project.org/web/packages/SPEI/index.html">R: SPEI package</a></td>
 <td><a href="https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-index-spi">McKee et al., 1993</a></td>
+<td>-</td>
+<td>-</td>
 <td>High</td>
 <td>Drought monitoring, early warning</td>
 </tr>
 <tr class="even">
-<td>Drought</td>
-<td>Agricultural</td>
-<td>Soil Moisture Anomaly</td>
-<td>SMA = (soil moisture - mean)/std</td>
-<td>Crop-specific (e.g.&nbsp;&lt;20% FC)</td>
-<td>Yes</td>
-<td>Soil moisture (ERA5, AgERA5, TAMSAT)</td>
-<td><a href="https://xarray.pydata.org/">Python: xarray</a></td>
-<td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
-<td>High</td>
-<td>Crop stress detection</td>
-</tr>
-<tr class="odd">
 <td>Drought</td>
 <td>Agricultural</td>
 <td>SPEI (Standardized Precipitation Evapotranspiration Index)</td>
@@ -559,8 +550,25 @@ ul.task-list li input[type="checkbox"] {
 <td>Precipitation, PET (CHIRPS, ERA5, AgERA5)</td>
 <td><a href="https://cran.r-project.org/web/packages/SPEI/index.html">R: SPEI package</a></td>
 <td><a href="https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-evapotranspiration-index-spei">Vicente-Serrano et al., 2010</a></td>
+<td>-</td>
+<td>-</td>
 <td>High</td>
 <td>Drought impact on crops</td>
+</tr>
+<tr class="odd">
+<td>Drought</td>
+<td>Agricultural</td>
+<td>Soil Moisture Anomaly</td>
+<td>SMA = (soil moisture - mean)/std</td>
+<td>Crop-specific (e.g.&nbsp;&lt;20% FC)</td>
+<td>Yes</td>
+<td>Soil moisture (ERA5, AgERA5, TAMSAT)</td>
+<td><a href="https://xarray.pydata.org/">Python: xarray</a></td>
+<td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>Soil texture, field capacity, depth</td>
+<td>-</td>
+<td>High</td>
+<td>Crop stress detection</td>
 </tr>
 <tr class="even">
 <td>Drought</td>
@@ -572,6 +580,8 @@ ul.task-list li input[type="checkbox"] {
 <td>River gauge data</td>
 <td>Custom (site-specific)</td>
 <td><a href="https://library.wmo.int/doc_num.php?explnum_id=7768">WMO</a></td>
+<td>-</td>
+<td>Elevation (slope, drainage patterns)</td>
 <td>Medium</td>
 <td>Water resource management</td>
 </tr>
@@ -585,6 +595,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Daily Tmax (CHIRTS, ERA5, AgERA5)</td>
 <td><a href="https://github.com/AgroClimate/heat-stress-indices">Python Example</a></td>
 <td><a href="https://www.pnas.org/content/108/2/458">Lobell et al., 2011</a></td>
+<td>-</td>
+<td>-</td>
 <td>High</td>
 <td>Heatwave risk for maize</td>
 </tr>
@@ -598,6 +610,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Temp, humidity (ERA5, AgERA5)</td>
 <td><a href="https://cran.r-project.org/web/packages/climwin/index.html">R: climwin</a></td>
 <td><a href="https://www.ars.usda.gov/plains-area/clay-center-ne/marc/docs/thi/">NOAA</a></td>
+<td>-</td>
+<td>-</td>
 <td>Medium</td>
 <td>Dairy cattle management</td>
 </tr>
@@ -611,6 +625,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Temp, humidity (ERA5, AgERA5, CHIRTS)</td>
 <td><a href="https://unidata.github.io/MetPy/latest/">Python: metpy</a></td>
 <td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>-</td>
+<td>Elevation (altitude affects temperature)</td>
 <td>Medium</td>
 <td>Crop/livestock risk mapping</td>
 </tr>
@@ -624,6 +640,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Daily Tmin (CHIRTS, ERA5, AgERA5)</td>
 <td><a href="https://pandas.pydata.org/">Python: pandas</a></td>
 <td><a href="https://www.pnas.org/content/101/27/9971">Peng et al., 2004</a></td>
+<td>-</td>
+<td>-</td>
 <td>Medium</td>
 <td>Rice yield loss risk</td>
 </tr>
@@ -637,6 +655,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Daily Tmin, Tmax (CHIRTS, ERA5, AgERA5)</td>
 <td><a href="https://cran.r-project.org/web/packages/chillR/index.html">R: chillR</a></td>
 <td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>Soil type (affects crop phenology)</td>
+<td>-</td>
 <td>High</td>
 <td>Crop phenology modeling</td>
 </tr>
@@ -650,6 +670,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Soil moisture (ERA5, AgERA5, TAMSAT)</td>
 <td><a href="https://xarray.pydata.org/">Python: xarray</a></td>
 <td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>Soil porosity, bulk density</td>
+<td>-</td>
 <td>Medium</td>
 <td>Rice, wheat management</td>
 </tr>
@@ -663,6 +685,8 @@ ul.task-list li input[type="checkbox"] {
 <td>Precipitation (CHIRPS, TAMSAT, IMERG)</td>
 <td><a href="https://pandas.pydata.org/">Python: pandas</a></td>
 <td><a href="http://www.fao.org/3/y5043e/y5043e0d.htm">FAO</a></td>
+<td>-</td>
+<td>-</td>
 <td>Medium</td>
 <td>Flood risk assessment</td>
 </tr>
@@ -676,8 +700,91 @@ ul.task-list li input[type="checkbox"] {
 <td>Temp, humidity (ERA5, AgERA5, CHIRTS)</td>
 <td><a href="https://unidata.github.io/MetPy/latest/">Python: metpy</a></td>
 <td><a href="https://www.fao.org/3/y5082e/y5082e07.htm">FAO</a></td>
+<td>-</td>
+<td>-</td>
 <td>Medium</td>
 <td>Compound hazard assessment</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Key Datasets, APIs, and Software Tools for Soil and Elevation Data</strong></p>
+<p>This table provides an overview of the main soil and elevation datasets relevant in our project, along with their spatial resolution, coverage, available APIs, and software packages to facilitate data access and analysis.</p>
+<div class="scroll-table">
+<table class="caption-top table">
+<caption>Summary of soil and elevation datasets with variables, APIs, and software tools.</caption>
+<thead>
+<tr class="header">
+<th>Data Type</th>
+<th>Source / Data Portal</th>
+<th>Resolution</th>
+<th>Coverage</th>
+<th>Access Link</th>
+<th>Variables Included</th>
+<th>API / REST Endpoint</th>
+<th>Software Package(s) / Libraries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Soil Data</td>
+<td>SoilGrids (ISRIC)</td>
+<td>250m</td>
+<td>Global</td>
+<td><a href="https://soilgrids.org">SoilGrids</a></td>
+<td>Soil texture, bulk density, organic carbon, pH, sand, silt, clay fractions</td>
+<td><a href="https://rest.isric.org/soilgrids/v2.0/docs">SoilGrids REST API</a></td>
+<td>Python: <a href="https://github.com/gantian127/soilgrids">soilgrids</a>, R: soilDB (partial)</td>
+</tr>
+<tr class="even">
+<td>Soil Data</td>
+<td>OpenLandMap Soil Organic Carbon</td>
+<td>250m</td>
+<td>Global</td>
+<td><a href="https://openlandmap.org">OpenLandMap</a></td>
+<td>Soil organic carbon content</td>
+<td>No dedicated public API documented</td>
+<td>No widely used package known</td>
+</tr>
+<tr class="odd">
+<td>Soil Data</td>
+<td>HWSD (Harmonized World Soil Database)</td>
+<td>1km</td>
+<td>Global</td>
+<td><a href="http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/">FAO HWSD</a></td>
+<td>Soil texture, bulk density, water storage capacity, organic carbon</td>
+<td>No official API; data downloadable as GeoTIFF/ASCII</td>
+<td>Various GIS software (QGIS, ArcGIS) for data use</td>
+</tr>
+<tr class="even">
+<td>Elevation</td>
+<td>SRTM (NASA)</td>
+<td>30m</td>
+<td>Global</td>
+<td><a href="https://earthdata.nasa.gov">Earthdata</a></td>
+<td>Digital elevation model (DEM), slope, aspect</td>
+<td>APIs via NASA Earthdata services</td>
+<td>Python: <a href="https://pypi.org/project/elevation/">elevation</a></td>
+</tr>
+<tr class="odd">
+<td>Elevation</td>
+<td>ALOS World 3D</td>
+<td>30m</td>
+<td>Global</td>
+<td><a href="https://www.eorc.jaxa.jp/ALOS/en/aw3d30/">ALOS</a></td>
+<td>Digital elevation model (DEM), terrain height</td>
+<td>No public API; data downloadable</td>
+<td>GIS software, custom scripts</td>
+</tr>
+<tr class="even">
+<td>Elevation</td>
+<td>OpenTopography API</td>
+<td>Variable</td>
+<td>Global</td>
+<td><a href="https://opentopography.org">OpenTopography</a></td>
+<td>Digital elevation data, slope, terrain metrics</td>
+<td><a href="https://opentopography.org/developers">OpenTopography REST API</a></td>
+<td>Various GIS and Python libraries</td>
 </tr>
 </tbody>
 </table>
