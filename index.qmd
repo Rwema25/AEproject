@@ -23,6 +23,7 @@ This document is organized into several key sections to guide users through the 
 
 This section systematically presents the climate datasets used in this study, covering their key characteristics, accessibility procedures, and their specific value for advancing agroecological research. The datasets were evaluated and prioritized based on criteria critical for agricultural applications, data integration, and scientific rigor ([Prioritization method](https://github.com/Rwema25/AE-project/wiki/Prioritization-Methodology)).
 
+
 <div class="scroll-table">
 
 | Dataset Name | Short Description | Provider/Source | Spatial Coverage | Temporal Coverage | Spatial Resolution | Temporal Resolution | Key Variables | Data Quality Indicators | Metadata Completeness | Update Frequency | Data Provenance | Preprocessing Steps | Access Methods | API/Package Links | Example Scripts | License/Terms | Integration Challenges | Data Ownership | Versioning/Change Log | Data Citation | Benchmarking/Validation Studies | Potential Applications (Agroecological) | Priority Level |
