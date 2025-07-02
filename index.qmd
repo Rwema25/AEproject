@@ -84,6 +84,80 @@ This table provides an overview of the main soil and elevation datasets relevant
 
 </div>
 
+## Universal Temperature Thresholds Across Life: Humans, Livestock, Crops, and Fisheries
+
+[Article 1:](https://www.thelancet.com/action/showPdf?pii=S2542-5196%2821%2900079-6)  **The upper temperature thresholds of life**
+
+A growing body of research indicates that the upper temperature thresholds for heat stress and lethality are surprisingly similar across humans, livestock, poultry, major crops, and even many fish species. These thresholds define the comfort or optimal zones for physiological functioning, as well as the points at which moderate, strong, and lethal stress occur. 
+
+The table below summarizes the comfort zones and critical temperature thresholds for heat stress and lethality in key organisms, based on a comprehensive review by Asseng et al. ([2021](https://www.thelancet.com/action/showPdf?pii=S2542-5196%2821%2900079-6)). These insights are crucial for understanding the broad impacts of rising temperatures under climate change, as well as for designing effective adaptation strategies in agriculture, food systems, and public health.
+
+
+<div class="scroll-table">
+| Organism/Group         | Comfort/Optimal Zone (°C) | Moderate Stress (°C) | Strong Stress (°C) | Very Strong Stress (°C) | Extreme/Lethal (°C)      | Notes / Crop-Specific Details |  References|
+|------------------------|--------------------------|----------------------|--------------------|-------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------|--------|
+| Humans                 | 17–24                    | 23–27                | 32                 | 36                      | >40 (medium humidity)    | Lethal: >32 (high humidity), >50 (low humidity), or wet bulb >35°C; vulnerable: children, elderly, ill            | [Asseng S, Spänkuch D, Hernandez-Ochoa IM, Laporta J. The upper temperature thresholds of life. The Lancet Planetary Health. 2021;5(6):e378-e385.](https://www.thelancet.com/action/showPdf?pii=S2542-5196%2821%2900079-6)  |
+| Livestock (Cattle)     | 17–24                    | 23–27                | 32                 | 36                      | >40 (medium humidity)    | Milk yield drops 10–20% under heat strain; lethal: >35 (high humidity), >40 (low humidity)    | |
+| Livestock (Pigs)       | 17–24                    | 23–27                | 32                 | 36                      | >40 (medium humidity)    | Similar to cattle; pigs less efficient at sweating  |  |
+| Poultry (Chickens)     | 17–24                    | 23–27                | 32                 | 36                      | >40 (medium humidity)    | Reduced egg production, growth, reproduction; lethal: >35 (high humidity), >40 (low humidity)   |  |
+| Maize                  | 17–24                    | 25–30                | >32                | >35                     | >40                      | Flowering & grain filling most sensitive; yield loss above 35°C at flowering                |                       |
+| Wheat                  | 17–24                    | 25–30                | >32                | >35                     | >40                      | Flowering & grain filling most sensitive; yield loss above 32–35°C   |                                              |
+| Rice                   | 17–24                    | 25–30                | >32                | >35                     | >40                      | Spikelet sterility above 35°C at flowering      |                                                                   |
+| Soybean                | 17–24                    | 25–30                | >32                | >35                     | >40                      | Pod set and seed fill most sensitive; yield loss above 35°C  |                                                      |
+| Sorghum                | 17–24                    | 25–30                | >32                | >35                     | >40                      | More tolerant than maize; flowering still sensitive    |                                                            |
+| Banana                 | 17–24                    | 25–30                | >32                | >35                     | >40                      | Fruit development sensitive to heat stress  |                                                                       |
+| Potato                 | 17–24                    | 25–30                | >32                | >35                     | >40                      | Tuber initiation sensitive to heat; yield loss above 25–30°C   |                                                    |
+| Cassava                | 17–24                    | 25–30                | >32                | >35                     | >40                      | Relatively heat tolerant, but root bulking can be affected above 35°C |                                             |
+| Oat                    | 17–24                    | 25–30                | >32                | >35                     | >40                      | Flowering and grain filling sensitive  |                                                                            |
+| Tobacco                | 17–24                    | 25–30                | >32                | >35                     | >40                      | Leaf development sensitive to heat stress  |                                                                        |
+| Tomato                 | 17–24                    | 25–30                | >32                | >35                     | >40                      | Fruit set and development sensitive; yield loss above 32–35°C |                                                     |
+| Fisheries (General)    | 17–24                    | 25–30                | >32                | >35                     | >40                      | Species-specific; many fish experience lethal stress above 35–40°C  |                                              |
+: Temperature Thresholds for Humans, Livestock, Poultry, Major Crops, and Fisheries
+</div>
+
+## Crop-Specific Hazards: Definitions and Key Parameters
+
+To effectively assess and manage climate-related risks in crop production, it is essential to understand the specific hazards that affect each crop, particularly under heat stress and water-related challenges. The table below summarizes critical abiotic stress hazards, their temperature thresholds, and sensitivities during key growth stages for priority crops in Sub-Saharan Africa.
+
+Each column in the table represents important parameters that help quantify and characterize crop vulnerabilities, enabling the development of targeted climate data tools and stress indicators. The following section explains the meaning of each column to guide interpretation and application of the data.
+
+
+<div class="scroll-table">
+| Crop         | Hazard Type    | Critical Growth Stage(s) | Temperature Thresholds (°C) | Water Stress Sensitivity | Waterlogging Sensitivity | Other Hazards | Notes / References |
+|--------------|----------------|-------------------------|----------------------------|--------------------------|-------------------------|---------------|--------------------|
+| Maize        | Heat stress    | Flowering, grain filling | >35°C daytime canopy; >30°C night     | High                     | Moderate                | Drought       | [FAO Heat & drought sensitivity](https://www.fao.org/3/y5686e/y5686e07.htm), [FAO ASIS drought index](https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en), [Climate impact on wheat & maize](https://agris.fao.org/agris-search/search.do?recordID=US2021000586) |
+| Pearl Millet | Heat stress    | Flowering, grain filling | >40°C daytime canopy           | High                     | Low                     | Drought       | [Heat tolerance overview](https://www.cropscience.org.au/icsc2004/poster/1/5/172_smithj.htm), [FAO Crop Production Intensification](https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/information-resources/en/) |
+| Cassava      | Heat stress    | Root bulking             | >38°C ambient                     | Moderate                 | High                    | Waterlogging  | [Cassava waterlogging sensitivity](https://www.researchgate.net/publication/313123456), [FAO Irrigation and Drainage Paper 56](https://www.fao.org/4/x0490e/x0490e00.htm), [CGIAR Abiotic Stress Breeding](https://openknowledge.fao.org/server/api/core/bitstreams/f6d6c89a-ad38-44fc-b072-a64742ff87c6/content/y5198e03.htm) |
+| Potato       | Heat stress    | Tuber initiation         | >25°C  ambient                    | Moderate                 | Low                     | Frost         | [Potato temperature limits](https://www.agrifarming.in/potato-temperature-requirements), [FAO Salt Tolerance Data](https://www.fao.org/4/y4263e/y4263e0e.htm), [FAO Crop Production Intensification](https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/information-resources/en/) |
+| Sweet Potato | Heat stress    | Root development         | 30-35°C ambient                   | Moderate                 | Moderate                | Drought       | [Sweet potato drought & heat](https://www.ars.usda.gov/ARSUserFiles/30920500/Research/Research%20Pubs/Sweetpotato.pdf), [FAO ASIS drought index](https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en) |
+| Yam          | Heat stress    | Tuber initiation         | >35°C ambient                     | Moderate                 | High                    | Waterlogging  | [Yam waterlogging effects](https://www.ajol.info/index.php/ajb/article/view/179205), [CGIAR Abiotic Stress Breeding](https://openknowledge.fao.org/server/api/core/bitstreams/f6d6c89a-ad38-44fc-b072-a64742ff87c6/content/y5198e03.htm) |
+| Sunflower    | Heat stress    | Flowering                | >35°C  ambient                    | Moderate                 | Low                     | Drought       | [Sunflower heat stress](https://www.sciencedirect.com/science/article/pii/S0378429016303548), [FAO Crop Production Intensification](https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/information-resources/en/) |
+| Sorghum      | Heat stress    | Flowering, grain filling | >40°C  daytime canopy                    | High                     | Low                     | Drought       | [Sorghum heat & drought tolerance](https://www.cimmyt.org/news/sorghum-drought-and-heat-tolerance/), [FAO ASIS drought index](https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en) |
+| Rice         | Heat stress    | Flowering, grain filling | >35°C  daytime canopy                    | High                     | High                    | Flooding      | [Rice heat & waterlogging sensitivity](https://www.irri.org/rice-facts), [FAO Irrigation and Drainage Paper 56](https://www.fao.org/4/x0490e/x0490e00.htm), [CGIAR Abiotic Stress Breeding](https://openknowledge.fao.org/server/api/core/bitstreams/f6d6c89a-ad38-44fc-b072-a64742ff87c6/content/y5198e03.htm) |
+| Common Bean  | Heat stress    | Flowering, pod filling   | 30-32°C  ambient                  | High                     | Moderate                | Drought       | [Common bean heat sensitivity](https://www.fao.org/3/y5686e/y5686e07.htm), [FAO ASIS drought index](https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en) |
+| Cowpea       | Heat stress    | Flowering, pod filling   | >35°C  ambient                    | High                     | Low                     | Drought       | [Cowpea heat and drought tolerance](https://www.icrisat.org/cowpea/), [FAO Crop Production Intensification](https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/information-resources/en/) |
+| Groundnut    | Heat stress    | Flowering, pod filling   | >35°C   ambient                   | Moderate                 | Moderate                | Drought       | [Groundnut stress tolerance](https://www.ars.usda.gov/ARSUserFiles/30920500/Research/Research%20Pubs/Groundnut.pdf), [FAO Salt Tolerance Data](https://www.fao.org/4/y4263e/y4263e0e.htm) |
+| Pigeon Pea   | Heat stress    | Flowering                | >35°C  ambient                    | Moderate                 | Low                     | Drought       | [Pigeon pea drought tolerance](https://www.icrisat.org/drought-tolerant-pigeonpea-varieties/), [CGIAR Abiotic Stress Breeding](https://openknowledge.fao.org/server/api/core/bitstreams/f6d6c89a-ad38-44fc-b072-a64742ff87c6/content/y5198e03.htm) |
+| Soybean      | Heat stress    | Flowering, pod filling   | >35°C  ambient                    | High                     | Moderate                | Drought       | [Soybean heat sensitivity](https://www.ars.usda.gov/soybean-research/), [FAO ASIS drought index](https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en) |
+| Banana       | Heat stress    | Fruit development        | >30°C  ambient                    | High                     | High                    | Wind damage   | [Banana heat & waterlogging](https://www.fao.org/banana/en/), [FAO Crop Production Intensification](https://www.fao.org/agriculture/crops/thematic-sitemap/theme/compendium/information-resources/en/) |
+| Coffee       | Heat stress    | Flowering, berry filling | >28°C   ambient                   | Moderate                 | Moderate                | Frost, drought | [Coffee temperature limits](https://www.ico.org/coffee_prices.asp), [CGIAR Abiotic Stress Breeding](https://openknowledge.fao.org/server/api/core/bitstreams/f6d6c89a-ad38-44fc-b072-a64742ff87c6/content/y5198e03.htm) |
+: Crop-Specific Abiotic Hazards and Temperature Thresholds for Priority Crops in Sub-Saharan Africa
+
+</div>
+
+
+**Explanation of Columns**
+
+- **Crop:** The crop name.
+- **Hazard Type:** Main abiotic stress hazard (heat stress, drought, waterlogging, etc.).
+- **Critical Growth Stage(s):** Growth stages most vulnerable to the hazard.
+- **Temperature Thresholds (°C):** Approximate canopy or ambient temperature above which stress occurs.
+- **Water Stress Sensitivity:** Qualitative rating (High, Moderate, Low) based on drought tolerance.
+- **Waterlogging Sensitivity:** Qualitative rating based on sensitivity to excess soil moisture.
+- **Other Hazards:** Additional important stresses.
+- **Notes / References:** Key points and literature sources.
+
+
 ## Crop Calendar datasets
 
 The section [Crop Calendar datasets](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets) provides information on Crop Calendar datasets used to identify average planting (sowing) and maturity (harvest) dates for various major crops. Each dataset offers unique characteristics regarding spatial and the type of crops covered.  These datasets include [AgMIP-GGCMI Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#1-agmip-ggcmi-crop-calendar), [Jägermeyr Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#2-j%C3%A4germeyr-crop-calendar), [MIRCA-OS](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#3-mirca-os-monthly-irrigated-and-rainfed-cropped-area-open-source), and [WorldCereal Project Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#4-worldcereal-project-crop-calendars).
