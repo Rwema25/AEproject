@@ -120,7 +120,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#climate-datasets" id="toc-climate-datasets" class="nav-link" data-scroll-target="#climate-datasets"><span class="header-section-number">2</span> Climate datasets</a></li>
+  <li><a href="#climate-datasets" id="toc-climate-datasets" class="nav-link" data-scroll-target="#climate-datasets"><span class="header-section-number">2</span> Climate datasets</a>
+  <ul class="collapse">
+  <li><a href="#core-climate-datasets" id="toc-core-climate-datasets" class="nav-link" data-scroll-target="#core-climate-datasets"><span class="header-section-number">2.1</span> Core Climate datasets</a></li>
+  <li><a href="#forcing-variants-example-uk-models" id="toc-forcing-variants-example-uk-models" class="nav-link" data-scroll-target="#forcing-variants-example-uk-models"><span class="header-section-number">2.2</span> Forcing Variants Example (UK Models)</a></li>
+  <li><a href="#model-variant-examples-in-downscaled-archive" id="toc-model-variant-examples-in-downscaled-archive" class="nav-link" data-scroll-target="#model-variant-examples-in-downscaled-archive"><span class="header-section-number">2.3</span> Model Variant Examples in Downscaled Archive</a></li>
+  </ul></li>
   <li><a href="#indicators" id="toc-indicators" class="nav-link" data-scroll-target="#indicators"><span class="header-section-number">3</span> Indicators</a></li>
   <li><a href="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" id="toc-universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" class="nav-link" data-scroll-target="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries"><span class="header-section-number">4</span> Universal Temperature Thresholds Across Life: Humans, Livestock, Crops, and Fisheries</a></li>
   <li><a href="#crop-calendar-datasets" id="toc-crop-calendar-datasets" class="nav-link" data-scroll-target="#crop-calendar-datasets"><span class="header-section-number">5</span> Crop Calendar datasets</a>
@@ -178,7 +183,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#climate-datasets" id="toc-climate-datasets"><span class="header-section-number">2</span> Climate datasets</a></li>
+  <li><a href="#climate-datasets" id="toc-climate-datasets"><span class="header-section-number">2</span> Climate datasets</a>
+  <ul>
+  <li><a href="#core-climate-datasets" id="toc-core-climate-datasets"><span class="header-section-number">2.1</span> Core Climate datasets</a></li>
+  <li><a href="#forcing-variants-example-uk-models" id="toc-forcing-variants-example-uk-models"><span class="header-section-number">2.2</span> Forcing Variants Example (UK Models)</a></li>
+  <li><a href="#model-variant-examples-in-downscaled-archive" id="toc-model-variant-examples-in-downscaled-archive"><span class="header-section-number">2.3</span> Model Variant Examples in Downscaled Archive</a></li>
+  </ul></li>
   <li><a href="#indicators" id="toc-indicators"><span class="header-section-number">3</span> Indicators</a></li>
   <li><a href="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" id="toc-universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries"><span class="header-section-number">4</span> Universal Temperature Thresholds Across Life: Humans, Livestock, Crops, and Fisheries</a></li>
   <li><a href="#crop-calendar-datasets" id="toc-crop-calendar-datasets"><span class="header-section-number">5</span> Crop Calendar datasets</a>
@@ -524,6 +534,628 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
+<section id="core-climate-datasets" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="core-climate-datasets"><span class="header-section-number">2.1</span> Core Climate datasets</h3>
+<section id="nex-gddp-cmip6-dataset" class="level4" data-number="2.1.1">
+<h4 data-number="2.1.1" class="anchored" data-anchor-id="nex-gddp-cmip6-dataset"><span class="header-section-number">2.1.1</span> NEX-GDDP-CMIP6 dataset</h4>
+<section id="key-information-about-nex-gddp-cmip6" class="level5" data-number="2.1.1.1">
+<h5 data-number="2.1.1.1" class="anchored" data-anchor-id="key-information-about-nex-gddp-cmip6"><span class="header-section-number">2.1.1.1</span> Key Information about NEX-GDDP-CMIP6</h5>
+<p>The <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">NEX-GDDP-CMIP6</a> dataset provides a comprehensive set of global, high-resolution, bias-corrected daily climate projections that are derived from 35 General Circulation Models (GCMs) participating in the Coupled Model Intercomparison Project Phase 6 (CMIP6). These models were developed to support the IPCC Sixth Assessment Report (AR6).</p>
+<p><strong>Key features of NEX-GDDP-CMIP6 include:</strong></p>
+<ul>
+<li><strong>Temporal Coverage:</strong>
+<ul>
+<li>Historical (retrospective) period: 1950–2014<br>
+</li>
+<li>Future (prospective) projections: 2015–2100</li>
+</ul></li>
+<li><strong>Baseline Period:</strong>
+<ul>
+<li>The dataset uses <strong>1960–2014</strong> as the baseline period for bias correction and calibration against observed climate data.<br>
+</li>
+<li>Observational reference data during this period come from the Global Meteorological Forcing Dataset (GMFD), providing daily averages at 0.25° spatial resolution.</li>
+</ul></li>
+<li><strong>Spatial Resolution:</strong>
+<ul>
+<li>Downscaled to <strong>0.25° × 0.25°</strong> (~25 km grid cells), significantly finer than original GCM grids.</li>
+</ul></li>
+<li><strong>Emission Scenarios:</strong>
+<ul>
+<li>Includes four Shared Socioeconomic Pathways (SSPs) representing diverse greenhouse gas trajectories:
+<ul>
+<li>SSP1-2.6<br>
+</li>
+<li>SSP2-4.5<br>
+</li>
+<li>SSP3-7.0<br>
+</li>
+<li>SSP5-8.5</li>
+</ul></li>
+</ul></li>
+<li><strong>Bias Correction and Downscaling Methodology:</strong>
+<ul>
+<li>Uses the Bias-Correction Spatial Disaggregation (BCSD) method to:
+<ul>
+<li>Correct systematic biases in GCM outputs relative to observed data within the baseline period.<br>
+</li>
+<li>Preserve large-scale climate trends projected by GCMs.<br>
+</li>
+<li>Enhance local spatial climate detail by incorporating observational climatology.</li>
+</ul></li>
+</ul></li>
+<li><strong>Variables Covered:</strong><br>
+Eight key daily climate variables, including temperature (max/min), precipitation, humidity, radiation, and wind speed.</li>
+</ul>
+</section>
+</section>
+<section id="cmip6-variant-id-overview" class="level4" data-number="2.1.2">
+<h4 data-number="2.1.2" class="anchored" data-anchor-id="cmip6-variant-id-overview"><span class="header-section-number">2.1.2</span> CMIP6 Variant-ID Overview</h4>
+<p>The <code>variant-id</code> in CMIP6 metadata uniquely identifies different ensemble members and model configurations within the CMIP6 data archive. It appears as a global attribute in CMIP6 netCDF files with the format:</p>
+<p>r<realisation>i<initialisation>p<physics>f<forcing></forcing></physics></initialisation></realisation></p>
+<p>where each index denotes:</p>
+<ul>
+<li><strong>r (realisation):</strong> The ensemble member number, distinguishing different runs with varying initial conditions.</li>
+<li><strong>i (initialisation):</strong> The method used to initialise the model run:
+<ul>
+<li><code>1</code>: Initial conditions taken from a prior simulation (branch-date specified).</li>
+<li><code>2</code>: Same as <code>1</code> but with an additional random atmospheric perturbation.</li>
+</ul></li>
+<li><strong>p (physics):</strong> Indicates the physics configuration or version of the model used.</li>
+<li><strong>f (forcing):</strong> Represents which forcing dataset variant is applied, such as different Input4MIPs versions or treatments of ozone and aerosols.</li>
+</ul>
+</section>
+</section>
+<section id="forcing-variants-example-uk-models" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="forcing-variants-example-uk-models"><span class="header-section-number">2.2</span> Forcing Variants Example (UK Models)</h3>
+<ul>
+<li><strong>HadGEM3-GC3.1:</strong>
+<ul>
+<li><code>f1</code>: Input4MIPs v6.1.1, no ozone remapping (used for some pre-2015 experiments).</li>
+<li><code>f2</code>: Input4MIPs v6.2.0, no ozone remapping.</li>
+<li><code>f3</code>: Input4MIPs v6.2.0 with ozone remapping, applied to ensure spatial consistency of ozone with the thermal tropopause.</li>
+</ul></li>
+<li><strong>UKESM1:</strong>
+<ul>
+<li><code>f2</code>: Input4MIPs v6.2.0.</li>
+<li><code>f3</code>: Same as <code>f2</code> but with periodic 1850 stratospheric aerosol surface area density (SAD) forcing instead of time-varying 1850–2014 SAD series in a few ensemble members.</li>
+</ul></li>
+</ul>
+</section>
+<section id="model-variant-examples-in-downscaled-archive" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="model-variant-examples-in-downscaled-archive"><span class="header-section-number">2.3</span> Model <a href="https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf">Variant Examples</a> in Downscaled Archive</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Variant-ID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ACCESS-CM2</td>
+<td>r1i1p1f1</td>
+</tr>
+<tr class="even">
+<td>CESM2</td>
+<td>r4i1p1f1</td>
+</tr>
+<tr class="odd">
+<td>CNRM-CM6-1</td>
+<td>r1i1p1f2</td>
+</tr>
+<tr class="even">
+<td>HadGEM3-GC31-LL</td>
+<td>r1i1p1f3</td>
+</tr>
+<tr class="odd">
+<td>UKESM1-0-LL</td>
+<td>r1i1p1f2</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note:</em> These <a href="https://ukesm.ac.uk/cmip6/variant-id/">variant-ids</a> help track differences in initialisation, physics choices, and forcing datasets across ensemble members, which is crucial for interpreting model spread and uncertainty in climate projections.</p>
+<div class="scroll-table">
+<table class="caption-top table">
+<caption>CMIP6 models included in downscaled archive</caption>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 11%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Variant</th>
+<th>hurs</th>
+<th>huss</th>
+<th>pr</th>
+<th>rlds</th>
+<th>rsds</th>
+<th>sfcWind</th>
+<th>tas</th>
+<th>tasmax</th>
+<th>tasmin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ACCESS-CM2</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ACCESS-ESM1-5</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>BCC-CSM2-MR</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CanESM5</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CESM2</td>
+<td>r4i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CESM2-WACCM</td>
+<td>r3i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CMCC-CM2-SR5</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CMCC-ESM2</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CNRM-CM6-1</td>
+<td>r1i1p1f2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CNRM-ESM2-1</td>
+<td>r1i1p1f2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>EC-Earth3</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>EC-Earth3-Veg-LR</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FGOALS-g3</td>
+<td>r3i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>GFDL-CM4 (gr1)</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>GFDL-CM4 (gr2)</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>GFDL-ESM4</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>GISS-E2-1-G</td>
+<td>r1i1p1f2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>HadGEM3-GC31-LL</td>
+<td>r1i1p1f3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>HadGEM3-GC31-MM</td>
+<td>r1i1p1f3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>IITM-ESM 2</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>INM-CM4-8</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>INM-CM5-0</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>IPSL-CM6A-LR</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>KACE-1-0-G</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>KIOST-ESM</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MIROC-ES2L</td>
+<td>r1i1p1f2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MIROC6</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MPI-ESM1-2-HR</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MPI-ESM1-2-LR</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MRI-ESM2-0</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>NESM3</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>NorESM2-LM</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>NorESM2-MM</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>TaiESM1</td>
+<td>r1i1p1f1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>UKESM1-0-LL</td>
+<td>r1i1p1f2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Note on Model Selection:</strong><br>
+For this study, we selected CMIP6 models using the <code>r1i1p1f1</code> variant that have complete coverage of both historical simulations and all Tier 1 Shared Socioeconomic Pathway (SSP) experiments (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5). The rationale behind this choice is as follows:</p>
+<ul>
+<li>The <code>r1i1p1f1</code> variant represents the primary ensemble member with standard initialisation, physics, and forcing configurations, thereby providing a consistent baseline across models.<br>
+</li>
+<li>Including only models with full historical and SSP runs ensures comprehensive temporal coverage from the past to future climate scenarios, facilitating seamless assessment of climate trends and impacts.<br>
+</li>
+<li>Restricting the analysis to this variant minimizes variability arising from differences in initialization methods or forcing datasets, enhancing comparability across models and scenarios.<br>
+</li>
+<li>While this approach limits exploration of internal model variability from alternative ensemble members, it strikes a balance between robustness, consistency, and computational feasibility for multi-model impact assessments.</li>
+</ul>
+</section>
 </section>
 <section id="indicators" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="indicators"><span class="header-section-number">3</span> Indicators</h2>

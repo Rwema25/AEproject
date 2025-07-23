@@ -42,6 +42,136 @@ This section systematically presents the climate datasets used in this study, co
 
 </div>
 
+### Core Climate datasets
+
+#### NEX-GDDP-CMIP6 dataset
+##### Key Information about NEX-GDDP-CMIP6
+
+The [NEX-GDDP-CMIP6](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) dataset provides a comprehensive set of global, high-resolution, bias-corrected daily climate projections that are derived from 35 General Circulation Models (GCMs) participating in the Coupled Model Intercomparison Project Phase 6 (CMIP6). These models were developed to support the IPCC Sixth Assessment Report (AR6).
+
+**Key features of NEX-GDDP-CMIP6 include:**
+
+- **Temporal Coverage:**  
+  - Historical (retrospective) period: 1950–2014  
+  - Future (prospective) projections: 2015–2100
+
+- **Baseline Period:**  
+  - The dataset uses **1960–2014** as the baseline period for bias correction and calibration against observed climate data.  
+  - Observational reference data during this period come from the Global Meteorological Forcing Dataset (GMFD), providing daily averages at 0.25° spatial resolution.
+
+- **Spatial Resolution:**  
+  - Downscaled to **0.25° × 0.25°** (~25 km grid cells), significantly finer than original GCM grids.
+
+- **Emission Scenarios:**  
+  - Includes four Shared Socioeconomic Pathways (SSPs) representing diverse greenhouse gas trajectories:  
+    - SSP1-2.6  
+    - SSP2-4.5  
+    - SSP3-7.0  
+    - SSP5-8.5
+
+- **Bias Correction and Downscaling Methodology:**  
+  - Uses the Bias-Correction Spatial Disaggregation (BCSD) method to:  
+    - Correct systematic biases in GCM outputs relative to observed data within the baseline period.  
+    - Preserve large-scale climate trends projected by GCMs.  
+    - Enhance local spatial climate detail by incorporating observational climatology.
+
+- **Variables Covered:**  
+  Eight key daily climate variables, including temperature (max/min), precipitation, humidity, radiation, and wind speed.
+
+#### CMIP6 Variant-ID Overview
+
+The `variant-id` in CMIP6 metadata uniquely identifies different ensemble members and model configurations within the CMIP6 data archive. It appears as a global attribute in CMIP6 netCDF files with the format:
+
+r<realisation>i<initialisation>p<physics>f<forcing>
+
+
+where each index denotes:
+
+- **r (realisation):** The ensemble member number, distinguishing different runs with varying initial conditions.
+- **i (initialisation):** The method used to initialise the model run:
+  - `1`: Initial conditions taken from a prior simulation (branch-date specified).
+  - `2`: Same as `1` but with an additional random atmospheric perturbation.
+- **p (physics):** Indicates the physics configuration or version of the model used.
+- **f (forcing):** Represents which forcing dataset variant is applied, such as different Input4MIPs versions or treatments of ozone and aerosols.
+
+### Forcing Variants Example (UK Models)
+
+- **HadGEM3-GC3.1:**
+  - `f1`: Input4MIPs v6.1.1, no ozone remapping (used for some pre-2015 experiments).
+  - `f2`: Input4MIPs v6.2.0, no ozone remapping.
+  - `f3`: Input4MIPs v6.2.0 with ozone remapping, applied to ensure spatial consistency of ozone with the thermal tropopause.
+
+- **UKESM1:**
+  - `f2`: Input4MIPs v6.2.0.
+  - `f3`: Same as `f2` but with periodic 1850 stratospheric aerosol surface area density (SAD) forcing instead of time-varying 1850–2014 SAD series in a few ensemble members.
+
+### Model [Variant Examples](https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note_4.pdf) in Downscaled Archive
+
+
+| Model             | Variant-ID   | 
+|-------------------|--------------|
+| ACCESS-CM2        | r1i1p1f1     |
+| CESM2             | r4i1p1f1     |
+| CNRM-CM6-1        | r1i1p1f2     |
+| HadGEM3-GC31-LL   | r1i1p1f3     |
+| UKESM1-0-LL       | r1i1p1f2     |
+
+
+*Note:* These [variant-ids](https://ukesm.ac.uk/cmip6/variant-id/) help track differences in initialisation, physics choices, and forcing datasets across ensemble members, which is crucial for interpreting model spread and uncertainty in climate projections.
+
+<div class="scroll-table">
+
+| Model             | Variant  | hurs | huss | pr  | rlds | rsds | sfcWind | tas  | tasmax | tasmin |
+|-------------------|----------|------|------|-----|------|------|---------|------|--------|--------|
+| ACCESS-CM2        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| ACCESS-ESM1-5     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| BCC-CSM2-MR       | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| CanESM5           | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| CESM2             | r4i1p1f1 |      |      |     |      |      |         |      |        |        |
+| CESM2-WACCM       | r3i1p1f1 |      |      |     |      |      |         |      |        |        |
+| CMCC-CM2-SR5      | r1i1p1f1 |    |     |    |      |      |         |      |        |        |
+| CMCC-ESM2         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| CNRM-CM6-1        | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+| CNRM-ESM2-1       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+| EC-Earth3         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| EC-Earth3-Veg-LR  | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| FGOALS-g3         | r3i1p1f1 |      |      |     |      |      |         |      |        |        |
+| GFDL-CM4 (gr1)    | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| GFDL-CM4 (gr2)    | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| GFDL-ESM4         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| GISS-E2-1-G       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+| HadGEM3-GC31-LL   | r1i1p1f3 |      |      |     |      |      |         |      |        |        |
+| HadGEM3-GC31-MM   | r1i1p1f3 |      |      |     |      |      |         |      |        |        |
+| IITM-ESM 2        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| INM-CM4-8         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| INM-CM5-0         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| IPSL-CM6A-LR      | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| KACE-1-0-G        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| KIOST-ESM         | r1i1p1f1 |    |      |     |      |      |         |      |        |        |
+| MIROC-ES2L        | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+| MIROC6            | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| MPI-ESM1-2-HR     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| MPI-ESM1-2-LR     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| MRI-ESM2-0        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| NESM3             | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| NorESM2-LM        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| NorESM2-MM        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
+| TaiESM1           | r1i1p1f1 |     |    |   |      |      |         |      |        |        |
+| UKESM1-0-LL       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+: CMIP6 models included in downscaled archive
+
+</div>
+
+**Note on Model Selection:**  
+For this study, we selected CMIP6 models using the `r1i1p1f1` variant that have complete coverage of both historical simulations and all Tier 1 Shared Socioeconomic Pathway (SSP) experiments (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5). The rationale behind this choice is as follows:
+
+- The `r1i1p1f1` variant represents the primary ensemble member with standard initialisation, physics, and forcing configurations, thereby providing a consistent baseline across models.  
+- Including only models with full historical and SSP runs ensures comprehensive temporal coverage from the past to future climate scenarios, facilitating seamless assessment of climate trends and impacts.  
+- Restricting the analysis to this variant minimizes variability arising from differences in initialization methods or forcing datasets, enhancing comparability across models and scenarios.  
+- While this approach limits exploration of internal model variability from alternative ensemble members, it strikes a balance between robustness, consistency, and computational feasibility for multi-model impact assessments.
+
+
+
 
 ## Indicators
 
