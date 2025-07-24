@@ -536,3 +536,230 @@ ISO (2020). [ISO 14050:2020(en)
 Environmental management — Vocabulary: Terms relating to climate change and climate action](https://www.iso.org/obp/ui/en/#iso:std:iso:14050:ed-4:v1:en). *ISO*, 14050:2020(en).
 
 Adaptation Atlas (2023). [Hazards-definitions](https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions). *GitHub repository*.
+
+
+| Crop         | Crop Stage         | Duration (days) | Max Temperature (°C) | Optimum Day Temperature (°C) | Min Temperature (°C) |
+|--------------|--------------------|-----------------|---------------------|-----------------------------|----------------------|
+| Crop A       | Stage 1            |                 |                     |                             |                      |
+|              | Stage 2            |                 |                     |                             |                      |
+|              | Stage 3            |                 |                     |                             |                      |
+|              | Stage 4            |                 |                     |                             |                      |
+|              | Stage 5            |                 |                     |                             |                      |
+|              | Stage 6            |                 |                     |                             |                      |
+| Crop B       | Stage 1            |                 |                     |                             |                      |
+|              | Stage 2            |                 |                     |                             |                      |
+|              | Stage 3            |                 |                     |                             |                      |
+|              | Stage 4            |                 |                     |                             |                      |
+|              | Stage 5            |                 |                     |                             |                      |
+|              | Stage 6            |                 |                     |                             |                      |
+| Crop C       | Stage 1            |                 |                     |                             |                      |
+|              | Stage 2            |                 |                     |                             |                      |
+|              | Stage 3            |                 |                     |                             |                      |
+|              | Stage 4            |                 |                     |                             |                      |
+|              | Stage 5            |                 |                     |                             |                      |
+|              | Stage 6            |                 |                     |                             |                      |
+
+
+| Crop         | Crop Stage         | Duration (days) | Max Temperature (°C) | Optimum Day Temperature (°C) | Min Temperature (°C) |
+|--------------|--------------------|-----------------|---------------------|-----------------------------|----------------------|
+| Maize        | Germination        | 7               | 35                  | 25                          | 10                   |
+|              | Vegetative growth  | 30              | 38                  | 28                          | 12                   |
+|              | Tasseling          | 10              | 33                  | 26                          | 14                   |
+|              | Flowering          | 15              | 32                  | 24                          | 15                   |
+|              | Grain filling      | 25              | 30                  | 22                          | 14                   |
+|              | Maturity           | 20              | 28                  | 20                          | 12                   |
+
+<div class="scroll-table">
+<table>
+  <thead>
+    <tr>
+      <th>Crop</th>
+      <th>Crop Stage</th>
+      <th>Duration (days)</th>
+      <th>Max Temperature (°C)</th>
+      <th>Optimum Day Temperature (°C)</th>
+      <th>Min Temperature (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Maize -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Maize</td>
+      <td>Germination and emergence</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leaf development,stem elongation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tasselling</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flowering, anthesis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kernel development</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ripening</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- Crop B -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop B</td>
+      <td>Stage 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+<!-- Crop C -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop C</td>
+      <td>Stage 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Crop D -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop D</td>
+      <td>Stage 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
