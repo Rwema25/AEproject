@@ -253,6 +253,214 @@ The table below summarizes the comfort zones and critical temperature thresholds
 
 - **Fisheries:** Fish species vary, but many follow similar patterns; high temperatures reduce dissolved oxygen and can be lethal.
 
+
+### Crop Growth Stages and Temperature Thresholds
+
+This table outlines key growth stages for selected crops, their duration, and corresponding temperature ranges critical for healthy development and yield.[Ref](https://admin.concern.net/sites/default/files/media/migrated/crop_weather_and_climate_vulnerability_profiles_.pdf?_gl=1*1vxywrp*FPAU*MTUxMTU1NTMyNS4xNzUzMzcwNDk2*_ga*MjAxNTc1MTI2My4xNzUzMzcwNDk2*_ga_RLZ9XCKFP1*czE3NTM0MzgyNzQkbzIkZzAkdDE3NTM0MzgyNzUkajU5JGwwJGgzNTc1MzAzMTY.*_fplc*eXpjcWV0TEtEU2RVSiUyRk1JRUp3cmxKWUpndSUyQmlHYmRmVUFhYTBVOWFTNVdMN3llJTJCOWtlNkNNUzVhWHZuQyUyRjE0TzVUbWd0cXolMkZXOTUlMkJURWJTWFpiTXN3UyUyQiUyRm91QWZzSUtsVjg5RHh0aWpEOU9ndXliVHZhSHBNN243b2lDZyUzRCUzRA..)
+
+
+<div class="scroll-table">
+<table>
+  <thead>
+    <tr>
+      <th>Crop</th>
+      <th>Crop Stage</th>
+      <th>Duration (days)</th>
+      <th>Max Temperature (°C)</th>
+      <th>Optimum Day Temperature (°C)</th>
+      <th>Min Temperature (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Maize -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Maize</td>
+      <td>Germination and emergence</td>
+      <td>15 - 25 days</td>
+      <td>40°C</td>
+      <td>26°C - 31°C</td>
+      <td>10°C</td>
+    </tr>
+    <tr>
+      <td>Leaf development,stem elongation</td>
+      <td>25 - 40 days</td>
+      <td>39°C</td>
+      <td>26°C - 33°C</td>
+      <td>9°C</td>
+    </tr>
+    <tr>
+      <td>Tasselling</td>
+      <td>15 - 20 days (together with next stage)</td>
+      <td>39°C</td>
+      <td>19°C - 30°C</td>
+      <td>9°C</td>
+    </tr>
+    <tr>
+      <td>Flowering, anthesis</td>
+      <td>15 - 20 days (together with previous stage)</td>
+      <td>37°C</td>
+      <td>28°C - 33°C</td>
+      <td>8°C</td>
+    </tr>
+    <tr>
+      <td>Kernel development</td>
+      <td>35 - 45 days</td>
+      <td>36°C</td>
+      <td>24°C - 30°C</td>
+      <td>8°C</td>
+    </tr>
+    <tr>
+      <td>Ripening</td>
+      <td>10 - 15 days</td>
+      <td>36°C</td>
+      <td>21°C - 30°C</td>
+      <td>8°C</td>
+    </tr>
+    <!-- Pearl millet -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Pearl millet</td>
+      <td>Germination and emergence</td>
+      <td>10 - 15 days (together with next stage)</td>
+      <td>45°C</td>
+      <td>24°C - 33°C</td>
+      <td>10°C</td>
+    </tr>
+    <tr>
+      <td>Seedling growth</td>
+      <td>10 - 15 days (together with previous stage)</td>
+      <td>49°C</td>
+      <td>30°C - 35°C</td>
+      <td>11°C</td>
+    </tr>
+    <tr>
+      <td>Culm elongation, leaf development</td>
+      <td>16 - 22 days</td>
+      <td>-</td>
+      <td>23°C - 31°C</td>
+      <td>11°C</td>
+    </tr>
+    <tr>
+      <td>Panicle initiation and maturation</td>
+      <td>18 - 45 days</td>
+      <td>-</td>
+      <td>21°C - 30°C</td>
+      <td>10°C</td>
+    </tr>
+    <tr>
+      <td>Flowering and seed formation</td>
+      <td>10 - 18 days</td>
+      <td>43°C</td>
+      <td>25°C - 31°C</td>
+      <td>10°C</td>
+    </tr>
+    <tr>
+      <td>Grain filling and ripening</td>
+      <td>20 - 55 days</td>
+      <td>-</td>
+      <td>21°C - 29°C</td>
+      <td>10°C</td>
+    </tr>
+
+<!-- Sorghum -->
+    <tr>
+      <td rowspan="7" style="vertical-align: middle; text-align: center;">Sorghum</td>
+      <td> Seed germination</td>
+      <td>15 - 20 days (together with next stage)</td>
+      <td>46°C</td>
+      <td>26°C - 37°C</td>
+      <td>9°C</td>
+    </tr>
+    <tr>
+      <td> Emergence, seedling growth</td>
+      <td>15 - 20 days (together with previous stage)</td>
+      <td>45°C</td>
+      <td>21°C - 33°C</td>
+      <td>0°C</td>
+    </tr>
+    <tr>
+      <td> 3-5 leaf stages</td>
+      <td>20 - 30 days (together with next stage)</td>
+      <td>43°C</td>
+      <td>26°C - 33°C</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Panicle formation</td>
+      <td>20 - 30 days (together with previous stage)</td>
+      <td>42°C</td>
+      <td>25°C - 31°C</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> Floral initiation, anthesis</td>
+      <td>15 - 20 days</td>
+      <td>37°C</td>
+      <td>27°C - 30°C</td>
+      <td>9°C</td>
+    </tr>
+    <tr>
+      <td>Blooming, soft dough</td>
+      <td>35 - 40 days</td>
+      <td>40°C</td>
+      <td>23°C - 28°C</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Hard dough, maturity</td>
+      <td>10 - 15 days</td>
+      <td>-</td>
+      <td>25°C - 31°C</td>
+      <td>-</td>
+    </tr>
+    <!-- Crop D -->
+    <tr>
+      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop D</td>
+      <td>Stage 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage 6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 ## Crop Calendar datasets
 
 The section [Crop Calendar datasets](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets) provides information on Crop Calendar datasets used to identify average planting (sowing) and maturity (harvest) dates for various major crops. Each dataset offers unique characteristics regarding spatial and the type of crops covered.  These datasets include [AgMIP-GGCMI Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#1-agmip-ggcmi-crop-calendar), [Jägermeyr Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#2-j%C3%A4germeyr-crop-calendar), [MIRCA-OS](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#3-mirca-os-monthly-irrigated-and-rainfed-cropped-area-open-source), and [WorldCereal Project Crop Calendar](https://github.com/Rwema25/AE-project/wiki/Crop-Calendars-datasets#4-worldcereal-project-crop-calendars).
@@ -537,204 +745,3 @@ Environmental management — Vocabulary: Terms relating to climate change and cl
 
 Adaptation Atlas (2023). [Hazards-definitions](https://github.com/AdaptationAtlas/hazards/wiki/Hazards-definitions). *GitHub repository*.
 
-
-
-### Crop Growth Stages and Temperature Thresholds
-
-This table outlines key growth stages for selected crops, their duration, and corresponding temperature ranges critical for healthy development and yield.
-
-
-<div class="scroll-table">
-<table>
-  <thead>
-    <tr>
-      <th>Crop</th>
-      <th>Crop Stage</th>
-      <th>Duration (days)</th>
-      <th>Max Temperature (°C)</th>
-      <th>Optimum Day Temperature (°C)</th>
-      <th>Min Temperature (°C)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Maize -->
-    <tr>
-      <td rowspan="6" style="vertical-align: middle; text-align: center;">Maize</td>
-      <td>Germination and emergence</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Leaf development,stem elongation</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Tasselling</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Flowering, anthesis</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Kernel development</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ripening</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-
-    <!-- Crop B -->
-    <tr>
-      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop B</td>
-      <td>Stage 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 6</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-
-<!-- Crop C -->
-    <tr>
-      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop C</td>
-      <td>Stage 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 6</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Crop D -->
-    <tr>
-      <td rowspan="6" style="vertical-align: middle; text-align: center;">Crop D</td>
-      <td>Stage 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Stage 6</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-</div>
