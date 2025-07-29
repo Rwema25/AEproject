@@ -123,44 +123,79 @@ where each index denotes:
 
 | Model             | Variant  | hurs | huss | pr  | rlds | rsds | sfcWind | tas  | tasmax | tasmin |
 |-------------------|----------|------|------|-----|------|------|---------|------|--------|--------|
-| ACCESS-CM2        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| ACCESS-ESM1-5     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| BCC-CSM2-MR       | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| CanESM5           | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| CESM2             | r4i1p1f1 |      |      |     |      |      |         |      |        |        |
-| CESM2-WACCM       | r3i1p1f1 |      |      |     |      |      |         |      |        |        |
-| CMCC-CM2-SR5      | r1i1p1f1 |    |     |    |      |      |         |      |        |        |
-| CMCC-ESM2         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| CNRM-CM6-1        | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
-| CNRM-ESM2-1       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
-| EC-Earth3         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| EC-Earth3-Veg-LR  | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| FGOALS-g3         | r3i1p1f1 |      |      |     |      |      |         |      |        |        |
-| GFDL-CM4 (gr1)    | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| GFDL-CM4 (gr2)    | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| GFDL-ESM4         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| GISS-E2-1-G       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
-| HadGEM3-GC31-LL   | r1i1p1f3 |      |      |     |      |      |         |      |        |        |
-| HadGEM3-GC31-MM   | r1i1p1f3 |      |      |     |      |      |         |      |        |        |
-| IITM-ESM 2        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| INM-CM4-8         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| INM-CM5-0         | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| IPSL-CM6A-LR      | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| KACE-1-0-G        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| KIOST-ESM         | r1i1p1f1 |    |      |     |      |      |         |      |        |        |
-| MIROC-ES2L        | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
-| MIROC6            | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| MPI-ESM1-2-HR     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| MPI-ESM1-2-LR     | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| MRI-ESM2-0        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| NESM3             | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| NorESM2-LM        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| NorESM2-MM        | r1i1p1f1 |      |      |     |      |      |         |      |        |        |
-| TaiESM1           | r1i1p1f1 |     |    |   |      |      |         |      |        |        |
-| UKESM1-0-LL       | r1i1p1f2 |      |      |     |      |      |         |      |        |        |
+| ACCESS-CM2        | r1i1p1f1 |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>     |
+| ACCESS-ESM1-5     | r1i1p1f1 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>      |
+| BCC-CSM2-MR       | r1i1p1f1 |   <span style="color:red;">Not available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |     <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |
+| CanESM5           | r1i1p1f1 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>  |  <span style="color:green;">Available</span>    | <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>      | <span style="color:green;">Available</span>     |    <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |
+| CESM2             | r4i1p1f1 |    <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |    <span style="color:red;">Not available</span>    |    <span style="color:red;">Not available</span>    |
+| CESM2-WACCM       | r3i1p1f1 |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>  |  <span style="color:Yellow;">Available</span>    | <span style="color:Yellow;">Available</span>     |   <span style="color:Yellow;">Available</span>      | <span style="color:Yellow;">Available</span>     |    <span style="color:red;">Not available</span>    |   <span style="color:red;">Not available</span>     |
+| CMCC-CM2-SR5      | r1i1p1f1 |  <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>  | <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |     <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:Yellow;">Available</span>     |    <span style="color:Yellow;">Available</span>    |
+| CMCC-ESM2         | r1i1p1f1 |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>  |    <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>      |
+| CNRM-CM6-1        | r1i1p1f2 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>     |
+| CNRM-ESM2-1       | r1i1p1f2 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   | <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>       |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>      |
+| EC-Earth3         | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>     |    <span style="color:green;">Available</span>    |
+| EC-Earth3-Veg-LR  | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     | <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
+| FGOALS-g3         | r3i1p1f1 |    <span style="color:green;">Available</span>  |    <span style="color:green;">Available</span>  | <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>      |
+| GFDL-CM4 (gr1)    | r1i1p1f1 |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>  |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>   |    <span style="color:Yellow;">Available</span>     |    <span style="color:Yellow;">Available</span>  |   <span style="color:Yellow;">Available</span>     |    <span style="color:Yellow;">Available</span>    |
+| GFDL-CM4 (gr2)    | r1i1p1f1 |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>      |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>     |   <span style="color:Yellow;">Available</span>     |
+| GFDL-ESM4         | r1i1p1f1 |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
+| GISS-E2-1-G       | r1i1p1f2 |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>  |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |
+| HadGEM3-GC31-LL   | r1i1p1f3 |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>    |   <span style="color:Yellow;">Available</span>      |   <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>     |   <span style="color:Yellow;">Available</span>     |
+| HadGEM3-GC31-MM   | r1i1p1f3 |  <span style="color:Yellow;">Available</span>    | <span style="color:Yellow;">Available</span>     |  <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>       |   <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>      |   <span style="color:Yellow;">Available</span>     |
+| IITM-ESM^2        | r1i1p1f1 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>  |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:red;">Available</span>     |   <span style="color:red;">Available</span>     |
+| INM-CM4-8         | r1i1p1f1 |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
+| INM-CM5-0         | r1i1p1f1 |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
+| IPSL-CM6A-LR      | r1i1p1f1 |      |    <span style="color:red;">Available</span>  |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>      |
+| KACE-1-0-G        | r1i1p1f1 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    | <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>      |
+| KIOST-ESM         | r1i1p1f1 |  <span style="color:Yellow;">Available</span>  |   <span style="color:Yellow;">Available</span>   |  <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>   |    <span style="color:Yellow;">Available</span>     |   <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>     |   <span style="color:Yellow;">Available</span>     |
+| MIROC-ES2L        | r1i1p1f2 |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |
+| MIROC6            | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:Yellow;">Available</span>   | <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>       |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>     |
+| MPI-ESM1-2-HR     | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |        |
+| MPI-ESM1-2-LR     | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>  |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>      |
+| MRI-ESM2-0        | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |    <span style="color:green;">Available</span>  |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>      |
+| NESM3             | r1i1p1f1 |   <span style="color:red;">Available</span>   |    <span style="color:red;">Available</span>  |  <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>   |   <span style="color:Yellow;">Available</span>   |    <span style="color:Yellow;">Available</span>     |  <span style="color:Yellow;">Available</span>    |  <span style="color:Yellow;">Available</span>      |   <span style="color:Yellow;">Available</span>     |
+| NorESM2-LM        | r1i1p1f1 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     | <span style="color:green;">Available</span>       |
+| NorESM2-MM        | r1i1p1f1 | <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>   | <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>      |    <span style="color:green;">Available</span>    |
+| TaiESM1           | r1i1p1f1 |    <span style="color:green;">Available</span> |  <span style="color:green;">Available</span>  |  <span style="color:green;">Available</span> |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>      |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
+| UKESM1-0-LL       | r1i1p1f2 |   <span style="color:green;">Available</span>   |   <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>   |  <span style="color:green;">Available</span>    |  <span style="color:green;">Available</span>    |    <span style="color:green;">Available</span>     |  <span style="color:green;">Available</span>    |   <span style="color:green;">Available</span>     |   <span style="color:green;">Available</span>     |
 : CMIP6 models included in downscaled archive
 
 </div>
+Key:
+
+<span style="color:green;">Available</span>: Historical & all SSPs available
+
+<span style="color:Yellow;">Available</span>: Historical & some SSPs available
+
+<span style="color:red;">Not available</span>: No data available
+
+- **hurs**: Near-Surface Relative Humidity (%)  
+  Relative humidity of air near the surface, expressed as a percentage.
+
+- **huss**: Near-Surface Specific Humidity (dimensionless ratio, kg/kg)  
+  Mass of water vapor per unit mass of moist air near the surface.
+
+- **pr**: Precipitation (mean of the daily precipitation rate, kg m⁻² s⁻¹)  
+  Average rate of precipitation (rain, snow, etc.) over the day, expressed in kg per square meter per second.
+
+- **rlds**: Surface Downwelling Longwave Radiation (W m⁻²)  
+  Thermal infrared radiation energy coming downward onto the surface from the atmosphere.
+
+- **rsds**: Surface Downwelling Shortwave Radiation (W m⁻²)  
+  Solar radiation energy in the shortwave spectrum reaching the surface.
+
+- **sfcWind**: Daily-Mean Near-Surface Wind Speed (m s⁻¹)  
+  Average wind speed measured near the surface over the day.
+
+- **tas**: Daily Near-Surface Air Temperature (Kelvin)  
+  Average air temperature near the surface for the day.
+
+- **tasmax**: Daily Maximum Near-Surface Air Temperature (Kelvin)  
+  Maximum air temperature recorded near the surface during the day.
+
+- **tasmin**: Daily Minimum Near-Surface Air Temperature (Kelvin)  
+  Minimum air temperature recorded near the surface during the day.
+
 
 **Note on Model Selection:**  
 For this study, we selected CMIP6 models using the `r1i1p1f1` variant that have complete coverage of both historical simulations and all Tier 1 Shared Socioeconomic Pathway (SSP) experiments (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5). The rationale behind this choice is as follows:
