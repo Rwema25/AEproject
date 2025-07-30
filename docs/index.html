@@ -130,6 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" id="toc-universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" class="nav-link" data-scroll-target="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries"><span class="header-section-number">4</span> Universal Temperature Thresholds Across Life: Humans, Livestock, Crops, and Fisheries</a>
   <ul class="collapse">
   <li><a href="#crop-growth-stages-and-temperature-thresholds" id="toc-crop-growth-stages-and-temperature-thresholds" class="nav-link" data-scroll-target="#crop-growth-stages-and-temperature-thresholds"><span class="header-section-number">4.1</span> Crop Growth Stages and Temperature Thresholds</a></li>
+  <li><a href="#comprehensive-hazard-crop-interaction-framework" id="toc-comprehensive-hazard-crop-interaction-framework" class="nav-link" data-scroll-target="#comprehensive-hazard-crop-interaction-framework"><span class="header-section-number">4.2</span> Comprehensive Hazard-Crop Interaction Framework</a></li>
   </ul></li>
   <li><a href="#crop-calendar-datasets" id="toc-crop-calendar-datasets" class="nav-link" data-scroll-target="#crop-calendar-datasets"><span class="header-section-number">5</span> Crop Calendar datasets</a>
   <ul class="collapse">
@@ -196,6 +197,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries" id="toc-universal-temperature-thresholds-across-life-humans-livestock-crops-and-fisheries"><span class="header-section-number">4</span> Universal Temperature Thresholds Across Life: Humans, Livestock, Crops, and Fisheries</a>
   <ul>
   <li><a href="#crop-growth-stages-and-temperature-thresholds" id="toc-crop-growth-stages-and-temperature-thresholds"><span class="header-section-number">4.1</span> Crop Growth Stages and Temperature Thresholds</a></li>
+  <li><a href="#comprehensive-hazard-crop-interaction-framework" id="toc-comprehensive-hazard-crop-interaction-framework"><span class="header-section-number">4.2</span> Comprehensive Hazard-Crop Interaction Framework</a></li>
   </ul></li>
   <li><a href="#crop-calendar-datasets" id="toc-crop-calendar-datasets"><span class="header-section-number">5</span> Crop Calendar datasets</a>
   <ul>
@@ -2109,6 +2111,609 @@ Stage 6
 <td>
 </td>
 <td>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comprehensive-hazard-crop-interaction-framework" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="comprehensive-hazard-crop-interaction-framework"><span class="header-section-number">4.2</span> Comprehensive Hazard-Crop Interaction Framework</h3>
+<p>This table serves as a detailed reference framework that systematically links various hazards to their potential impacts on crops, humans, and livestock. It incorporates severity levels, optimal environmental ranges, and the calculation methodologies used for risk assessment, alongside the relevant input variables derived from climate datasets.</p>
+<div class="scroll-table">
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<thead>
+<tr>
+<th>
+Hazard
+</th>
+<th>
+Indicator/Index/Variable
+</th>
+<th>
+Calculation/ Description
+</th>
+<th>
+Input variables
+</th>
+<th>
+Single data source
+</th>
+<th>
+Source requires supplement
+</th>
+<th>
+Thresholds / Interpretation
+</th>
+<th>
+Crop Specificity
+</th>
+<th>
+Livestock Specificity
+</th>
+<th>
+Human Specificity
+</th>
+<th>
+Generic
+</th>
+<th>
+Comments/Notes
+</th>
+</tr>
+</thead>
+<tbody>
+<!-- Group 1 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Heat stress
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+THI (thermal humidity index)
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+THI = (1.8xTdb+32) - [(0.55 - 0.0055xRH)x(1.8xTdb-26.8)]
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - <strong>Tdb</strong>: dry bulb temperature (assumed to be the maximum temperature, ºC)<br> - <strong>RH</strong>: relative humidity (%)
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)
+</td>
+<td>
+<strong>73–78</strong>: mild stress
+</td>
+<td>
+-
+</td>
+<td>
+Cattle
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+<br> - <strong>Use Average</strong> for monthly, seasonal, annual THI
+</td>
+</tr>
+<tr>
+<td>
+<strong>79–89</strong>: moderate stress
+</td>
+<td>
+-
+</td>
+<td>
+Cattle
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+<tr>
+<td>
+<strong>≥90</strong>: severe stress
+</td>
+<td>
+-
+</td>
+<td>
+Cattle
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+<!-- Group 2 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Heat stress
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+HI (heat index)
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+HI = c1 + c2 * T + c3 * R + c4 * T * R + c5 * T^2 + c6 * R^2 + c7 * T^2 * R + c8 * T * R^2 + c9 * T^2 * R^2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - <strong>T</strong>: dry bulb temperature (assumed to be daily mean temperature, ºC)<br> - <strong>R</strong>: relative humidity (%)<br> - <strong>c1</strong> = -8.78469475556; <strong>c2</strong> = 1.61139411<br> - <strong>c3</strong> = 2.33854883889; <strong>c4</strong> = -0.14611605<br> - <strong>c5</strong> = -0.012308094; <strong>c6</strong> = -0.0164248277778<br> - <strong>c7</strong> = 2.211732 x 10^-3; <strong>c8</strong> = 7.2546 x 10^-4<br> - <strong>c9</strong> = -3.582 x 10^-6
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+<br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+<br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)
+</td>
+<td>
+<strong>27–32</strong>: caution
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+Human
+</td>
+<td>
+-
+</td>
+<td>
+<strong>Use Average</strong> for monthly, seasonal, annual HI
+</td>
+</tr>
+<tr>
+<td>
+<strong>32-41</strong>: extreme caution
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+Human
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+<tr>
+<td>
+<br> - <strong>&gt; 41</strong>: danger;<br> - <strong>&gt; 54</strong>: extreme danger
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+Human
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+<!-- Group 3 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 1
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 3
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 4
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 5
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 3, Col 6
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+</tr>
+<tr>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+</tr>
+<tr>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+</tr>
+<!-- Group 4 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 1
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 3
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 4
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 5
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 4, Col 6
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+</tr>
+<tr>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+</tr>
+<tr>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+</tr>
+<!-- Group 5 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 1
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 3
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 4
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 5
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 5, Col 6
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+</tr>
+<tr>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+</tr>
+<tr>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+</tr>
+<!-- Group 6 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 1
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 3
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 4
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 5
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 6, Col 6
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+</tr>
+<tr>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+</tr>
+<tr>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+</tr>
+<!-- Group 7 -->
+<tr>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 1
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 2
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 3
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 4
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 5
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: center;">
+Row 7, Col 6
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+<td>
+Subcell 1
+</td>
+</tr>
+<tr>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+<td>
+Subcell 2
+</td>
+</tr>
+<tr>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
+</td>
+<td>
+Subcell 3
 </td>
 </tr>
 </tbody>
