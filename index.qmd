@@ -531,7 +531,7 @@ This table serves as a detailed reference framework that systematically links va
       <td>Cattle</td>
       <td>-</td>
       <td>-</td>
-      <td><br> - **Use Average** for monthly, seasonal, annual THI </td>
+      <td><br> - **Use Average** for monthly, seasonal, annual THI<br> - Compute **frequencies** of each THI categories </td>
     </tr>
     <tr>
       <td>**79–89**: moderate stress</td>
@@ -563,7 +563,7 @@ This table serves as a detailed reference framework that systematically links va
       <td>-</td>
       <td>Human</td>
       <td>-</td>
-      <td>**Use Average** for monthly, seasonal, annual HI </td>
+      <td><br> - **Use Average** for monthly, seasonal, annual HI<br> - Compute **frequencies** of each HI categories </td>
     </tr>
     <tr>
       <td>**32-41**: extreme caution</td>
