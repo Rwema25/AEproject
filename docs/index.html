@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -2181,7 +2210,8 @@ THI = (1.8xTdb+32) - [(0.55 - 0.0055xRH)x(1.8xTdb-26.8)]
 <br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: left;">
-<br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)
+<br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)<br> <strong>Estimate RH</strong><br> <span class="math display">\[
+RH = 100 \times \frac{e_a}{e_s}\]</span> <br> <span class="math inline">\(e_a\)</span> : actual vapour pressure [kPa] <br> <span class="math inline">\(e_s\)</span> : mean satuaration vapour pressure [kPa] <br> <span class="math display">\[e_a=e^o(T_{dew})=0.6108  \exp\left[\frac{17.27T_{dew}}{T_{dew}+237.3}\right]\]</span> <br> <span class="math inline">\(T_{dew}\)</span>: dewpoint temperature [°C]<br> <span class="math display">\[ e_s = \frac{e^o(T_{max})+e^o(T_{min})}{2}\]</span> <br> <span class="math inline">\(T_{max}\)</span>: maximum temperature [°C] <br> <span class="math inline">\(T_{min}\)</span>: minimum temperature [°C]
 </td>
 <td>
 <strong>73–78</strong>: mild stress

@@ -525,7 +525,9 @@ This table serves as a detailed reference framework that systematically links va
       <td rowspan="3" style="vertical-align: middle; text-align: center;">THI = (1.8xTdb+32) - \[(0.55 - 0.0055xRH)x(1.8xTdb-26.8)\]</td>
       <td rowspan="3" style="vertical-align: middle; text-align: left;"> <br> - **Tdb**: dry bulb temperature (assumed to be the maximum temperature, ºC)<br> - **RH**: relative humidity (%)</td>
       <td rowspan="3" style="vertical-align: middle; text-align: left;"><br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: left;"><br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;"><br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)<br> **Estimate RH**<br> $$
+RH = 100 \times \frac{e_a}{e_s}$$ <br> $e_a$ : actual vapour pressure [kPa] <br> $e_s$ : mean satuaration vapour pressure [kPa] <br> $$e_a=e^o(T_{dew})=0.6108  \exp\left[\frac{17.27T_{dew}}{T_{dew}+237.3}\right]$$ <br> $T_{dew}$: dewpoint temperature [°C]<br> $$ e_s = \frac{e^o(T_{max})+e^o(T_{min})}{2}$$ <br> $T_{max}$: maximum temperature [°C] <br> $T_{min}$: minimum temperature [°C]
+ </td>
       <td>**73–78**: mild stress</td>
       <td>-</td>
       <td>Cattle</td>
