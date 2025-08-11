@@ -2214,7 +2214,7 @@ THI = (1.8xTdb+32) - [(0.55 - 0.0055xRH)x(1.8xTdb-26.8)]
 RH = 100 \times \frac{e_a}{e_s}\]</span> <br> <span class="math inline">\(e_a\)</span> : actual vapour pressure [kPa] <br> <span class="math inline">\(e_s\)</span> : mean satuaration vapour pressure [kPa] <br> <span class="math display">\[e_a=e^o(T_{dew})=0.6108  \exp\left[\frac{17.27T_{dew}}{T_{dew}+237.3}\right]\]</span> <br> <span class="math inline">\(T_{dew}\)</span>: dewpoint temperature [°C]<br> <span class="math display">\[ e_s = \frac{e^o(T_{max})+e^o(T_{min})}{2}\]</span> <br> <span class="math inline">\(T_{max}\)</span>: maximum temperature [°C] <br> <span class="math inline">\(T_{min}\)</span>: minimum temperature [°C]
 </td>
 <td>
-<strong>73–78</strong>: mild stress
+<strong>73–78</strong>: Mild stress
 </td>
 <td>
 -
@@ -2234,7 +2234,7 @@ Cattle
 </tr>
 <tr>
 <td>
-<strong>79–89</strong>: moderate stress
+<strong>79–89</strong>: Moderate stress
 </td>
 <td>
 -
@@ -2254,7 +2254,7 @@ Cattle
 </tr>
 <tr>
 <td>
-<strong>≥90</strong>: severe stress
+<strong>≥90</strong>: Severe stress
 </td>
 <td>
 -
@@ -2277,7 +2277,7 @@ Cattle
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
 Heat stress
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
 HI (heat index)
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
@@ -2286,14 +2286,14 @@ HI = c1 + c2 * T + c3 * R + c4 * T * R + c5 * T^2 + c6 * R^2 + c7 * T^2 * R + c8
 <td rowspan="3" style="vertical-align: middle; text-align: left;">
 <br> - <strong>T</strong>: dry bulb temperature (assumed to be daily mean temperature, ºC)<br> - <strong>R</strong>: relative humidity (%)<br> - <strong>c1</strong> = -8.78469475556; <strong>c2</strong> = 1.61139411<br> - <strong>c3</strong> = 2.33854883889; <strong>c4</strong> = -0.14611605<br> - <strong>c5</strong> = -0.012308094; <strong>c6</strong> = -0.0164248277778<br> - <strong>c7</strong> = 2.211732 x 10^-3; <strong>c8</strong> = 7.2546 x 10^-4<br> - <strong>c9</strong> = -3.582 x 10^-6
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
 <br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
 <br> - CHIRTS (requires RH)<br> - TAMSAT (Requires RH)
 </td>
 <td>
-<strong>27–32</strong>: caution
+<strong>27–32</strong>: Caution
 </td>
 <td>
 -
@@ -2313,7 +2313,7 @@ Human
 </tr>
 <tr>
 <td>
-<strong>32-41</strong>: extreme caution
+<strong>32–41</strong>: Extreme caution
 </td>
 <td>
 -
@@ -2333,7 +2333,7 @@ Human
 </tr>
 <tr>
 <td>
-<br> - <strong>&gt; 41</strong>: danger;<br> - <strong>&gt; 54</strong>: extreme danger
+<br> <strong>&gt; 41</strong>: Danger;<br> <strong>&gt; 54</strong>: Extreme danger
 </td>
 <td>
 -
@@ -2354,238 +2354,240 @@ Human
 <!-- Group 3 -->
 <tr>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 1
+Heat stress
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 2
+Heat stress for crops (days), Tmax &gt; 35ºC
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 3
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+Count of days with daily maximum temperatures (Tmax) exceeding 35ºC during a specified time period
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 4
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - <strong>Tmax</strong>: daily maximum temperatures, ºC
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 5
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - AgERA5<br> - CHIRTS<br> - ERA5<br> - NEX-GDDP-CMIP6<br> - TerraClimate
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 3, Col 6
-</td>
-<td>
-Subcell 1
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - CHIRPS (requires Tmax)<br> - IMERG (requires Tmax)<br> - TAMSAT (Requires Tmax)
 </td>
 <td>
-Subcell 1
+<strong>10–20</strong>: Moderate
 </td>
 <td>
-Subcell 1
+Crop (e.g.&nbsp;Maize)
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
+</td>
+<td>
+<br> - Compute this for <strong>each month</strong> of the year<br> - Compute this for <strong>rainy season</strong>
 </td>
 </tr>
 <tr>
 <td>
-Subcell 2
+<strong>20–25</strong>: Severe
 </td>
 <td>
-Subcell 2
+Crop (e.g.&nbsp;Maize)
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 </tr>
 <tr>
 <td>
-Subcell 3
+<strong>&gt; 25</strong>: Extreme
 </td>
 <td>
-Subcell 3
+Crop (e.g.&nbsp;Maize)
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 </tr>
 <!-- Group 4 -->
 <tr>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 1
+Heat stress
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 2
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+Heat stress for crops (days), Tmax &gt; 40ºC
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 3
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+Count of days with daily maximum temperatures (Tmax) exceeding 40ºC during a specified time period
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 4
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - <strong>Tmax</strong>: daily maximum temperatures, ºC
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 5
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - AgERA5<br> - CHIRTS<br> - ERA5<br> - NEX-GDDP-CMIP6<br> - TerraClimate
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 4, Col 6
-</td>
-<td>
-Subcell 1
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - CHIRPS (requires Tmax)<br> - IMERG (requires Tmax)<br> - TAMSAT (Requires Tmax)
 </td>
 <td>
-Subcell 1
+<strong>1–5</strong>: Moderate
 </td>
 <td>
-Subcell 1
+Crop (i.e.&nbsp;generic)
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
+</td>
+<td>
+<br> - Compute this for <strong>each month</strong> of the year<br> - Compute this for <strong>rainy season</strong>
 </td>
 </tr>
 <tr>
 <td>
-Subcell 2
+<strong>5–10</strong>: Severe
 </td>
 <td>
-Subcell 2
+Crop (i.e.&nbsp;generic)
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 </tr>
 <tr>
 <td>
-Subcell 3
+<strong>&gt; 10</strong>: Extreme
 </td>
 <td>
-Subcell 3
+Crop (i.e.&nbsp;generic)
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 </tr>
 <!-- Group 5 -->
 <tr>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 1
+Drought stress
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 2
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+TAI (Thornwaite aridity index, %)
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 3
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+TAI = 100 * (d / n)
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 4
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - <strong>d</strong>: sum of monthly differences between prec and PET for months where precip &lt; PET<br> - <strong>n</strong>: sum of monthly PET for those months<br> - <strong>prec</strong>: Precipitation<br> - <strong>PET</strong>: Potential evapotraspiration (can be obtained using Hargreaves Equation that used for season detection) <span class="math display">\[
+PET = 0.0023 \times \sqrt{T_{\text{max}} - T_{\text{min}}} \times (T_{\text{mean}} + 17.8) \times R_a
+\]</span> <br> - Where: <br> - <span class="math inline">\(T_{\text{max}}\)</span> and <span class="math inline">\(T_{\text{min}}\)</span> are the daily maximum and minimum temperatures (°C). <br>- <span class="math inline">\(R_a\)</span> is extraterrestrial radiation (mm/day)
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 5
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - AgERA5<br> - ERA5<br> - NEX-GDDP-CMIP6
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 5, Col 6
-</td>
-<td>
-Subcell 1
-</td>
-<td>
-Subcell 1
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - CHIRPS (requires Tmax and Tmin)<br> - IMERG (requires Tmax and Tmin)<br> - TAMSAT (Requires Tmax and Tmin)
 </td>
 <td>
-Subcell 1
+<strong>40–60</strong>: Moderate stress
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
+</td>
+<td>
+Generic
+</td>
+<td>
+<br> - Designed to examine the degree of dryness primarily on <strong>monthly and annual scales</strong> over multi-year periods (often a standard 30-year climatic normal (e.g., 1981-2010 or 1950-2000))
 </td>
 </tr>
 <tr>
 <td>
-Subcell 2
+<strong>60–80</strong>: Severe
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+Generic
 </td>
 <td>
-Subcell 2
+-
 </td>
 </tr>
 <tr>
 <td>
-Subcell 3
+<strong>&gt; 80</strong>: Extreme
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+Generic
 </td>
 <td>
-Subcell 3
+-
 </td>
 </tr>
 <!-- Group 6 -->
