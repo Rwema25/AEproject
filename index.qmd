@@ -687,7 +687,7 @@ $$ <br> - Where:
     <!-- Group 6 -->
     <tr>
       <td rowspan="3" style="vertical-align: middle; text-align: center;">Drought stress</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: left;">NDWS (Number of Soil Water Stress Days)</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;">NDD (Number of dry days)</td>
       <td rowspan="3" style="vertical-align: middle; text-align: left;">Counts days where actual evapotranspiration (Ea) to potential evapotranspiration (Ep) ratio (<br/>Ea/Ep) is less than 0.5, indicating soil water stress. Calculated daily from a soil water balance that updates soil moisture availability considering rainfall, evapotranspiration, and soil capacity</td>
       <td rowspan="3" style="vertical-align: middle; text-align: left;"><br> - Daily precipitation (rain) <br> - Daily temperature (min, max, mean)<br> - Daily solar radiation <br> - Soil water holding capacity (soilcp) <br> - Soil saturation (soil moisture max)</td>
       <td rowspan="3" style="vertical-align: middle; text-align: center;">None</td>
@@ -718,34 +718,34 @@ $$ <br> - Where:
 
     <!-- Group 7 -->
     <tr>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 1</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 2</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 3</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 4</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 5</td>
-      <td rowspan="3" style="vertical-align: middle; text-align: center;">Row 7, Col 6</td>
-      <td>Subcell 1</td>
-      <td>Subcell 1</td>
-      <td>Subcell 1</td>
-      <td>Subcell 1</td>
-      <td>Subcell 1</td>
-      <td>Subcell 1</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: center;">Drought stress</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;">NDWS (Number of Soil Water Stress Days)</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;">Counts days where actual evapotranspiration (Ea) to potential evapotranspiration (Ep) ratio (<br/>Ea/Ep) is less than 0.5, indicating soil water stress. Calculated daily from a soil water balance that updates soil moisture availability considering rainfall, evapotranspiration, and soil capacity</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;"><br> - Daily precipitation (rain) <br> - Daily temperature (min, max, mean)<br> - Daily solar radiation <br> - Soil water holding capacity (soilcp) <br> - Soil saturation (soil moisture max)</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: center;">None</td>
+      <td rowspan="3" style="vertical-align: middle; text-align: left;">Combines climate and soil datasets:<br>- Precipitation: CHIRPS or CMIP6 climate data<br> - Temperature & Solar Radiation: ERA5, AgERA5, CMIP6 <br>- Soil: SoilGrids or local soil datasets</td>
+      <td>**15–20**: Moderate</td>
+      <td>Crop (e.g. ...)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td><br> - Based on physically-grounded **water balance** modeling <br> - Output is a raster representing **water-stressed day counts** per period</td>
     </tr>
     <tr>
-      <td>Subcell 2</td>
-      <td>Subcell 2</td>
-      <td>Subcell 2</td>
-      <td>Subcell 2</td>
-      <td>Subcell 2</td>
-      <td>Subcell 2</td>
+      <td>**20–25**: Severe</td>
+      <td>Crop (e.g. ...)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td>Subcell 3</td>
-      <td>Subcell 3</td>
-      <td>Subcell 3</td>
-      <td>Subcell 3</td>
-      <td>Subcell 3</td>
-      <td>Subcell 3</td>
+      <td>**> 25**: Extreme</td>
+      <td>Crop (e.g. ...)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <!-- Group 8 -->
 <tr>
