@@ -2599,16 +2599,16 @@ Drought stress
 NDD (Number of dry days)
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: left;">
-Counts days where actual evapotranspiration (Ea) to potential evapotranspiration (Ep) ratio (<br>Ea/Ep) is less than 0.5, indicating soil water stress. Calculated daily from a soil water balance that updates soil moisture availability considering rainfall, evapotranspiration, and soil capacity
+Counts number of dry days (P &lt; 1 mm) per month, season and per year for period 1995–2014 (yearly and long-term mean)
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: left;">
-<br> - Daily precipitation (rain) <br> - Daily temperature (min, max, mean)<br> - Daily solar radiation <br> - Soil water holding capacity (soilcp) <br> - Soil saturation (soil moisture max)
+<br> - Daily precipitation (rain)
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br>- CHIRPS<br>- CMIP6<br>- AgERA5<br>- ERA5<br>- TAMSAT<br>- IMRG
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-None
-</td>
-<td rowspan="3" style="vertical-align: middle; text-align: left;">
-Combines climate and soil datasets:<br>- Precipitation: CHIRPS or CMIP6 climate data<br> - Temperature &amp; Solar Radiation: ERA5, AgERA5, CMIP6 <br>- Soil: SoilGrids or local soil datasets
+-
 </td>
 <td>
 <strong>15–20</strong>: Moderate
@@ -2626,7 +2626,7 @@ Crop (e.g.&nbsp;…)
 -
 </td>
 <td>
-<br> - Based on physically-grounded <strong>water balance</strong> modeling <br> - Output is a raster representing <strong>water-stressed day counts</strong> per period
+<br> - Useful for drought risk assessment
 </td>
 </tr>
 <tr>
@@ -2751,80 +2751,80 @@ Crop (e.g.&nbsp;…)
 <!-- Group 8 -->
 <tr>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 1
+Waterlogging &amp; flooding stress
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+NDWL0 (Number of waterlogging days at start of saturation)
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+Counts days in which the soil moisture is above field capacity and moving toward saturation. Soil moisture calculated using a simple watbal routine as for the number of water stress days. We use 0% of the way to saturation (i.e., at the very start).
+</td>
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+<br> - Daily precipitation (rain) <br> - Daily temperature (min, max, mean)<br> - Daily solar radiation <br> - Soil water holding capacity (soilcp) <br> - Soil saturation (soil moisture max)
 </td>
 <td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 2
+None
 </td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 3
-</td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 4
-</td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 5
-</td>
-<td rowspan="3" style="vertical-align: middle; text-align: center;">
-Row 8, Col 6
+<td rowspan="3" style="vertical-align: middle; text-align: left;">
+Combines climate and soil datasets:<br>- Precipitation: CHIRPS or CMIP6 climate data<br> - Temperature &amp; Solar Radiation: ERA5, AgERA5, CMIP6 <br>- Soil: SoilGrids or local soil datasets
 </td>
 <td>
-Subcell 1
+<strong>2–5</strong>: Moderate
 </td>
 <td>
-Subcell 1
+Crop (e.g.&nbsp;…)
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 <td>
-Subcell 1
+-
 </td>
 </tr>
 <tr>
 <td>
-Subcell 2
+<strong>5–8</strong>: Severe
 </td>
 <td>
-Subcell 2
+Crop (e.g.&nbsp;…)
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 <td>
-Subcell 2
+-
 </td>
 </tr>
 <tr>
 <td>
-Subcell 3
+<strong>&gt; 8</strong>: Extreme
 </td>
 <td>
-Subcell 3
+Crop (e.g.&nbsp;…)
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 <td>
-Subcell 3
+-
 </td>
 </tr>
 <!-- Group 9 -->
